@@ -1,4 +1,5 @@
 main {
+  position: relative;
   background-color: #edf2ee;
   .container {
     border: 1px solid red;
@@ -64,7 +65,6 @@ main {
       }
     }
   }
-
   .swiperBtn {
     background-color: #fff;
     border-radius: 50%;
@@ -72,16 +72,57 @@ main {
     height: 40px;
     color: black;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     &::after {
       font-size: 26px;
     }
-    &:hover{
-        background-color: #00B207;
-        color: white;
+    &:hover {
+      background-color: #00b207;
+      color: white;
     }
   }
-  .swiper-pagination-bullet{
-    background-color: #00B207;
+  .swiper-pagination-bullet {
+    background-color: #00b207;
+  }
+  .barg1Img {
+    position: absolute;
+    top: 0;
+    margin-left: -30px;
+  }
+  .barg2Img{
+    position: absolute;
+    bottom: -60px;
+    margin-left: 1100px;
+  }
+  .group1Img{
+    position: absolute;
+    top: 30px;
+    margin-left: 1150px;
+    z-index: 2;
+  }
+  .group2Img{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    margin-left: 600px;
+  }
+  .group3Img{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    margin-left: 1247px;
+  }
+  .group4Img{
+    position: absolute;
+    z-index: 2;
+    top: 490px;
+    margin-left: -150px;
+  }
+  .group5Img{
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    margin-left: -160px;
+    transform: rotate(110deg);
   }
 }
