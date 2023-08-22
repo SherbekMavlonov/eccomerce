@@ -76,6 +76,8 @@ main .swiperBtn:hover {
 }
 main .swiper-pagination-bullet {
   background-color: #00b207;
+  width: 12px;
+  height: 12px;
 }
 main .barg1Img {
   position: absolute;
