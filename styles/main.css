@@ -14,9 +14,8 @@ html {
     max-width: 1320px;
     margin: 0 auto;
 }
+
 /* loges start */
-
-
 #company-logo {
   background: white;
   background-image: url(../images/company-logo-bg.svg);
@@ -438,3 +437,117 @@ html {
     align-items: center;
     justify-content: center;
 }
+/* Aziz section end */
+/* Testomonial start Dilshodbek */
+#testimonials {
+  background: linear-gradient(180deg, #fff 0%, #f2f5f3 63.02%), rgba(32, 181, 38, 0.1);
+  padding: 70px 0;
+}
+#testimonials .heading,
+#testimonials .client,
+#testimonials .reviewer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#testimonials .heading .testomonialTitle {
+  color: var(--branding-success, #00b207);
+  font-family: Segoe Script;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  text-transform: uppercase;
+}
+#testimonials .heading h1 {
+  color: var(--gray-scale-gray-900, #1a1a1a);
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 48px */
+}
+#testimonials .testomonialScroll {
+  display: flex;
+  gap: 12px;
+}
+#testimonials .scrollArrow {
+  background: var(--gray-scale-white, #fff);
+  border: 1px solid var(--gray-scale-gray-100, #e6e6e6);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#testimonials .scrollArrow img {
+  width: 15px;
+  height: 12px;
+}
+#testimonials .scrollArrow:hover {
+  background: var(--branding-success, #00b207);
+  border-color: var(--branding-success, #00b207);
+}
+#testimonials .scrollArrow:active {
+  scale: 0.85;
+}
+#testimonials .swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+#testimonials .swiper-container {
+  margin-top: 45px;
+  overflow: hidden;
+}
+#testimonials .testomonial {
+  width: 425px !important;
+  padding: 24px;
+  border-radius: 8px;
+  background: var(--gray-scale-white, #fff);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.01);
+}
+#testimonials .tilda img {
+  width: 32px;
+  height: 26px;
+}
+#testimonials .content {
+  color: var(--gray-scale-gray-700, #4d4d4d);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin: 16px 0;
+  width: 376px;
+}
+#testimonials .reviewer {
+  gap: 12px;
+}
+#testimonials .reviewer img {
+  width: 56px;
+  height: 56px;
+}
+#testimonials .info .customerName {
+  color: var(--gray-scale-gray-900, #1a1a1a);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+#testimonials .info .customer {
+  color: var(--gray-scale-gray-400, #999);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+#testimonials .rating img {
+  width: 20px;
+  height: 20px;
+}
+/* Testomonial end  Dilshodbek*/
