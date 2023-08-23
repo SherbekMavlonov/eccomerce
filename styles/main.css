@@ -14,7 +14,49 @@ html {
     max-width: 1320px;
     margin: 0 auto;
 }
+/* loges start */
 
+
+#company-logo {
+  background: white;
+  background-image: url(../images/company-logo-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+#company-logo .container {
+  padding: 82px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  gap: 160px;
+}
+
+#company-logo .container a:hover {
+  transition: 0.7s;
+  filter: brightness(0) saturate(100%) invert(43%) sepia(39%) saturate(3480%) hue-rotate(97deg) brightness(97%) contrast(107%);
+}
+
+#company-logo .container .company-logo-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  animation: 20s slide infinite linear;
+  gap: 160px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* loges end */
 /* ----->  samandar  <-----  */
 #Banner {
     margin: 80px auto;
