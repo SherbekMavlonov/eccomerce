@@ -131,4 +131,7 @@ html {
     text-transform: uppercase;
     opacity: 0.7;
 }
+#Banner .container .banner-box .btn {
+    width: 162px;
+}
 /* <-----  samandar  ----->  */
