@@ -78,3 +78,21 @@ html {
   line-height: 150%;
 }
 
+.shop_now_btn {
+  display: flex;
+  padding: 16px 40px;
+  width: 191px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 53px;
+  background: var(--branding-success, #00b207);
+  color: var(--gray-scale-white, #fff);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  cursor: pointer;
+  border: none;
+}
