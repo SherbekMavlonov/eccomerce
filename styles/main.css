@@ -17,79 +17,101 @@ html {
 }
 
 /* Savbatov Asadbek */
-#customers .container .wrapper {
-  position: absolute;
-  width: 80vw;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
+
+#customers {
+  background-image: url(../images/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
 }
-#customers .container .wrapper .container {
-  width: 28vmin;
-  height: 28vmin;
+
+#customers .container .customersWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+#customers .container .customersWrapper .customersWrapperBox {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 1em 0;
-  position: relative;
-  font-size: 16px;
-  border-radius: 0.5em;
-  background-color: #21242b;
-  border-bottom: 10px solid #18f98f;
+  align-items: center;
+  padding: 40px 0px;
+  width: 312px;
+  height: 174px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
 }
-#customers .container .wrapper i {
-  color: #18f98f;
-  font-size: 2.5em;
-  text-align: center;
+
+#customers .container .customersWrapper span.num {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  color: #00b307;
 }
-#customers .container .wrapper span.num {
-  color: #ffffff;
-  display: grid;
-  place-items: center;
-  font-weight: 600;
-  font-size: 3em;
-}
-#customers .container .wrapper span.text {
-  color: #e0e0e0;
-  font-size: 1em;
-  text-align: center;
-  pad: 0.7em 0;
+
+#customers .container .customersWrapper span.text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   font-weight: 400;
-  line-height: 0;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
 }
+
 @media screen and (max-width: 1024px) {
-  #customers .container .wrapper {
-    width: 85vw;
+  #customers .container .customersWrapper {
+    /* width: 85vw; */
+    padding: 0 40px;
   }
-  #customers .container .wrapper .container {
+
+  #customers .container .customersWrapper .customersWrapperBox {
     height: 26vmin;
     width: 26vmin;
-    font-size: 12px;
+    padding: 35px 0px;
   }
 }
+
 @media screen and (max-width: 768px) {
-  #customers .container .wrapper {
-    width: 90vw;
+  #customers .container .customersWrapper {
+    /* width: 90vw; */
+    padding: 0 20px;
     flex-wrap: wrap;
     gap: 30px;
   }
-  #customers .container .wrapper .container {
+  #customers .container .customersWrapper .customersWrapperBox {
     width: calc(50% - 40px);
     height: 30vmin;
-    font-size: 14px;
+    padding: 30px 0px;
+  }
+
+  #customers .container .customersWrapper span.num {
+    font-size: 40px;
+  }
+
+  #customers .container .customersWrapper span.text {
+    font-size: 15px;
   }
 }
+
 @media screen and (max-width: 480px) {
-  #customers .container .wrapper {
+  #customers .container .customersWrapper {
     gap: 15px;
   }
-  #customers .container .wrapper .container {
+
+  #customers .container .customersWrapper .customersWrapperBox {
     width: 100%;
     height: 25vmin;
-    font-size: 8px;
+    padding: 15px 0px;
+  }
+
+  #customers .container .customersWrapper span.num {
+    font-size: 25px;
+  }
+  #customers .container .customersWrapper span.text {
+    font-size: 14px;
   }
 }
 
