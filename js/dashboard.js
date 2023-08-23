@@ -11,6 +11,34 @@ const openCity = (evt, cityName) => {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 };
-
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+/* === breadcrumbs start */
+/* === breadcrumbs end === */
+
+/* === Dashboard styles === */
+
+/* === navigation start === */
+/* === navigation end === */
+
+/* === main start === */
+
+/* === dashboard content start === */
+/* === dashboard content end === */
+
+/* === Order History content start === */
+/* === Order History content end === */
+
+/* === Wishlist content start === */
+/* === Wishlist content end === */
+
+/* === Shopping Cart content start === */
+/* === Shopping Cart content end === */
+
+/* === Settings content start === */
+/* === Settings content end === */
+
+/* === Log out content start === */
+/* === Log out content end === */
+
+/* === main end === */
