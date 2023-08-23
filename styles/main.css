@@ -79,9 +79,6 @@ font-size:40px;
   scale: 1.05;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
 }
-.boxsWrap .box:hover + .box p{
-  color: white;
-}
 .boxsWrap .box p:hover{
   color: var(--branding-success,#00B207);
 }
