@@ -63,6 +63,8 @@ bannerTimer();
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
+    loop: true,
+    speed: 1600,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
