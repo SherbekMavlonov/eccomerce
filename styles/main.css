@@ -18,6 +18,19 @@ html {
 
 /* Azimsher */
 
+.topCatigories-starting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
 
+.topCatigories-starting h2 {
+  font-size: 44px;
+}
+
+.topCatigories-starting a {
+  color: #00b207;
+}
 
 /* Azimsher */
