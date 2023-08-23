@@ -20,13 +20,13 @@ html {
   padding: 30px 0;
   position: relative;
 }
-#whyChooseUs .container .leafFoto{
+#whyChooseUs .container .leafFoto {
   position: absolute;
   top: 408px;
   left: -65px;
 }
 
-#whyChooseUs .container .leafFoto2{
+#whyChooseUs .container .leafFoto2 {
   position: absolute;
   top: 24px;
   left: 190px;
@@ -60,8 +60,14 @@ html {
   line-height: 120%;
 }
 
-#whyChooseUs .container .whyChooseWrapper .whyChooseUsText .whyChooseUsTexts .whyChooseUsTexts1 h4{
-  color: var(--gray-scale-gray-900, #1A1A1A);
+#whyChooseUs
+  .container
+  .whyChooseWrapper
+  .whyChooseUsText
+  .whyChooseUsTexts
+  .whyChooseUsTexts1
+  h4 {
+  color: var(--gray-scale-gray-900, #1a1a1a);
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -69,7 +75,13 @@ html {
   line-height: 150%;
 }
 
-#whyChooseUs .container .whyChooseWrapper .whyChooseUsText .whyChooseUsTexts .whyChooseUsTexts1 p{
+#whyChooseUs
+  .container
+  .whyChooseWrapper
+  .whyChooseUsText
+  .whyChooseUsTexts
+  .whyChooseUsTexts1
+  p {
   color: var(--gray-scale-gray-500, #808080);
   font-family: Poppins;
   font-size: 14px;
@@ -77,22 +89,7 @@ html {
   font-weight: 400;
   line-height: 150%;
 }
-
-.shop_now_btn {
-  display: flex;
-  padding: 16px 40px;
-  width: 191px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  border-radius: 53px;
-  background: var(--branding-success, #00b207);
-  color: var(--gray-scale-white, #fff);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
-  cursor: pointer;
-  border: none;
+#whyChooseUs .container .whyChooseWrapper .whyChooseUsText .whyChooseUsBtn {
+  max-width: 191px;
+  white-space: nowrap;
 }
