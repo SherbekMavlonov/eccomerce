@@ -2,9 +2,6 @@ main {
   position: relative;
   background-color: #edf2ee;
 }
-main .container {
-  border: 1px solid red;
-}
 main .swiper-wrapper {
   transition: all 1s ease-in-out;
 }
