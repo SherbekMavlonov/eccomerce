@@ -20,14 +20,14 @@ html {
     margin: 80px auto;
 }
 #Banner .container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
 }
 #Banner .container .banner-box {
-  /* background:
+    /* background:
   linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.5)),
   url('../images/photo_2022-05-06_20-35-27.jpg'); */
     border-radius: 10px;
@@ -37,8 +37,7 @@ html {
     justify-content: center;
     width: 648px;
     height: 360px;
-     background-size: cover;
-   
+    background-repeat: no-repeat;
 }
 #Banner .container .banner-box h4 {
     color: var(--gray-scale-white, #fff);

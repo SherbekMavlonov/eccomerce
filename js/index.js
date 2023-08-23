@@ -12,13 +12,16 @@ function bannerTimer() {
     const bannerMinute = document.querySelector("#Banner .minute");
     const bannerSecond = document.querySelector("#Banner .second");
 
-    bannerBoxes[0].style.background=
-    `linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.5)),
-    url('../images/photo_2022-05-06_20-35-27.jpg')`;
+    let box1Img = "vegetables-img.jpg";
+    let box2Img = "vegetables-sale-img.jpg";
+    bannerBoxes[0].style.background = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.35)),
+    url('../images/${box1Img}')`;
 
-    bannerBoxes[1].style.background=
-    `linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.5)),
-    url('../images/photo_2022-05-06_20-35-27.jpg')`;
+    bannerBoxes[1].style.background = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.35)),
+    url('../images/${box2Img}')`;
+    bannerBoxes.forEach((box) => (box.style.backgroundSize = "cover"));
+ 
+
     let d = 2;
     let h = 16;
     let m = 42;
