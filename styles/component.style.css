@@ -1,6 +1,6 @@
 
 .shop_now_btn{
-    display: inline-flex;
+    display: flex;
     padding: 16px 40px;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,10 @@
    cursor: pointer;
    border: none;
 }
+.shop_now_btn:hover svg{
+    transition:  0.5s all;
+    transform: translateX(16px);
+    }
 .popular_tag_green_btn{
     display: inline-flex;
     padding: 6px 16px;
