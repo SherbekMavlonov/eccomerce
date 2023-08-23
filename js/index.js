@@ -12,6 +12,13 @@ function bannerTimer() {
     const bannerMinute = document.querySelector("#Banner .minute");
     const bannerSecond = document.querySelector("#Banner .second");
 
+    bannerBoxes[0].style.background=
+    `linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.5)),
+    url('../images/photo_2022-05-06_20-35-27.jpg')`;
+
+    bannerBoxes[1].style.background=
+    `linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.5)),
+    url('../images/photo_2022-05-06_20-35-27.jpg')`;
     let d = 2;
     let h = 16;
     let m = 42;
