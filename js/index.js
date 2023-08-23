@@ -4,22 +4,21 @@
 
 // ---> samandar
 
-const bannerBoxes = document.querySelectorAll("#Banner .banner-box");
-const startingAtPrice = document.querySelector(".startingAtPrice");
-const bannerDay = document.querySelector("#Banner .day");
-const bannerHour = document.querySelector("#Banner .hour");
-const bannerMinute = document.querySelector("#Banner .minute");
-const bannerSecond = document.querySelector("#Banner .second");
-
 function bannerTimer() {
+    const bannerBoxes = document.querySelectorAll("#Banner .banner-box");
+    const startingAtPrice = document.querySelector(".startingAtPrice");
+    const bannerDay = document.querySelector("#Banner .day");
+    const bannerHour = document.querySelector("#Banner .hour");
+    const bannerMinute = document.querySelector("#Banner .minute");
+    const bannerSecond = document.querySelector("#Banner .second");
+
     let d = 2;
     let h = 16;
     let m = 42;
     let s = 25;
-    console.log(new Date()); //122465465456
-    // 10/23/2023/10/
+
     let allTime = d * 24 * 3600 + h * 3600 + m * 60 + s;
-    const stopped = null;
+    let stopped = null;
 
     bannerDay.textContent = `${d < 10 ? "0" + d : d}`;
     bannerHour.textContent = `${h < 10 ? "0" + h : h}`;
