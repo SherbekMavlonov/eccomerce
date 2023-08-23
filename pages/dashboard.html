@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <!-- Dashboard link -->
     <link rel="stylesheet" href="../styles/dashboard.css" />
+    <!-- style/components link -->
+    <link rel="stylesheet" href="../styles/component.style.css" />
+    <link rel="stylesheet" href="../sass/healtyFood.css" />
   </head>
   <body>
     <header></header>
@@ -21,17 +25,25 @@
         <aside id="navigation">
           <div class="tab">
             <div class="navigationHeader">Navigation</div>
-            <button class="tablinks" onclick="openCity(event, 'mainDashboard')" id="defaultOpen">
+            <button
+              class="tablinks"
+              onclick="openCity(event, 'mainDashboard')"
+              id="defaultOpen"
+            >
               Dashboard
             </button>
             <button class="tablinks" onclick="openCity(event, 'orderHistory')">
               Order History
             </button>
-            <button class="tablinks" onclick="openCity(event, 'wishlist')">Wishlist</button>
+            <button class="tablinks" onclick="openCity(event, 'wishlist')">
+              Wishlist
+            </button>
             <button class="tablinks" onclick="openCity(event, 'shoppingCard')">
               Shopping Cart
             </button>
-            <button class="tablinks" onclick="openCity(event, 'settings')">Settings</button>
+            <button class="tablinks" onclick="openCity(event, 'settings')">
+              Settings
+            </button>
             <button class="tablinks">Log-out</button>
           </div>
         </aside>
@@ -54,6 +66,65 @@
 
           <div id="settings" class="tabcontent">
             <h3>Settings</h3>
+            <div class="accountSettingsSection">
+              <h2>Account Settings</h2>
+              <form class="settingsSectionIn">
+                <div class="leftInputData">
+                  <div class="fNameDiv leftInput">
+                    <label for="fNameInput">First Name</label>
+                    <input
+                      type="text"
+                      id="fNameInput"
+                      name="fname"
+                      placeholder="John"
+                      required
+                    />
+                  </div>
+                  <div class="lNameDiv leftInput">
+                    <label for="lNameInput">Last Name</label>
+                    <input
+                      type="text"
+                      id="lNameInput"
+                      name="lname"
+                      placeholder="Doe"
+                      required
+                    />
+                  </div>
+                  <div class="emailDiv leftInput">
+                    <label for="emailInput">Email</label>
+                    <input
+                      type="email"
+                      id="emailInput"
+                      name="email"
+                      placeholder="JohnDoe@gmail.com"
+                      required
+                    />
+                  </div>
+                  <div class="numberDiv leftInput">
+                    <label for="phoneNumberInput">Phone Number</label>
+                    <input
+                      type="number"
+                      id="phoneNumberInput"
+                      name="number"
+                      placeholder="(+998) 99-999-99-99"
+                      required
+                    />
+                  </div>
+                  <button class="popular_tag_green_btn" id="accountSettingsBtn" type="submit">
+                    Save Changes
+                  </button>
+                </div>
+                <div class="rightInputData">
+                  <div class="uploadImg">
+                    <img src="" alt="" id="showImage"/>
+                  </div>
+                  <label for="uploadImgInput">
+                    Choose the Img
+                  <input id="uploadImgInput" type="file" name="file" />
+                  </label>
+                </div>
+              </form>
+            </div>
           </div>
         </main>
       </div>
