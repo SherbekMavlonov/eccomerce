@@ -17,7 +17,7 @@ function bannerTimer() {
     let m = 42;
     let s = 25;
     console.log(new Date()); //122465465456
-// 10/23/2023/10/
+    // 10/23/2023/10/
     let allTime = d * 24 * 3600 + h * 3600 + m * 60 + s;
     const stopped = null;
 
@@ -59,3 +59,21 @@ function bannerTimer() {
 }
 bannerTimer();
 // samandar <----
+
+//=========>> Main section Swiper <<================//
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
