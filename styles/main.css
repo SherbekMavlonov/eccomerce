@@ -331,6 +331,7 @@ font-size:40px;
 }
 .boxsWrap .box p:hover{
   color: var(--branding-success,#00B207);
+  
 }
 .boxsWrap .box button{
   background-color: white;
