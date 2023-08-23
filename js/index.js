@@ -1,8 +1,6 @@
 // axios
 //     .get("https://jsonplaceholder.typicode.com/todos/1")
 //     .then((data) => console.log(data.data));
-import Swiper from "../node_modules/swiper/swiper-bundle.mjs";
-import { TESTOMONIAL } from "./__mock__data.js";
 
 // ---> samandar
 
@@ -93,6 +91,8 @@ var swiper = new Swiper(".mySwiper", {
 // main section swiper end <<====================================//
 
 // =========>> testimonial section <<=========================//
+// import Swiper from "../node_modules/swiper/swiper-bundle.mjs";
+// import { TESTOMONIAL } from "./__mock__data.js";
 function createTestomonial() {
   const swiperWrapper = document.querySelector(".swiper-wrapper");
 
@@ -109,6 +109,7 @@ function createTestomonial() {
       delay: 5000,
     },
   });
+  
 
   TESTOMONIAL.forEach((customer) => {
     const testomonial = document.createElement("div");
