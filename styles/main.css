@@ -119,6 +119,7 @@ font-size:40px;
 .boxsWrap .box .imgBox .mini{
   background-color: white;
   text-align: center;
+  cursor: pointer;
   width: 58px;
   height: 58px;
   padding: 6px 15px;
