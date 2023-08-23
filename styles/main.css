@@ -1,125 +1,433 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 .container {
-  max-width: 1320px;
-  margin: 0 auto;
+    max-width: 1320px;
+    margin: 0 auto;
 }
-.latest{
-  text-align: center;
-}
-.latest h3{
-  color:#00B207;
-  font-family: Segoe Script;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-margin: 0;
-line-height: 120%; /* 19.2px */
-text-transform: uppercase;
-}
-.latest h2{
-  margin-bottom: 43px;
-font-size:40px;
-}
-#latestNews{
-  padding: 70px 0 80px;
-}
-#latestNews{
-  background-image: url('../images/BG.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--gray-scale-gray-50, #F2F2F2);
-  object-fit: cover;
-}
-.boxsWrap .box .imgBox{
-  height: 324px;
-  width: 424px;
-  background-image: url("../images/photo_2022-05-06_20-35-27.jpg");
-  position: relative  ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* display: flex; */
-  background-color: var(--gray-scale-gray-400, #999);
-}
-.boxsWrap .box{
-  align-items: center;
-  width:424px;
-  overflow: hidden;
-  height: 494px;
-  border-radius: 10px;
-  transition: all 0.4s ease-in-out;
+/* loges start */
 
+
+#company-logo {
+  background: white;
+  background-image: url(../images/company-logo-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
-.boxsWrap{
+
+#company-logo .container {
+  padding: 82px 0;
   display: flex;
-  gap:24px;
-}
-.boxsWrap .box .categ-box{
-  display: flex;
-  margin: 0 0 8px 0;
   align-items: center;
-  gap: 16px;
+  justify-content: space-between;
+  overflow: hidden;
+  gap: 160px;
 }
-.boxsWrap .box p{
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  margin-bottom: 20px;
+
+#company-logo .container a:hover {
+  transition: 0.7s;
+  filter: brightness(0) saturate(100%) invert(43%) sepia(39%) saturate(3480%) hue-rotate(97deg) brightness(97%) contrast(107%);
 }
-.boxsWrap .box:hover{
-  scale: 1.05;
-  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
-}
-.boxsWrap .box p:hover{
-  color: var(--branding-success,#00B207);
-}
-.boxsWrap .box button{
-  background-color: white;
-  align-items: center;
+
+#company-logo .container .company-logo-slide {
   display: flex;
-  cursor: pointer;
-  gap: 10px;
-  border: none;
-  color: var(--branding-success, #00B207);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%; 
-  transition: all 0.4s ease-in-out;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  animation: 20s slide infinite linear;
+  gap: 160px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* loges end */
+/* ----->  samandar  <-----  */
+#Banner {
+    margin: 80px auto;
+}
+#Banner .container {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+#Banner .container .banner-box {
+    /* background:
+  linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.5)),
+  url('../images/photo_2022-05-06_20-35-27.jpg'); */
+    border-radius: 10px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 648px;
+    height: 360px;
+    background-repeat: no-repeat;
+}
+#Banner .container .banner-box h4 {
+    color: var(--gray-scale-white, #fff);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+#Banner .container .banner-box h2 {
+    color: var(--gray-scale-white, #fff);
+    padding-top: 8px;
+    padding-bottom: 16px;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 43.2px */
+}
+#Banner .container .banner-box .boxLeftInP {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+#Banner .container .banner-box .boxLeftInP .startingAtText {
+    color: var(--gray-scale-white, #fff);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+#Banner .container .banner-box .boxLeftInP .startingAtPrice {
+    padding: 4px 8px;
+    color: var(--gray-scale-white, #fff);
+    border-radius: 5px;
+    background: var(--branding-warning, #ff8a00);
+
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+#Banner .container .banner-box .saleDiscountTime {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    color: var(--gray-scale-white, #fff);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    /* opacity: 0.6; */
+    margin-bottom: 24px;
+}
+#Banner .container .banner-box .saleDiscountTime ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding-right: 8px;
+}
+#Banner .container .banner-box .saleDiscountTime ul:nth-child(n + 2) {
+    padding-left: 8px;
+}
+#Banner .container .banner-box .saleDiscountTime ul li:first-child {
+    color: var(--gray-scale-white, #fff);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+#Banner .container .banner-box .saleDiscountTime ul li:last-child {
+    color: var(--gray-scale-white, #fff);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+#Banner .container .banner-box .btn {
+    width: 162px;
+}
+/* <-----  samandar  ----->  */
+
+/* Nurbek  */
+
+.featureContainer {
+    display: flex;
+    justify-content: space-between;
+}
+#feature {
+    width: 312px;
+    height: 224px;
+    position: relative;
+    margin-top: 40px;
+}
+#feature::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2.575px;
+    transition: all 0.4s ease;
+    transform: scale(0, 1);
+    background-color: rgb(16, 158, 16);
+    margin-top: 20px;
+}
+#feature:hover::after {
+    transform: scale(1, 1);
+}
+#feature svg path {
+    transition: all 0.4s ease;
+}
+#feature:hover svg path {
+    fill: white;
+    cursor: pointer;
+}
+#feature:hover svg {
+    fill: white;
+    cursor: pointer;
+    background-color: rgb(13, 150, 13);
+    border-radius: 50%;
+}
+#feature svg {
+    margin-left: 130px;
+}
+.featureDescription {
+    margin-top: 16px;
+    color: var(--gray-scale-gray-900, #1a1a1a);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.featureContact {
+    margin-top: 5px;
+    color: var(--gray-scale-gray-400, #999);
+    text-align: center;
+}
+.line {
+    margin-top: -55px;
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+    z-index: 1;
+    line-height: 150%;
+}
+
+/* Nurbek */
+/* ----------------------------------------- */
+/* Asqar section */
+#whyChooseUs .container {
+    padding: 30px 0;
+    position: relative;
+}
+#whyChooseUs .container .leafFoto {
+    position: absolute;
+    top: 408px;
+    left: -65px;
+}
+
+#whyChooseUs .container .leafFoto2 {
+    position: absolute;
+    top: 24px;
+    left: 190px;
+    z-index: -1;
+}
+#whyChooseUs .container .whyChooseWrapper {
+    display: flex;
+    gap: 24px;
+    padding: 51px 0;
+}
+
+#whyChooseUs .container .whyChooseWrapper .whyChooseUsText {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-top: 16px;
+}
+#whyChooseUs .container .whyChooseWrapper .whyChooseUsText .whyChooseUsTexts {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+}
+
+#whyChooseUs .container .whyChooseWrapper h1 {
+    color: var(--gray-scale-gray-900, #1a1a1a);
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+#whyChooseUs
+    .container
+    .whyChooseWrapper
+    .whyChooseUsText
+    .whyChooseUsTexts
+    .whyChooseUsTexts1
+    h4 {
+    color: var(--gray-scale-gray-900, #1a1a1a);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+#whyChooseUs
+    .container
+    .whyChooseWrapper
+    .whyChooseUsText
+    .whyChooseUsTexts
+    .whyChooseUsTexts1
+    p {
+    color: var(--gray-scale-gray-500, #808080);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+/* Asqar section */
+/* ---------------------------------------- */
+/* aziz section */
+.latest {
+    text-align: center;
+}
+.latest h3 {
+    color: #00b207;
+    font-family: Segoe Script;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    line-height: 120%; /* 19.2px */
+    text-transform: uppercase;
+}
+.latest h2 {
+    margin-bottom: 43px;
+    font-size: 40px;
+}
+#latestNews {
+    padding: 70px 0 80px;
+}
+#latestNews {
+    background-image: url("../images/BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--gray-scale-gray-50, #f2f2f2);
+    object-fit: cover;
+}
+.boxsWrap .box .imgBox {
+    height: 324px;
+    width: 424px;
+    background-image: url("../images/photo_2022-05-06_20-35-27.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex; */
+    background-color: var(--gray-scale-gray-400, #999);
+}
+.boxsWrap .box {
+    align-items: center;
+    width: 424px;
+    overflow: hidden;
+    height: 494px;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.boxsWrap {
+    display: flex;
+    gap: 24px;
+}
+.boxsWrap .box .categ-box {
+    display: flex;
+    margin: 0 0 8px 0;
+    align-items: center;
+    gap: 16px;
+}
+.boxsWrap .box p {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 20px;
+}
+.boxsWrap .box:hover {
+    scale: 1.05;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+}
+.boxsWrap .box p:hover {
+    color: var(--branding-success, #00b207);
+}
+.boxsWrap .box button {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+    border: none;
+    color: var(--branding-success, #00b207);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    transition: all 0.4s ease-in-out;
 }
 /* .boxsWrap .box button:hover{
   gap: 18px;
 } */
-.boxsWrap .box .categ-box div{
-  display: flex;
-  cursor: pointer;
-  gap: 5px;
-  align-items: center;
+.boxsWrap .box .categ-box div {
+    display: flex;
+    cursor: pointer;
+    gap: 5px;
+    align-items: center;
 }
-.boxsWrap .box .wrap{
-  padding: 24px;
-  background-color: white;
+.boxsWrap .box .wrap {
+    padding: 24px;
+    background-color: white;
 }
-.boxsWrap .box .categ-box a{
-  color: black;
+.boxsWrap .box .categ-box a {
+    color: black;
 }
-.boxsWrap .box .imgBox .mini p{
-  margin: 0;
+.boxsWrap .box .imgBox .mini p {
+    margin: 0;
 }
 .boxsWrap .box .imgBox .mini{
   background-color: white;
   text-align: center;
-  cursor: pointer;
   width: 58px;
   height: 58px;
   padding: 6px 15px;
