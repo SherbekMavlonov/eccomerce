@@ -1,19 +1,20 @@
-.shop_now_btn {
-  display: inline-flex;
-  padding: 16px 40px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  border-radius: 53px;
-  background: var(--branding-success, #00b207);
-  color: var(--gray-scale-white, #fff);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
-  cursor: pointer;
-  border: none;
+
+.shop_now_btn{
+    display: inline-flex;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 53px;
+    background: var(--branding-success, #00B207);
+   color: var(--gray-scale-white, #FFF);
+   font-family: Poppins;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 120%;
+   cursor: pointer;
+   border: none;
 }
 .popular_tag_green_btn {
   display: inline-flex;
@@ -59,13 +60,13 @@
   border-radius: 0px 6px 6px 0px;
   background: var(--branding-success, #00b207);
 }
-.add_to_card_btn {
-  display: flex;
-  width: 447px;
-  padding: 16px 161.5px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  border-radius: 43px;
-  background: var(--branding-success, #00b207);
+.add_to_card_btn{
+    display: flex;
+width: 447px;
+padding: 16px 161.5px;
+justify-content: center;
+align-items: center;
+gap: 16px;
+border-radius: 43px;
+background: var(--branding-success, #00B207);
 }
