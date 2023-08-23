@@ -7,8 +7,6 @@
   text-decoration: none;
   font-family: 'Poppins';
 }
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -16,4 +14,118 @@ html {
   max-width: 1320px;
   margin: 0 auto;
 }
+.latest{
+  text-align: center;
+}
+.latest h3{
+  color:#00B207;
+  font-family: Segoe Script;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+margin: 0;
+line-height: 120%; /* 19.2px */
+text-transform: uppercase;
+}
+.latest h2{
+  margin-bottom: 43px;
+font-size:40px;
+}
+#latestNews{
+  padding: 70px 0 80px;
+}
+#latestNews{
+  background-image: url('../images/BG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--gray-scale-gray-50, #F2F2F2);
+  object-fit: cover;
+}
+.boxsWrap .box .imgBox{
+  height: 324px;
+  width: 424px;
+  background-image: url("../images/photo_2022-05-06_20-35-27.jpg");
+  position: relative  ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display: flex; */
+  background-color: var(--gray-scale-gray-400, #999);
+}
+.boxsWrap .box{
+  align-items: center;
+  width:424px;
+  overflow: hidden;
+  height: 494px;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
 
+}
+.boxsWrap{
+  display: flex;
+  gap:24px;
+}
+.boxsWrap .box .categ-box{
+  display: flex;
+  margin: 0 0 8px 0;
+  align-items: center;
+  gap: 16px;
+}
+.boxsWrap .box p{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+.boxsWrap .box:hover{
+  scale: 1.05;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+}
+.boxsWrap .box p:hover{
+  color: var(--branding-success,#00B207);
+}
+.boxsWrap .box button{
+  background-color: white;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+  border: none;
+  color: var(--branding-success, #00B207);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; 
+  transition: all 0.4s ease-in-out;
+}
+/* .boxsWrap .box button:hover{
+  gap: 18px;
+} */
+.boxsWrap .box .categ-box div{
+  display: flex;
+  cursor: pointer;
+  gap: 5px;
+  align-items: center;
+}
+.boxsWrap .box .wrap{
+  padding: 24px;
+  background-color: white;
+}
+.boxsWrap .box .categ-box a{
+  color: black;
+}
+.boxsWrap .box .imgBox .mini p{
+  margin: 0;
+}
+.boxsWrap .box .imgBox .mini{
+  background-color: white;
+  text-align: center;
+  width: 58px;
+  height: 58px;
+  padding: 6px 15px;
+  position: absolute;
+  bottom:24px;
+  left: 24px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}

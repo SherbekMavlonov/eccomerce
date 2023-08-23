@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+a{
+    text-decoration: none;
+=======
 
 .shop_now_btn{
     display: inline-flex;
@@ -69,4 +73,5 @@ align-items: center;
 gap: 16px;
 border-radius: 43px;
 background: var(--branding-success, #00B207);
+>>>>>>> e09e2ea5653656b287774f4e1c76c1061bd9ca8e
 }
