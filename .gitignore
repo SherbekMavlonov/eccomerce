@@ -1,2 +1,5 @@
-sass
+# third party librarys
 node_modules
+
+# sass file
+sass

@@ -8,13 +8,13 @@
     font-family: "Poppins";
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 
 .container {
-    max-width: 1320px;
-    margin: 0 auto;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
 
@@ -103,7 +103,6 @@ html {
 }
 
 /* Abduhakim⌋ */
-
 /* loges start */
 #company-logo {
   background: white;
@@ -111,6 +110,7 @@ html {
   background-repeat: no-repeat;
   background-position: 100%;
 }
+
 #company-logo .container {
   padding: 82px 0;
   display: flex;
@@ -122,7 +122,8 @@ html {
 
 #company-logo .container a:hover {
   transition: 0.7s;
-  filter: brightness(0) saturate(100%) invert(43%) sepia(39%) saturate(3480%) hue-rotate(97deg) brightness(97%) contrast(107%);
+  filter: brightness(0) saturate(100%) invert(43%) sepia(39%) saturate(3480%) hue-rotate(97deg)
+    brightness(97%) contrast(107%);
 }
 
 #company-logo .container .company-logo-slide {
