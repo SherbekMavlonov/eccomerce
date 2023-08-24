@@ -1,10 +1,104 @@
 import Swiper from "../node_modules/swiper/swiper-bundle.mjs";
 import { TESTOMONIAL } from "./__mock__data.js";
 
-function createTestomonial() {
-  const swiperWrapper = document.querySelector(".swiper-wrapper");
+// axios
+//     .get("https://jsonplaceholder.typicode.com/todos/1")
+//     .then((data) => console.log(data.data));
 
-  const swiper = new Swiper(".swiper-container", {
+// ---> samandar
+
+function bannerTimer() {
+  const bannerBoxes = document.querySelectorAll("#Banner .banner-box");
+  const startingAtPrice = document.querySelector(".startingAtPrice");
+  const bannerDay = document.querySelector("#Banner .day");
+  const bannerHour = document.querySelector("#Banner .hour");
+  const bannerMinute = document.querySelector("#Banner .minute");
+  const bannerSecond = document.querySelector("#Banner .second");
+
+  let box1Img = "vegetables-img.jpg";
+  let box2Img = "vegetables-sale-img.jpg";
+  bannerBoxes[0].style.background = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.35)),
+    url('../images/${box1Img}')`;
+
+  bannerBoxes[1].style.background = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.35)),
+    url('../images/${box2Img}')`;
+  bannerBoxes.forEach((box) => (box.style.backgroundSize = "cover"));
+
+  let d = 2;
+  let h = 16;
+  let m = 42;
+  let s = 25;
+
+  let allTime = d * 24 * 3600 + h * 3600 + m * 60 + s;
+  let stopped = null;
+
+  bannerDay.textContent = `${d < 10 ? "0" + d : d}`;
+  bannerHour.textContent = `${h < 10 ? "0" + h : h}`;
+  bannerMinute.textContent = `${m < 10 ? "0" + m : m}`;
+  bannerSecond.textContent = `${s < 10 ? "0" + s : s}`;
+
+  stopped = setInterval(() => {
+    if (s < 0 && m == 0 && h == 0 && d == 0) {
+      return clearInterval(stopped);
+    }
+    if (s == 0 && m == 0 && h == 0 && d - 1 >= 0) {
+      d = d - 1;
+      h = 23;
+      m = 59;
+      s = 59;
+      bannerDay.textContent = `${d < 10 ? "0" + d : d}`;
+      bannerHour.textContent = `${h < 10 ? "0" + h : h}`;
+      bannerMinute.textContent = `${m < 10 ? "0" + m : m}`;
+      bannerSecond.textContent = `${s < 10 ? "0" + s : s}`;
+    }
+    if (s == 0 && m == 0 && h - 1 >= 0) {
+      h = h - 1;
+      m = 59;
+      s = 59;
+      bannerHour.textContent = `${h < 10 ? "0" + h : h}`;
+      bannerMinute.textContent = `${m < 10 ? "0" + m : m}`;
+      bannerSecond.textContent = `${s < 10 ? "0" + s : s}`;
+    }
+    if (s == 0 && m - 1 >= 0) {
+      m = m - 1;
+      s = 59;
+      bannerMinute.textContent = `${m < 10 ? "0" + m : m}`;
+    }
+    bannerSecond.textContent = `${s < 10 ? "0" + s : s}`;
+    s--;
+  }, 1000);
+}
+bannerTimer();
+// samandar <----
+
+//=========>> Main section Swiper <<================//
+let swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  speed: 1600,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// Testamonial JavaScript
+
+(() => {
+  const swiperWrapper = document.querySelector(
+    "#testimonials .testomonialSwiperContainer .swiper-wrapper"
+  );
+
+  const testamonialSwiper = new Swiper(".swiper-container", {
     loop: true,
     loopedSlides: 3,
     slidesPerView: 3,
@@ -77,6 +171,4 @@ function createTestomonial() {
 
     swiperWrapper.appendChild(testomonial);
   });
-}
-
-createTestomonial();
+})();

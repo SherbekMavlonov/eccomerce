@@ -1,17 +1,11 @@
-// Navbar
-class Navbar extends HTMLElement {}
-
-customElements.define('navbar-navbar', Navbar)
-// Navbar
-
 // Footer
-class Footer extends HTMLElement {}
+class Footer extends HTMLElement { }
 
 customElements.define('footer-footer', Footer)
 // Footer
 
 // contact
-class Contact extends HTMLElement {}
+class Contact extends HTMLElement { }
 
 customElements.define('contact-contact', Contact)
 
