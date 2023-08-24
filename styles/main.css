@@ -438,3 +438,103 @@ html {
     align-items: center;
     justify-content: center;
 }
+/* Savbatov Asadbek */
+
+#customers {
+  background-image: url(../images/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#customers .container .customersWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+#customers .container .customersWrapper .customersWrapperBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+  width: 312px;
+  height: 174px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+}
+
+#customers .container .customersWrapper span.num {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  color: #00b307;
+}
+
+#customers .container .customersWrapper span.text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  #customers .container .customersWrapper {
+    /* width: 85vw; */
+    padding: 0 40px;
+  }
+
+  #customers .container .customersWrapper .customersWrapperBox {
+    height: 26vmin;
+    width: 26vmin;
+    padding: 35px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #customers .container .customersWrapper {
+    /* width: 90vw; */
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  #customers .container .customersWrapper .customersWrapperBox {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    padding: 30px 0px;
+  }
+
+  #customers .container .customersWrapper span.num {
+    font-size: 40px;
+  }
+
+  #customers .container .customersWrapper span.text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #customers .container .customersWrapper {
+    gap: 15px;
+  }
+
+  #customers .container .customersWrapper .customersWrapperBox {
+    width: 100%;
+    height: 25vmin;
+    padding: 15px 0px;
+  }
+
+  #customers .container .customersWrapper span.num {
+    font-size: 25px;
+  }
+  #customers .container .customersWrapper span.text {
+    font-size: 14px;
+  }
+}
+
+/* Savbatov Asadbek */
