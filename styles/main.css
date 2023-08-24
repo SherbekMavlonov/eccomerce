@@ -13,10 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 .container {
   max-width: 1320px;
