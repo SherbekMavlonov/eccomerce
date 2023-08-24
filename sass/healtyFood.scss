@@ -131,6 +131,7 @@
 
 //=========>> dashboard html file settigs section <<============//
 #settings {
+  margin-bottom: 500px;
   .accountSettingsSection {
     border: 2px solid #e6e6e6;
     h2 {
@@ -205,9 +206,9 @@
           background-color: #999;
           border-radius: 50%;
           border: 5px solid #fff;
-          outline: 4px solid #00B207;
+          outline: 4px solid #00b207;
 
-          img{
+          img {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -234,8 +235,262 @@
           &:active {
             transform: scale(0.95);
           }
-          input[type="file"]{
+          input[type="file"] {
             display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .billingAddressSection {
+    border: 2px solid #e6e6e6;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    h2 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      padding: 16px 0;
+      border-bottom: 2px solid #e6e6e6;
+      padding-left: 24px;
+    }
+
+    .billingSectionIn {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 16px;
+
+      .topBillingIn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+
+        .bInput {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+
+          label {
+            font-size: 14px;
+            line-height: 150%;
+          }
+
+          input {
+            width: 302px;
+            padding: 14px 16px;
+            background-color: #fff;
+            border-radius: 6px;
+            border: 1px solid #e6e6e6;
+            &::placeholder {
+              font-size: 16px;
+              line-height: 130%;
+            }
+            &:focus {
+              outline: 2px solid #00b207;
+            }
+          }
+        }
+      }
+
+      .streetAdrressDiv {
+        width: 938px;
+        input {
+          width: 100%;
+          padding: 14px 16px;
+          background-color: #fff;
+          border-radius: 6px;
+          border: 1px solid #e6e6e6;
+          &::placeholder {
+            font-size: 16px;
+            line-height: 130%;
+          }
+          &:focus {
+            outline: 2px solid #00b207;
+          }
+        }
+      }
+
+      .countrySectionsDiv {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .bInput {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+
+          label {
+            font-size: 14px;
+            line-height: 150%;
+          }
+
+          input,
+          select {
+            width: 303px;
+            padding: 14px 16px;
+            background-color: #fff;
+            border-radius: 6px;
+            border: 1px solid #e6e6e6;
+            &::placeholder {
+              font-size: 16px;
+              line-height: 130%;
+            }
+            &:focus {
+              outline: 2px solid #00b207;
+            }
+          }
+        }
+      }
+
+      .bottomBillingIn {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .bInput {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          label {
+            font-size: 14px;
+            line-height: 150%;
+          }
+
+          input {
+            width: 461px;
+            padding: 14px 16px;
+            background-color: #fff;
+            border-radius: 6px;
+            border: 1px solid #e6e6e6;
+            &::placeholder {
+              font-size: 16px;
+              line-height: 130%;
+            }
+            &:focus {
+              outline: 2px solid #00b207;
+            }
+          }
+        }
+      }
+
+      button {
+        width: 167px;
+        padding: 12px 32px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+
+  .changePasswordSection {
+    border: 2px solid #e6e6e6;
+
+    h2 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      padding: 16px 0;
+      border-bottom: 2px solid #e6e6e6;
+      padding-left: 24px;
+    }
+
+    .changePasswordIn {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 16px;
+
+      .currentPassDiv {
+        display: flex;
+        flex-direction: column;
+        width: 938px;
+
+        label {
+          font-size: 14px;
+          line-height: 150%;
+        }
+
+        input {
+          padding: 14px 16px;
+          background-color: #fff;
+          border-radius: 6px;
+          border: 1px solid #e6e6e6;
+          &::placeholder {
+            font-size: 16px;
+            line-height: 130%;
+          }
+          &:focus {
+            outline: 2px solid #00b207;
+          }
+        }
+      }
+
+      .updatePassSection{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 462px;
+
+        .newPassDiv{
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+
+          label {
+            font-size: 14px;
+            line-height: 150%;
+          }
+  
+          input {
+            width: 462px;
+            padding: 14px 16px;
+            background-color: #fff;
+            border-radius: 6px;
+            border: 1px solid #e6e6e6;
+            &::placeholder {
+              font-size: 16px;
+              line-height: 130%;
+            }
+            &:focus {
+              outline: 2px solid #00b207;
+            }
+          }
+        }
+
+        .confirmPassDiv{
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+
+          label {
+            font-size: 14px;
+            line-height: 150%;
+          }
+  
+          input {
+            width: 462px;
+            padding: 14px 16px;
+            background-color: #fff;
+            border-radius: 6px;
+            border: 1px solid #e6e6e6;
+            &::placeholder {
+              font-size: 16px;
+              line-height: 130%;
+            }
+            &:focus {
+              outline: 2px solid #00b207;
+            }
           }
         }
       }

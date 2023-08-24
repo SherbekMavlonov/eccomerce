@@ -118,6 +118,9 @@
   transform: rotate(110deg);
 }
 
+#settings {
+  margin-bottom: 500px;
+}
 #settings .accountSettingsSection {
   border: 2px solid #e6e6e6;
 }
@@ -192,7 +195,7 @@
   background-color: #999;
   border-radius: 50%;
   border: 5px solid #fff;
-  outline: 4px solid #00B207;
+  outline: 4px solid #00b207;
 }
 #settings .accountSettingsSection .settingsSectionIn .rightInputData .uploadImg img {
   display: flex;
@@ -222,4 +225,262 @@
 }
 #settings .accountSettingsSection .settingsSectionIn .rightInputData label input[type=file] {
   display: none;
+}
+#settings .billingAddressSection {
+  border: 2px solid #e6e6e6;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+#settings .billingAddressSection h2 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 16px 0;
+  border-bottom: 2px solid #e6e6e6;
+  padding-left: 24px;
+}
+#settings .billingAddressSection .billingSectionIn {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+#settings .billingAddressSection .billingSectionIn .topBillingIn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput label {
+  font-size: 14px;
+  line-height: 150%;
+}
+#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input {
+  width: 302px;
+  padding: 14px 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+}
+#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input::placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input:focus {
+  outline: 2px solid #00b207;
+}
+#settings .billingAddressSection .billingSectionIn .streetAdrressDiv {
+  width: 938px;
+}
+#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+}
+#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input::placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input:focus {
+  outline: 2px solid #00b207;
+}
+#settings .billingAddressSection .billingSectionIn .countrySectionsDiv {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput label {
+  font-size: 14px;
+  line-height: 150%;
+}
+#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input,
+#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select {
+  width: 303px;
+  padding: 14px 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+}
+#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input::-moz-placeholder, #settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select::-moz-placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input::placeholder,
+#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select::placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input:focus,
+#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select:focus {
+  outline: 2px solid #00b207;
+}
+#settings .billingAddressSection .billingSectionIn .bottomBillingIn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput label {
+  font-size: 14px;
+  line-height: 150%;
+}
+#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input {
+  width: 461px;
+  padding: 14px 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+}
+#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input::placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input:focus {
+  outline: 2px solid #00b207;
+}
+#settings .billingAddressSection .billingSectionIn button {
+  width: 167px;
+  padding: 12px 32px;
+  transition: all 0.2s ease-in-out;
+}
+#settings .billingAddressSection .billingSectionIn button:hover {
+  opacity: 0.8;
+}
+#settings .billingAddressSection .billingSectionIn button:active {
+  transform: scale(0.95);
+}
+#settings .changePasswordSection {
+  border: 2px solid #e6e6e6;
+}
+#settings .changePasswordSection h2 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 16px 0;
+  border-bottom: 2px solid #e6e6e6;
+  padding-left: 24px;
+}
+#settings .changePasswordSection .changePasswordIn {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+#settings .changePasswordSection .changePasswordIn .currentPassDiv {
+  display: flex;
+  flex-direction: column;
+  width: 938px;
+}
+#settings .changePasswordSection .changePasswordIn .currentPassDiv label {
+  font-size: 14px;
+  line-height: 150%;
+}
+#settings .changePasswordSection .changePasswordIn .currentPassDiv input {
+  padding: 14px 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+}
+#settings .changePasswordSection .changePasswordIn .currentPassDiv input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .changePasswordSection .changePasswordIn .currentPassDiv input::placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .changePasswordSection .changePasswordIn .currentPassDiv input:focus {
+  outline: 2px solid #00b207;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 462px;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .newPassDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .newPassDiv label {
+  font-size: 14px;
+  line-height: 150%;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .newPassDiv input {
+  width: 462px;
+  padding: 14px 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .newPassDiv input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .newPassDiv input::placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .newPassDiv input:focus {
+  outline: 2px solid #00b207;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv label {
+  font-size: 14px;
+  line-height: 150%;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv input {
+  width: 462px;
+  padding: 14px 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv input::placeholder {
+  font-size: 16px;
+  line-height: 130%;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv input:focus {
+  outline: 2px solid #00b207;
 }/*# sourceMappingURL=healtyFood.css.map */
