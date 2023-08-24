@@ -88,6 +88,21 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+
+// Kamroncik
+const likeIcon = document.querySelector('.product_offerLike');
+
+likeIcon.addEventListener('click', () =>{
+    likeIcon.innerHTML = `
+    <style>
+        .product_offerLike img{
+            color:red;
+        }
+    </style>
+    `
+});
+// Kamroncik
 // Savbatov Asadbek
 
 let valueDisplays = document.querySelectorAll(".num");
