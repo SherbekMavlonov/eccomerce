@@ -10,10 +10,100 @@
 html {
     scroll-behavior: smooth;
 }
+
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
 }
+
+
+/* ⌈Abduhakim */
+
+#praductsCard {
+  margin-bottom: 50px;
+}
+
+.productsBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.productsTitle {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #1a1a1a;
+}
+
+#productsLink {
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00b207;
+  transition: 0.3s all linear;
+}
+
+#productsLink:hover {
+  color: darkgreen;
+}
+
+.productsMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mainProductBox {
+  box-shadow: 0 0 5px rgb(185, 175, 175);
+  padding: 3px;
+}
+
+.productsBottomTitle {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4d4d4d;
+}
+
+.productsBottomText {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+
+.productsBottomBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.productsIcon {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(215, 200, 200);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainProductBox:hover {
+  box-shadow: 0 0 5px darkgreen;
+}
+
+/* Abduhakim⌋ */
+
 /* loges start */
 
 
@@ -23,7 +113,6 @@ html {
   background-repeat: no-repeat;
   background-position: 100%;
 }
-
 #company-logo .container {
   padding: 82px 0;
   display: flex;
@@ -181,70 +270,90 @@ html {
 /* <-----  samandar  ----->  */
 
 /* Nurbek  */
-
-.featureContainer {
+    
+.feature {
     display: flex;
-    justify-content: space-between;
-}
-#feature {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .container .box {
     width: 312px;
     height: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
+    cursor: pointer;    
+    padding-top: 10px;
+    border-bottom: 2.175px solid #eee;
     position: relative;
-    margin-top: 40px;
-}
-#feature::after {
+  }
+  .container .box .box_img {
+    position: relative;
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-content: center;
+    transition: all 0.4s ease;
+  }
+  .container .box .box_img .proImg {
+    transition: all 0.4s ease;
+  }
+  .container .box .box_img .proImgBg {
+    transition: all 0.4s ease;
+    position: absolute;
+    z-index: -1;
+    filter: contrast(0.09) brightness(1.8) opacity(0.7);
+  }
+  .container .box::after {
     position: absolute;
     content: "";
     width: 100%;
-    height: 2.575px;
-    transition: all 0.4s ease;
+    height: 4px;
+    background-color: #00b207;
+    bottom: -2%;
+    transition: all 0.4s ease-in-out;
     transform: scale(0, 1);
-    background-color: rgb(16, 158, 16);
-    margin-top: 20px;
-}
-#feature:hover::after {
+  }
+  .container .box:hover .box_img .proImg {
+    filter: brightness(0) invert(1);
+  }
+  .container .box:hover .box_img .proImgBg {
+    filter: contrast(1) brightness(1) opacity(1);
+  }
+  .container .box:hover::after {
     transform: scale(1, 1);
-}
-#feature svg path {
-    transition: all 0.4s ease;
-}
-#feature:hover svg path {
-    fill: white;
-    cursor: pointer;
-}
-#feature:hover svg {
-    fill: white;
-    cursor: pointer;
-    background-color: rgb(13, 150, 13);
-    border-radius: 50%;
-}
-#feature svg {
-    margin-left: 130px;
-}
-.featureDescription {
+  }
+  .featureDescription{
     margin-top: 16px;
-    color: var(--gray-scale-gray-900, #1a1a1a);
+    color: var(--gray-scale-gray-900, #1A1A1A);
     text-align: center;
     font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%;
-}
-.featureContact {
-    margin-top: 5px;
-    color: var(--gray-scale-gray-400, #999);
-    text-align: center;
-}
-.line {
-    margin-top: -55px;
-    width: 100%;
+    line-height: 150%; 
+  }
+  .featureDiscount{
+    margin-top: 10px;
+  }
+  .line{
+    max-width: 1300px;
+    margin: 0 auto;
     height: 1px;
     background-color: #999;
-    z-index: 1;
-    line-height: 150%;
-}
-
+    color: var(--gray-scale-gray-400, #999);
+text-align: center;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+  }
+  
 /* Nurbek */
 /* ----------------------------------------- */
 /* Asqar section */
@@ -323,6 +432,7 @@ html {
 }
 /* Asqar section */
 /* ---------------------------------------- */
+/* aziz section */
 /* aziz section */
 .latest {
     text-align: center;
@@ -425,18 +535,19 @@ html {
 .boxsWrap .box .imgBox .mini p {
     margin: 0;
 }
-.boxsWrap .box .imgBox .mini {
-    background-color: white;
-    text-align: center;
-    width: 58px;
-    height: 58px;
-    padding: 6px 15px;
-    position: absolute;
-    bottom: 24px;
-    left: 24px;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
+.boxsWrap .box .imgBox .mini{
+  background-color: white;
+  text-align: center;
+  cursor:pointer;
+  width: 58px;
+  height: 58px;
+  padding: 6px 15px;
+  position: absolute;
+  bottom:24px;
+  left: 24px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 
