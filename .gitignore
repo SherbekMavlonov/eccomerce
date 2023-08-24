@@ -1,8 +1,2 @@
-# third party librarys
-node_modules
-
-# sass file
 sass
-
-# vs code settings
-.vscode
+node_modules

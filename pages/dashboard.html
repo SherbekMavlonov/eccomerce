@@ -1,85 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/dashboard.css" />
-  </head>
-  <body>
-    <header></header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopery</title>
+        <link rel="stylesheet" href="../styles/dashboard.css" />
+    </head>
+    <body>
+        <header></header>
 
-    <!-- breadcrumbs start -->
-    <section id="breadcrumbs">
-      <div class="container"></div>
-    </section>
-    <!-- breadcrumbs end -->
+        <!-- breadcrumbs start -->
+        <section id="breadcrumbs">
+            <div class="container"></div>
+        </section>
+        <!-- breadcrumbs end -->
 
-    <!-- dashboard start -->
-    <section id="dashboard">
-      <div class="container">
-        <aside id="navigation">
-          <div class="tab">
-            <div class="navigationHeader">Navigation</div>
-            <button class="tablinks" onclick="openCity(event, 'mainDashboard')" id="defaultOpen">
-              Dashboard
-            </button>
-            <button class="tablinks" onclick="openCity(event, 'orderHistory')">
-              Order History
-            </button>
-            <button class="tablinks" onclick="openCity(event, 'wishlist')">Wishlist</button>
-            <button class="tablinks" onclick="openCity(event, 'shoppingCard')">
-              Shopping Cart
-            </button>
-            <button class="tablinks" onclick="openCity(event, 'settings')">Settings</button>
-            <button class="tablinks">Log-out</button>
-          </div>
-        </aside>
+        <!-- dashboard start -->
+        <section id="dashboard">
+            <div class="container">
+                <aside id="navigation">
+                    <div class="tab">
+                        <div class="navigationHeader">Navigation</div>
+                        <button class="tablinks" onclick="openCity(event, 'mainDashboard')" id="defaultOpen">
+                            Dashboard
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'orderHistory')">Order History</button>
+                        <button class="tablinks" onclick="openCity(event, 'wishlist')">Wishlist</button>
+                        <button class="tablinks" onclick="openCity(event, 'shoppingCard')">Shopping Cart</button>
+                        <button class="tablinks" onclick="openCity(event, 'settings')">Settings</button>
+                        <button class="tablinks">Log-out</button>
+                    </div>
+                </aside>
 
-        <main id="main">
-          <div id="mainDashboard" class="tabcontent">
-            <h3>dashboard</h3>
-          </div>
-          <div id="orderHistory" class="tabcontent">
-            <h3>OrderHistory</h3>
-          </div>
+                <main id="main">
+                    <div id="mainDashboard" class="tabcontent">
+                        <h3>dashboard</h3>
+                    </div>
+                    <div id="orderHistory" class="tabcontent">
+                        <h3>OrderHistory</h3>
+                    </div>
 
-          <div id="wishlist" class="tabcontent">
-            <h3>Wishlist</h3>
-          </div>
+                    <div id="wishlist" class="tabcontent">
+                        <h3>Wishlist</h3>
+                    </div>
 
-          <div id="shoppingCard" class="tabcontent">
-            <h3>Shopping Card</h3>
-          </div>
+                    <div id="shoppingCard" class="tabcontent">
+                        <h3>Shopping Card</h3>
+                    </div>
 
-          <div id="settings" class="tabcontent">
-            <h3>Settings</h3>
-          </div>
-        </main>
-      </div>
-    </section>
-    <!-- dashboard end -->
+                    <div id="settings" class="tabcontent">
+                        <h3>Settings</h3>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <!-- dashboard end -->
 
-    <!-- footer start -->
-    <footer></footer>
-    <!-- footer end -->
+        <!-- footer start -->
+        <footer></footer>
+        <!-- footer end -->
 
-    <script type="module" src="../js/dashboard.js"></script>
-    <script>
-      function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-      document.getElementById("defaultOpen").click();
-    </script>
-  </body>
+        <script type="module" src="../js/dashboard.js"></script>
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks
+                tabcontent = document.getElementsByClassName("tabcontent")
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none"
+                }
+                tablinks = document.getElementsByClassName("tablinks")
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "")
+                }
+                document.getElementById(cityName).style.display = "block"
+                evt.currentTarget.className += " active"
+            }
+            document.getElementById("defaultOpen").click()
+        </script>
+    </body>
 </html>

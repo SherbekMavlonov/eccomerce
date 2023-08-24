@@ -64,7 +64,7 @@ function bannerTimer() {
     s--;
   }, 1000);
 }
-bannerTimer();
+bannerTimer()
 // samandar <----
 
 //=========>> Main section Swiper <<================//
