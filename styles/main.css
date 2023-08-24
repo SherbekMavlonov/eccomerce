@@ -10,10 +10,100 @@
 html {
     scroll-behavior: smooth;
 }
+
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
 }
+
+
+/* ⌈Abduhakim */
+
+#praductsCard {
+  margin-bottom: 50px;
+}
+
+.productsBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.productsTitle {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #1a1a1a;
+}
+
+#productsLink {
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00b207;
+  transition: 0.3s all linear;
+}
+
+#productsLink:hover {
+  color: darkgreen;
+}
+
+.productsMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mainProductBox {
+  box-shadow: 0 0 5px rgb(185, 175, 175);
+  padding: 3px;
+}
+
+.productsBottomTitle {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4d4d4d;
+}
+
+.productsBottomText {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+
+.productsBottomBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.productsIcon {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(215, 200, 200);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainProductBox:hover {
+  box-shadow: 0 0 5px darkgreen;
+}
+
+/* Abduhakim⌋ */
+
 /* loges start */
 
 
@@ -23,7 +113,6 @@ html {
   background-repeat: no-repeat;
   background-position: 100%;
 }
-
 #company-logo .container {
   padding: 82px 0;
   display: flex;
@@ -181,70 +270,90 @@ html {
 /* <-----  samandar  ----->  */
 
 /* Nurbek  */
-
-.featureContainer {
+    
+.feature {
     display: flex;
-    justify-content: space-between;
-}
-#feature {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .container .box {
     width: 312px;
     height: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
+    cursor: pointer;    
+    padding-top: 10px;
+    border-bottom: 2.175px solid #eee;
     position: relative;
-    margin-top: 40px;
-}
-#feature::after {
+  }
+  .container .box .box_img {
+    position: relative;
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-content: center;
+    transition: all 0.4s ease;
+  }
+  .container .box .box_img .proImg {
+    transition: all 0.4s ease;
+  }
+  .container .box .box_img .proImgBg {
+    transition: all 0.4s ease;
+    position: absolute;
+    z-index: -1;
+    filter: contrast(0.09) brightness(1.8) opacity(0.7);
+  }
+  .container .box::after {
     position: absolute;
     content: "";
     width: 100%;
-    height: 2.575px;
-    transition: all 0.4s ease;
+    height: 4px;
+    background-color: #00b207;
+    bottom: -2%;
+    transition: all 0.4s ease-in-out;
     transform: scale(0, 1);
-    background-color: rgb(16, 158, 16);
-    margin-top: 20px;
-}
-#feature:hover::after {
+  }
+  .container .box:hover .box_img .proImg {
+    filter: brightness(0) invert(1);
+  }
+  .container .box:hover .box_img .proImgBg {
+    filter: contrast(1) brightness(1) opacity(1);
+  }
+  .container .box:hover::after {
     transform: scale(1, 1);
-}
-#feature svg path {
-    transition: all 0.4s ease;
-}
-#feature:hover svg path {
-    fill: white;
-    cursor: pointer;
-}
-#feature:hover svg {
-    fill: white;
-    cursor: pointer;
-    background-color: rgb(13, 150, 13);
-    border-radius: 50%;
-}
-#feature svg {
-    margin-left: 130px;
-}
-.featureDescription {
+  }
+  .featureDescription{
     margin-top: 16px;
-    color: var(--gray-scale-gray-900, #1a1a1a);
+    color: var(--gray-scale-gray-900, #1A1A1A);
     text-align: center;
     font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%;
-}
-.featureContact {
-    margin-top: 5px;
-    color: var(--gray-scale-gray-400, #999);
-    text-align: center;
-}
-.line {
-    margin-top: -55px;
-    width: 100%;
+    line-height: 150%; 
+  }
+  .featureDiscount{
+    margin-top: 10px;
+  }
+  .line{
+    max-width: 1300px;
+    margin: 0 auto;
     height: 1px;
     background-color: #999;
-    z-index: 1;
-    line-height: 150%;
-}
-
+    color: var(--gray-scale-gray-400, #999);
+text-align: center;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+  }
+  
 /* Nurbek */
 /* ----------------------------------------- */
 /* Asqar section */
@@ -385,7 +494,7 @@ html {
     margin-bottom: 20px;
 }
 .boxsWrap .box:hover {
-    scale: 1.05;
+    transform:scale(1.05);
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
 }
 .boxsWrap .box p:hover {
@@ -439,3 +548,343 @@ html {
   align-items: center;
   justify-content: center;
 }
+
+
+/* Kamroncik */
+.product_offer_in {
+  margin: 0 auto;
+  max-width: 1300px;
+  margin-bottom: 80px;
+  background-image: url(../images/offer_bg_img.png);
+  background-repeat: no-repeat;
+}
+
+.product_offer_cards_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_offer_short_titles {
+  display: flex;
+}
+
+.product_offer_short_titles h2 {
+  margin-right: 223px;
+  white-space: nowrap;
+}
+
+.product_offer_cards {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.product_offer_card {
+  display: flex;
+  align-items: center;
+  width: 312px;
+  margin-right: 24px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  padding: 5px;
+}
+
+.product_offer_card_text {
+  margin-left: 17px;
+}
+
+.product_offer_icons {
+  display: none;
+  align-items: center;
+  margin-top: 8px;
+  transition: all 0.8s ease;
+}
+
+.product_offer_icons .product_offer_ShopIcon,
+.product_offer_icons .product_offerLike {
+  cursor: pointer;
+}
+
+.product_offer_card .hotProductImg {
+  width: 102px;
+  height: 102px;
+  background: url(https://s3-alpha-sig.figma.com/img/2099/fb56/5ffbe623e9b927ae3be066c4f975d1fc?Expires=1693785600&Signature=JZlmN3G0purkOX~D0EaRU-pRgkrJt9Vn7TeVmCm630TePJ-9eIN1cpH0R6d-gne4ymaOfjk7bUOXjumcnF8hQyshkUpb~3aoN0oTvHTe5yg4EPXOU9ZdWHR2VEf54wslhw0m-nXWchneNAmdKGJ4Oa~-xVa-qeXsNR1xl0R4r5jot1X643MHrpx1UkavExQRxJZ84QBZFioAz4libqj9xCv6brXU7jluHhtpaJemtd63Yqv2VryQLPIGj1fQM3aZVtW3m6Z2pnxcgWVBosNeZf23OHzTyexRXrTr57r4MxUEt9NiP8DGyYy0aUJQYIHyuzB9AwNfNUfdA9uKj6jqOA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-position: center;
+  background-size: cover;
+}
+
+.product_offer_card .bestSellerProductImg {
+  width: 102px;
+  height: 102px;
+  background: url(https://s3-alpha-sig.figma.com/img/b2a4/8360/6891ccd65c5c15fa42de2429eafd19ee?Expires=1693785600&Signature=BNnbEMiBetXe8xEZNJQt7aIUToXPFRawIIyCVTtF10HiooYgPMPyN52JD9WH6sULV37qSFJhtUNszA2Tx3OdhVGMnpKR~Cel97CEtIlL1VQHPlG8Dw6IR7lA4Jztjz4d4BIVTMnM8wDChaka9kfv5PcZO3gAx6p3EzUil~B5oprjUhE4scKS7yEy8aH2498zDR0U~ZBtQYp7jNt8gzV1y5Tn5KztNEhPKwW3FPkikZJVaLCa4V9NdaIDTTn7fO5cR85CKfbt7z1Sdi2Ife3lG-G9tlOX2evk5HS2evfFoXkLdRD43rB4nK0gK8YSV0hsuLa35JWGC7cwjTnfltB7dg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-position: center;
+  background-size: cover;
+}
+
+.product_offer_card .topRatedProductImg {
+  width: 102px;
+  height: 102px;
+  background: url(https://s3-alpha-sig.figma.com/img/8a64/1b99/aade1c6d813825d71e3b0fe5a361d969?Expires=1693785600&Signature=Z4LUtolyTba1OxZlo1hrCEmLGwUQm4o8BUToEKa249lWFzHpFOv5g-wXgbKPpUT8-Lp7AFNm4-LgVAbTdUzboj9SzLcncA07q-4udZfy6EAYBOEHzjCZe3MMBNX4gkrf3PMuEIQZmXMf-SdoiW7PRPL1sVFT3v-Mc8qipTurbTtV9u~VYmlHYsCB-J6gpo15t8ijY85797-CB1eZ~4Nn8WMx6mPeDaIvHlpXZu3-fGvXc2Yl-erA6XFGlvBxCyLAzndkJMeuJLYp45SI1YMXfOj2dLrtcijOUucd7szZRUzkSywY0ZfaWQi6l6tCNBLK3Gebu6j2~IZbKjRdiP2mXQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-position: center;
+  background-size: cover;
+}
+
+.product_offer_card_text .product_offer_card_title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #4d4d4d;
+}
+
+.product_offer_card_text .product_cost {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1a1a1a;
+}
+
+.product_offer_card:hover .product_offer_icons {
+  display: flex;
+}
+
+.product_offer_card:hover {
+  border: 1px solid #2c742f;
+  box-shadow: 0px 0px 12px rgba(32, 181, 38, 0.32);
+}
+
+.product_offer_card:hover .product_offer_card_title {
+  color: #2c742f;
+}
+
+.product_offer_card:hover .product_cost {
+  display: none;
+}
+
+.product_offer_card:hover .product_offerGrade {
+  display: none;
+}
+
+.product_offer_card_text .product_offer_ShopIcon {
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+  background: #00b307;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_offer_card_text .product_offer_ShopIcon i {
+  color: white;
+}
+
+.product_offerLikeEye {
+  background: #ffffff;
+  margin-left: 12px;
+  padding: 9px;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+  border: 1px solid #f2f2f2;
+}
+
+.product_offerLikeEye a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_offerLike {
+  width: 39px;
+  height: 39px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.product_offerLike a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product_order {
+  background: url(https://s3-alpha-sig.figma.com/img/627d/e773/63d3144b88888de997dd16b7dda7316e?Expires=1693785600&Signature=MNptbWjgPpGWix7uDI4lDT-OtUnOUxbCiRnYZVdxhmjHZeAnAumKpZPS290jZUJ~FzNuPk23Ix4PJK0bbS2JgSC2bshEve~JVVy1zkchjDbzoYP6TUQvzPMKG0lK6DTTM7pcwvTp8r3cnYyO4BB2aahfQsip0kCyIHYKH5GzuQ3EWRnCYAqCvtPmbzXzG220G9hnnURBaze0DN-JO-yO8n3ycD6zRAtK~2dJwy1xi5moKNkLW-oXnnLhNu-CuFH3jROohD8Di9wOcDjEJpA-FxBcJYyp-IaY1IE21C5ohHv4DYH8IIE9u77C3ZrpMjuq31~6lEUMtXL-doiDsgFTlQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-size: cover;
+  border-radius: 8px;
+  width: 330px;
+  color: white;
+  margin-left: -16px;
+  padding: 0px 30px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.product_order .sale {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.product_order .order {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.product_order .order span {
+  font-weight: 600;
+}
+
+.product_order_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_order_btn {
+  padding: 14px 32px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #00b307;
+  background: #ffffff;
+  border-radius: 43px;
+}
+
+.product_order_btn i {
+  margin-left: 12px;
+  transition: all 0.5s ease;
+}
+
+.product_order_btn:hover i {
+  transform: translateX(15px);
+}
+.product_offerLike img {
+  color: red;
+}
+/* Kamroncik */
+/* Savbatov Asadbek */
+
+#customers {
+  background-image: url(../images/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#customers .container .customersWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+#customers .container .customersWrapper .customersWrapperBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+  width: 312px;
+  height: 174px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+}
+
+#customers .container .customersWrapper span.num {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  color: #00b307;
+}
+
+#customers .container .customersWrapper span.text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  #customers .container .customersWrapper {
+    /* width: 85vw; */
+    padding: 0 40px;
+  }
+
+  #customers .container .customersWrapper .customersWrapperBox {
+    height: 26vmin;
+    width: 26vmin;
+    padding: 35px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #customers .container .customersWrapper {
+    /* width: 90vw; */
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  #customers .container .customersWrapper .customersWrapperBox {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    padding: 30px 0px;
+  }
+
+  #customers .container .customersWrapper span.num {
+    font-size: 40px;
+  }
+
+  #customers .container .customersWrapper span.text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #customers .container .customersWrapper {
+    gap: 15px;
+  }
+
+  #customers .container .customersWrapper .customersWrapperBox {
+    width: 100%;
+    height: 25vmin;
+    padding: 15px 0px;
+  }
+
+  #customers .container .customersWrapper span.num {
+    font-size: 25px;
+  }
+  #customers .container .customersWrapper span.text {
+    font-size: 14px;
+  }
+}
+
+/* Savbatov Asadbek */
