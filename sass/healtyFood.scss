@@ -436,13 +436,13 @@
         }
       }
 
-      .updatePassSection{
+      .updatePassSection {
         display: flex;
         align-items: center;
         gap: 16px;
         width: 462px;
 
-        .newPassDiv{
+        .newPassDiv {
           display: flex;
           flex-direction: column;
           align-items: start;
@@ -451,7 +451,7 @@
             font-size: 14px;
             line-height: 150%;
           }
-  
+
           input {
             width: 462px;
             padding: 14px 16px;
@@ -468,7 +468,7 @@
           }
         }
 
-        .confirmPassDiv{
+        .confirmPassDiv {
           display: flex;
           flex-direction: column;
           align-items: start;
@@ -477,7 +477,7 @@
             font-size: 14px;
             line-height: 150%;
           }
-  
+
           input {
             width: 462px;
             padding: 14px 16px;
@@ -492,6 +492,18 @@
               outline: 2px solid #00b207;
             }
           }
+        }
+      }
+
+      #ChangePassBtn {
+        width: 200px;
+        padding: 12px 32px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          transform: scale(0.95);
         }
       }
     }

@@ -44,13 +44,13 @@ const lNameInput = document.querySelector("#lNameInput");
 const emailInput = document.querySelector("#emailInput");
 const phoneNumberInput = document.querySelector("#phoneNumberInput");
 const form = document.querySelector("form");
-
+let imageUrl;
 //=====>> save images in localStorage <<===========//
 input.addEventListener("change", (e) => {
   const reader = new FileReader();
   reader.addEventListener("load", () => {
     console.log(reader.result);
-    localStorage.setItem("settingsImg", reader.result);
+   imageUrl = reader.result;
   });
   reader.readAsDataURL(e.target.files[0]);
 });
@@ -58,20 +58,13 @@ input.addEventListener("change", (e) => {
 //========>> account settings section <<================//
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const fname = localStorage.setItem('fname',fNameInput.value);
-  const lname = localStorage.setItem('lname',lNameInput.value);
-  const email = JSON.stringify(localStorage.setItem('email',emailInput.value));
-  const number = localStorage.setItem('number',phoneNumberInput.value);
-  console.log(fname);
-  console.log(lname);
-  console.log(email);
-  console.log(number);
-
-  // const formData = new FormData(form);
-  // const object = Object.fromEntries(formData);
-  // console.log(object);
-  // const json = JSON.stringify(object);
-  // localStorage.setItem("accountSettings", json);
+  localStorage.setItem("accountSettings", JSON.stringify({
+    fname:fNameInput.value,
+    lname: lNameInput.value,
+    email: emailInput.value,
+    number: phoneNumberInput.value,
+    userImg: imageUrl,
+  }));
   // const api = fetch(`https://httpbin.org/post`, {
   //   method: "POST",
   //   body: json,
@@ -84,19 +77,21 @@ form.addEventListener("submit", (e) => {
 });
 
 //=====>> take account settings section from localStorage <<===========//
-document.addEventListener("DOMContentLoaded", () => {
-  const settingsImg = localStorage.getItem("settingsImg");
-  if (settingsImg) {
-    showImage.setAttribute("src", settingsImg);
-  }
-});
-
-// const accountJson = localStorage.getItem("accountSettings");
-// const jsonParsed = JSON.parse(accountJson);
-fNameInput.value = localStorage.getItem('fname');
-lNameInput.value = localStorage.getItem('lname');
-emailInput.value = localStorage.getItem('email')
-phoneNumberInput.value = localStorage.getItem('number');
+const {
+  fname,
+  lname,
+  email,
+  number,
+  userImg,
+} = JSON.parse(localStorage.getItem('accountSettings'));
+fNameInput.value = fname;
+lNameInput.value = lname
+emailInput.value = email
+phoneNumberInput.value = number
+const settingsImg = userImg
+if (settingsImg) {
+  showImage.setAttribute("src", settingsImg);
+}
 
 //=====>> take images from file <<===============//
 input.addEventListener("change", (e) => {

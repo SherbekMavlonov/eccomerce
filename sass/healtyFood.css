@@ -483,4 +483,15 @@
 }
 #settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv input:focus {
   outline: 2px solid #00b207;
+}
+#settings .changePasswordSection .changePasswordIn #ChangePassBtn {
+  width: 200px;
+  padding: 12px 32px;
+  transition: all 0.2s ease-in-out;
+}
+#settings .changePasswordSection .changePasswordIn #ChangePassBtn:hover {
+  opacity: 0.8;
+}
+#settings .changePasswordSection .changePasswordIn #ChangePassBtn:active {
+  transform: scale(0.95);
 }/*# sourceMappingURL=healtyFood.css.map */
