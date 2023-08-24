@@ -659,7 +659,6 @@ font-size:40px;
   justify-content: center;
   align-items: center;
 }
-
 .product_order {
   background: url(https://s3-alpha-sig.figma.com/img/627d/e773/63d3144b88888de997dd16b7dda7316e?Expires=1693785600&Signature=MNptbWjgPpGWix7uDI4lDT-OtUnOUxbCiRnYZVdxhmjHZeAnAumKpZPS290jZUJ~FzNuPk23Ix4PJK0bbS2JgSC2bshEve~JVVy1zkchjDbzoYP6TUQvzPMKG0lK6DTTM7pcwvTp8r3cnYyO4BB2aahfQsip0kCyIHYKH5GzuQ3EWRnCYAqCvtPmbzXzG220G9hnnURBaze0DN-JO-yO8n3ycD6zRAtK~2dJwy1xi5moKNkLW-oXnnLhNu-CuFH3jROohD8Di9wOcDjEJpA-FxBcJYyp-IaY1IE21C5ohHv4DYH8IIE9u77C3ZrpMjuq31~6lEUMtXL-doiDsgFTlQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
   background-size: cover;
@@ -728,5 +727,7 @@ font-size:40px;
 .product_order_btn:hover i {
   transform: translateX(15px);
 }
-
+.product_offerLike img {
+  color: red;
+}
 /* Kamroncik */
