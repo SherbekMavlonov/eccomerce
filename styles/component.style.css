@@ -1,6 +1,7 @@
 
 .shop_now_btn{
     display: flex;
+    width: 191px;
     padding: 16px 40px;
     justify-content: center;
     align-items: center;
