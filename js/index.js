@@ -1,10 +1,6 @@
 import Swiper from "../node_modules/swiper/swiper-bundle.mjs";
 import { TESTOMONIAL } from "./__mock__data.js";
 
-// axios
-//     .get("https://jsonplaceholder.typicode.com/todos/1")
-//     .then((data) => console.log(data.data));
-
 // ---> samandar
 
 function bannerTimer() {
@@ -18,10 +14,10 @@ function bannerTimer() {
   let box1Img = "vegetables-img.jpg";
   let box2Img = "vegetables-sale-img.jpg";
   bannerBoxes[0].style.background = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.35)),
-    url('../images/${box1Img}')`;
+  url('../images/${box1Img}')`;
 
   bannerBoxes[1].style.background = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.35)),
-    url('../images/${box2Img}')`;
+  url('../images/${box2Img}')`;
   bannerBoxes.forEach((box) => (box.style.backgroundSize = "cover"));
 
   let d = 2;
@@ -72,7 +68,7 @@ bannerTimer();
 // samandar <----
 
 //=========>> Main section Swiper <<================//
-let swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
@@ -90,6 +86,74 @@ let swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Kamroncik
+const likeIcon = document.querySelector(".product_offerLike");
+
+likeIcon.addEventListener("click", () => {
+  likeIcon.innerHTML = `
+  <style>
+      .product_offerLike img{
+          color:red;
+      }
+  </style>
+  `;
+});
+// Kamroncik
+// Savbatov Asadbek
+
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    // startValue += 1;
+    // valueDisplay.textContent = startValue;
+
+    if (startValue < 1000) {
+      startValue += 5;
+      valueDisplay.textContent = startValue;
+    }
+
+    if (startValue >= 1000) {
+      startValue += 100;
+      valueDisplay.textContent = (startValue / 1000).toFixed(1) + "K+";
+    }
+
+    if (startValue >= 10000) {
+      startValue += 5000;
+    }
+
+    if (startValue >= 1000000) {
+      startValue += 500000;
+      valueDisplay.textContent = (startValue / 1000000).toFixed(1) + "M+";
+    }
+
+    if (startValue >= endValue) {
+      if (startValue < 1000) {
+        valueDisplay.textContent = endValue;
+      }
+
+      if (startValue >= 1000) {
+        valueDisplay.textContent =
+          endValue % 1000 === 0 ? endValue / 1000 + "K+" : (endValue / 1000).toFixed(1) + "K+";
+      }
+
+      if (startValue >= 1000000) {
+        valueDisplay.textContent =
+          endValue % 1000000 === 0
+            ? endValue / 1000000 + "M+"
+            : (endValue / 1000000).toFixed(1) + "M+";
+      }
+      clearInterval(counter);
+    }
+  }, duration);
+});
+
+// Savbatov Asadbek
 
 // Testamonial JavaScript
 
