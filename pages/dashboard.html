@@ -61,14 +61,14 @@
                         <div class="personalInfoDash">
                             <div class="personInfo">
                                 <div class="personImg">
-                                    <img src="" alt="personImg" loading="lazy">
+                                    <img src="" alt="personImg" loading="lazy" id="personImg">
                                 </div>
                                 <div class="personFullName">
                                     <h2 id="personFname">John</h2>
                                     <h2 id="personLname">Doe</h2>
                                 </div>
                                 <p>Customer</p>
-                                <a href="#0">Edit Profile</a>
+                                <a href="#0"  onclick="openCity(event, 'settings')">Edit Profile</a>
                             </div>
                             <div class="personBillingAddress">
                                 <p class="billingAddr">Billing Address</p>
@@ -88,7 +88,7 @@
                                     <p id="personEmail">example@gamil.com</p>
                                     <p id="personNum">12345577</p>
                                 </div>
-                                <a href="#0" id="editEmailNum">Edit Address</a>
+                                <a href="#0" id="editEmailNum"  onclick="openCity(event, 'settings')">Edit Address</a>
                             </div>
                         </div>
                     </div>
