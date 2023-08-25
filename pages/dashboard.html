@@ -29,19 +29,68 @@
                     <div class="tab">
                         <div class="navigationHeader">Navigation</div>
                         <button class="tablinks" onclick="openCity(event, 'mainDashboard')" id="defaultOpen">
-                            Dashboard
+                            <img src="../images/icons/dashboardIcon.svg" alt="dashboardIcon" loading="lazy" /> Dashboard
                         </button>
-                        <button class="tablinks" onclick="openCity(event, 'orderHistory')">Order History</button>
-                        <button class="tablinks" onclick="openCity(event, 'wishlist')">Wishlist</button>
-                        <button class="tablinks" onclick="openCity(event, 'shoppingCard')">Shopping Cart</button>
-                        <button class="tablinks" onclick="openCity(event, 'settings')">Settings</button>
-                        <button class="tablinks">Log-out</button>
+                        <button class="tablinks" onclick="openCity(event, 'orderHistory')">
+                            <img src="../images/icons/orderHistoryIcon.svg" alt="orderHistoryIcon" loading="lazy" />
+                            Order History
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'wishlist')">
+                            <img src="../images/icons/wishlistIcon.svg" alt="wishlist" loading="lazy" /> Wishlist
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'shoppingCard')">
+                            <img
+                                src="../images/icons/shoppingCardIcon.svg"
+                                alt="shoppingCardIcon
+                            "
+                                loading="lazy"
+                            />
+                            Shopping Cart
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'settings')">
+                            <img src="../images/icons/SettingsIcon.svg" alt="SettingsIcon" loading="lazy" /> Settings
+                        </button>
+                        <button class="tablinks">
+                            <img src="../images/icons/logOutIcon.svg" alt="logOutIcon" loading="lazy" />Log-out
+                        </button>
                     </div>
                 </aside>
 
                 <main id="main">
                     <div id="mainDashboard" class="tabcontent">
-                        <h3>dashboard</h3>
+                        <div class="personalInfoDash">
+                            <div class="personInfo">
+                                <div class="personImg">
+                                    <img src="" alt="personImg" loading="lazy">
+                                </div>
+                                <div class="personFullName">
+                                    <h2 id="personFname">John</h2>
+                                    <h2 id="personLname">Doe</h2>
+                                </div>
+                                <p>Customer</p>
+                                <a href="#0">Edit Profile</a>
+                            </div>
+                            <div class="personBillingAddress">
+                                <p class="billingAddr">Billing Address</p>
+                                <div class="personFullName">
+                                    <h2 id="personFname">John</h2>
+                                    <h2 id="personLname">Doe</h2>
+                                </div>
+                               <div class="personCountryZip">
+                                <div class="personCountry">
+                                    <p id="personStreet">4040 Parker RD</p>
+                                    <p id="personCountry">Mexico</p>
+                                    <p id="personState">Tower</p>
+                                </div>
+                                <p id="personZipCode">1234</p>
+                               </div>
+                                <div class="personEmailNum">
+                                    <p id="personEmail">example@gamil.com</p>
+                                    <p id="personNum">12345577</p>
+                                </div>
+                                <a href="#0" id="editEmailNum">Edit Address</a>
+                            </div>
+                        </div>
                     </div>
                     <div id="orderHistory" class="tabcontent">
                         <h3>OrderHistory</h3>
@@ -103,7 +152,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="billingAddressSection">
+                        <div id="billingAddressSection">
                             <h2>Billing Address</h2>
                             <form class="billingSectionIn">
                                 <div class="topBillingIn">

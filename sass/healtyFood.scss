@@ -128,6 +128,147 @@
     }
 }
 
+//==========>> dashboard html file dashboard section <<==========//
+#mainDashboard {
+    display: flex;
+    flex-direction: column;
+    .personalInfoDash {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        .personInfo {
+            border: 2px solid #e6e6e6;
+            border-radius: 8px;
+            width: 536px;
+            height: 278px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .personImg {
+                background-color: grey;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                border: 4px solid #fff;
+                outline: 3px solid #00b207;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .personFullName {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                h2 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 150%;
+                }
+            }
+            p {
+                font-size: 14px;
+                line-height: 150%;
+                color: #808080;
+            }
+            a {
+                font-weight: 500;
+                color: #00b207;
+                line-height: 150%;
+                margin-top: 9px;
+            }
+        }
+
+        .personBillingAddress {
+            border: 2px solid #e6e6e6;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 424px;
+            height: 278px;
+            padding: 32px;
+
+            .billingAddr {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 100%;
+                letter-spacing: 0.42px;
+                text-transform: uppercase;
+                color: #999999;
+                margin-bottom: 18px;
+            }
+
+            .personFullName {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                h2 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 150%;
+                }
+            }
+
+            .personCountryZip {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                flex-wrap: wrap;
+                margin: 8px 0;
+                .personCountry {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 150%;
+                        color: #666666;
+                        text-transform: capitalize;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    color: #666666;
+                    text-transform: capitalize;
+                }
+            }
+
+            .personEmailNum {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-bottom: 20px;
+                gap: 6px;
+                p {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    color: #1a1a1a;
+                }
+            }
+
+            #editEmailNum {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 150%;
+                color:#00B207;
+            }
+        }
+    }
+}
+
 //=========>> dashboard html file settigs section <<============//
 #settings {
     margin-bottom: 500px;
@@ -244,7 +385,7 @@
         }
     }
 
-    .billingAddressSection {
+    #billingAddressSection {
         border: 2px solid #e6e6e6;
         border-radius: 8px;
         margin-top: 26px;
@@ -429,9 +570,9 @@
                         font-size: 20px;
                     }
                 }
-                #incorrect{
-                  color: red;
-                  display: none;
+                #incorrect {
+                    color: red;
+                    display: none;
                 }
 
                 label {
@@ -535,9 +676,9 @@
                     }
                 }
 
-                .incorrect{
-                  color: red !important;
-                  display: none;
+                .incorrect {
+                    color: red !important;
+                    display: none;
                 }
             }
 
@@ -556,4 +697,3 @@
         }
     }
 }
-

@@ -118,6 +118,139 @@
   transform: rotate(110deg);
 }
 
+#mainDashboard {
+  display: flex;
+  flex-direction: column;
+}
+#mainDashboard .personalInfoDash {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#mainDashboard .personalInfoDash .personInfo {
+  border: 2px solid #e6e6e6;
+  border-radius: 8px;
+  width: 536px;
+  height: 278px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#mainDashboard .personalInfoDash .personInfo .personImg {
+  background-color: grey;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  outline: 3px solid #00b207;
+}
+#mainDashboard .personalInfoDash .personInfo .personImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mainDashboard .personalInfoDash .personInfo .personFullName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#mainDashboard .personalInfoDash .personInfo .personFullName h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+}
+#mainDashboard .personalInfoDash .personInfo p {
+  font-size: 14px;
+  line-height: 150%;
+  color: #808080;
+}
+#mainDashboard .personalInfoDash .personInfo a {
+  font-weight: 500;
+  color: #00b207;
+  line-height: 150%;
+  margin-top: 9px;
+}
+#mainDashboard .personalInfoDash .personBillingAddress {
+  border: 2px solid #e6e6e6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 424px;
+  height: 278px;
+  padding: 32px;
+}
+#mainDashboard .personalInfoDash .personBillingAddress .billingAddr {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 18px;
+}
+#mainDashboard .personalInfoDash .personBillingAddress .personFullName {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#mainDashboard .personalInfoDash .personBillingAddress .personFullName h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+}
+#mainDashboard .personalInfoDash .personBillingAddress .personCountryZip {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: wrap;
+  margin: 8px 0;
+}
+#mainDashboard .personalInfoDash .personBillingAddress .personCountryZip .personCountry {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#mainDashboard .personalInfoDash .personBillingAddress .personCountryZip .personCountry p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #666666;
+  text-transform: capitalize;
+}
+#mainDashboard .personalInfoDash .personBillingAddress .personCountryZip p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #666666;
+  text-transform: capitalize;
+}
+#mainDashboard .personalInfoDash .personBillingAddress .personEmailNum {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 20px;
+  gap: 6px;
+}
+#mainDashboard .personalInfoDash .personBillingAddress .personEmailNum p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #1a1a1a;
+}
+#mainDashboard .personalInfoDash .personBillingAddress #editEmailNum {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #00B207;
+}
+
 #settings {
   margin-bottom: 500px;
 }
@@ -228,13 +361,13 @@
 #settings .accountSettingsSection .settingsSectionIn .rightInputData label input[type=file] {
   display: none;
 }
-#settings .billingAddressSection {
+#settings #billingAddressSection {
   border: 2px solid #e6e6e6;
   border-radius: 8px;
   margin-top: 26px;
   margin-bottom: 26px;
 }
-#settings .billingAddressSection h2 {
+#settings #billingAddressSection h2 {
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -243,144 +376,144 @@
   border-bottom: 2px solid #e6e6e6;
   padding-left: 24px;
 }
-#settings .billingAddressSection .billingSectionIn {
+#settings #billingAddressSection .billingSectionIn {
   padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 16px;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn {
+#settings #billingAddressSection .billingSectionIn .topBillingIn {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput label {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput label {
   font-size: 14px;
   line-height: 150%;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput input {
   width: 302px;
   padding: 14px 16px;
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input::-moz-placeholder {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput input::-moz-placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input::placeholder {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput input::placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input:focus {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput input:focus {
   outline: 2px solid #00b207;
 }
-#settings .billingAddressSection .billingSectionIn .streetAdrressDiv {
+#settings #billingAddressSection .billingSectionIn .streetAdrressDiv {
   width: 938px;
 }
-#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input {
+#settings #billingAddressSection .billingSectionIn .streetAdrressDiv input {
   width: 100%;
   padding: 14px 16px;
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
-#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input::-moz-placeholder {
+#settings #billingAddressSection .billingSectionIn .streetAdrressDiv input::-moz-placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input::placeholder {
+#settings #billingAddressSection .billingSectionIn .streetAdrressDiv input::placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input:focus {
+#settings #billingAddressSection .billingSectionIn .streetAdrressDiv input:focus {
   outline: 2px solid #00b207;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput label {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput label {
   font-size: 14px;
   line-height: 150%;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input,
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input,
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select {
   width: 303px;
   padding: 14px 16px;
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input::-moz-placeholder, #settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select::-moz-placeholder {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input::-moz-placeholder, #settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select::-moz-placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input::placeholder,
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select::placeholder {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input::placeholder,
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select::placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input:focus,
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select:focus {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input:focus,
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select:focus {
   outline: 2px solid #00b207;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput label {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput label {
   font-size: 14px;
   line-height: 150%;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput input {
   width: 461px;
   padding: 14px 16px;
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input::-moz-placeholder {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput input::-moz-placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input::placeholder {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput input::placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input:focus {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput input:focus {
   outline: 2px solid #00b207;
 }
-#settings .billingAddressSection .billingSectionIn button {
+#settings #billingAddressSection .billingSectionIn button {
   width: 167px;
   padding: 12px 32px;
   transition: all 0.2s ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#settings .billingAddressSection .billingSectionIn button:hover {
+#settings #billingAddressSection .billingSectionIn button:hover {
   opacity: 0.8;
 }
-#settings .billingAddressSection .billingSectionIn button:active {
+#settings #billingAddressSection .billingSectionIn button:active {
   transform: scale(0.95);
 }
 #settings .changePasswordSection {

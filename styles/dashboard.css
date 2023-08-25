@@ -46,15 +46,19 @@ html {
 }
 
 .tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 16px 20px;
-    width: 100%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-align: start;
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 16px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap:10px;
 }
 .tab button:hover {
     background: var(--gren-gray-scale-50, #edf2ee);
@@ -62,6 +66,9 @@ html {
 .tab button.active {
     background: var(--gren-gray-scale-50, #edf2ee);
     box-shadow: 3px 0px 0px 0px #20b526 inset;
+}
+.tab button.active img{
+  filter: brightness(5%);
 }
 /* navigation end */
 
