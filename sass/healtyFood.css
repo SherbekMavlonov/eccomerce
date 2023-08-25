@@ -361,13 +361,13 @@
 #settings .accountSettingsSection .settingsSectionIn .rightInputData label input[type=file] {
   display: none;
 }
-#settings .billingAddressSection {
+#settings #billingAddressSection {
   border: 2px solid #e6e6e6;
   border-radius: 8px;
   margin-top: 26px;
   margin-bottom: 26px;
 }
-#settings .billingAddressSection h2 {
+#settings #billingAddressSection h2 {
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -376,144 +376,144 @@
   border-bottom: 2px solid #e6e6e6;
   padding-left: 24px;
 }
-#settings .billingAddressSection .billingSectionIn {
+#settings #billingAddressSection .billingSectionIn {
   padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 16px;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn {
+#settings #billingAddressSection .billingSectionIn .topBillingIn {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput label {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput label {
   font-size: 14px;
   line-height: 150%;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput input {
   width: 302px;
   padding: 14px 16px;
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input::-moz-placeholder {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput input::-moz-placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input::placeholder {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput input::placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .topBillingIn .bInput input:focus {
+#settings #billingAddressSection .billingSectionIn .topBillingIn .bInput input:focus {
   outline: 2px solid #00b207;
 }
-#settings .billingAddressSection .billingSectionIn .streetAdrressDiv {
+#settings #billingAddressSection .billingSectionIn .streetAdrressDiv {
   width: 938px;
 }
-#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input {
+#settings #billingAddressSection .billingSectionIn .streetAdrressDiv input {
   width: 100%;
   padding: 14px 16px;
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
-#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input::-moz-placeholder {
+#settings #billingAddressSection .billingSectionIn .streetAdrressDiv input::-moz-placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input::placeholder {
+#settings #billingAddressSection .billingSectionIn .streetAdrressDiv input::placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .streetAdrressDiv input:focus {
+#settings #billingAddressSection .billingSectionIn .streetAdrressDiv input:focus {
   outline: 2px solid #00b207;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput label {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput label {
   font-size: 14px;
   line-height: 150%;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input,
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input,
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select {
   width: 303px;
   padding: 14px 16px;
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input::-moz-placeholder, #settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select::-moz-placeholder {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input::-moz-placeholder, #settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select::-moz-placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input::placeholder,
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select::placeholder {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input::placeholder,
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select::placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input:focus,
-#settings .billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select:focus {
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input:focus,
+#settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select:focus {
   outline: 2px solid #00b207;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput label {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput label {
   font-size: 14px;
   line-height: 150%;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput input {
   width: 461px;
   padding: 14px 16px;
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input::-moz-placeholder {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput input::-moz-placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input::placeholder {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput input::placeholder {
   font-size: 16px;
   line-height: 130%;
 }
-#settings .billingAddressSection .billingSectionIn .bottomBillingIn .bInput input:focus {
+#settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput input:focus {
   outline: 2px solid #00b207;
 }
-#settings .billingAddressSection .billingSectionIn button {
+#settings #billingAddressSection .billingSectionIn button {
   width: 167px;
   padding: 12px 32px;
   transition: all 0.2s ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#settings .billingAddressSection .billingSectionIn button:hover {
+#settings #billingAddressSection .billingSectionIn button:hover {
   opacity: 0.8;
 }
-#settings .billingAddressSection .billingSectionIn button:active {
+#settings #billingAddressSection .billingSectionIn button:active {
   transform: scale(0.95);
 }
 #settings .changePasswordSection {
