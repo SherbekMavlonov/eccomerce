@@ -29,13 +29,30 @@
                     <div class="tab">
                         <div class="navigationHeader">Navigation</div>
                         <button class="tablinks" onclick="openCity(event, 'mainDashboard')" id="defaultOpen">
-                            Dashboard
+                            <img src="../images/icons/dashboardIcon.svg" alt="dashboardIcon" loading="lazy" /> Dashboard
                         </button>
-                        <button class="tablinks" onclick="openCity(event, 'orderHistory')">Order History</button>
-                        <button class="tablinks" onclick="openCity(event, 'wishlist')">Wishlist</button>
-                        <button class="tablinks" onclick="openCity(event, 'shoppingCard')">Shopping Cart</button>
-                        <button class="tablinks" onclick="openCity(event, 'settings')">Settings</button>
-                        <button class="tablinks">Log-out</button>
+                        <button class="tablinks" onclick="openCity(event, 'orderHistory')">
+                            <img src="../images/icons/orderHistoryIcon.svg" alt="orderHistoryIcon" loading="lazy" />
+                            Order History
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'wishlist')">
+                            <img src="../images/icons/wishlistIcon.svg" alt="wishlist" loading="lazy" /> Wishlist
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'shoppingCard')">
+                            <img
+                                src="../images/icons/shoppingCardIcon.svg"
+                                alt="shoppingCardIcon
+                            "
+                                loading="lazy"
+                            />
+                            Shopping Cart
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'settings')">
+                            <img src="../images/icons/SettingsIcon.svg" alt="SettingsIcon" loading="lazy" /> Settings
+                        </button>
+                        <button class="tablinks">
+                            <img src="../images/icons/logOutIcon.svg" alt="logOutIcon" loading="lazy" />Log-out
+                        </button>
                     </div>
                 </aside>
 
@@ -163,8 +180,8 @@
                                 <div class="currentPassDiv">
                                     <label for="currentPass">Current Password</label>
                                     <div class="curPassInput">
-                                      <input type="password" id="currentPass"  placeholder="password" required />
-                                      <i class="fa-regular fa-eye-slash" id="currentPassEye"></i>
+                                        <input type="password" id="currentPass" placeholder="password" required />
+                                        <i class="fa-regular fa-eye-slash" id="currentPassEye"></i>
                                     </div>
                                     <p id="incorrect">Incorrect!</p>
                                 </div>
@@ -172,18 +189,18 @@
                                     <div class="newPassDiv">
                                         <label for="newPass">New Password</label>
                                         <div class="newPassInput">
-                                          <input type="password" id="newPass" placeholder="password" required />
-                                          <i class="fa-regular fa-eye-slash" id="newPassEye"></i>
+                                            <input type="password" id="newPass" placeholder="password" required />
+                                            <i class="fa-regular fa-eye-slash" id="newPassEye"></i>
                                         </div>
                                         <p class="incorrect">Incorrect!</p>
                                     </div>
                                     <div class="confirmPassDiv">
                                         <label for="confirmPass">Confirm Password</label>
-                                       <div class="confirmPassInput">
-                                        <input type="password" id="confirmPass"  placeholder="password" required />
-                                        <i class="fa-regular fa-eye-slash" id="confirmPassEye"></i>
-                                       </div>
-                                    <p class="incorrect">Incorrect!</p>
+                                        <div class="confirmPassInput">
+                                            <input type="password" id="confirmPass" placeholder="password" required />
+                                            <i class="fa-regular fa-eye-slash" id="confirmPassEye"></i>
+                                        </div>
+                                        <p class="incorrect">Incorrect!</p>
                                     </div>
                                 </div>
                                 <button class="popular_tag_green_btn" type="submit" id="ChangePassBtn">
