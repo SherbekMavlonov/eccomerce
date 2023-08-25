@@ -1,4 +1,7 @@
 
+import Categories from "./components/categories-input/input.js"
+import data from "../fakedata/cotigories.js"
+
 const accordionItems = document.querySelectorAll(".accordion-item")
 const categoriesBox = document.querySelector("#categories-box")
 
@@ -15,3 +18,8 @@ Array.from(Array(accordionItems.length).keys()).map((item) => {
     })
 })
 
+console.log(data);
+
+data.forEach((item) => {
+    categoriesBox.appendChild(Categories(item))
+})
