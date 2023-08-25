@@ -12,26 +12,69 @@
         <link rel="stylesheet" href="../fonts/stylesheet.css" />
         <!-- auth styles -->
         <link rel="stylesheet" href="../styles/auth.css" />
+        <!-- box icons link -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     </head>
     <body>
         <header></header>
 
         <section id="breadcrumbs">
             <div class="container">
-                <div>
+                <div class="content">
                     <img src="../images/icons/home-icon.svg" alt="home icon" loading="lazy" />
                     &nbsp;&nbsp;
                     <img src="../images/icons/vektor-right.svg" alt="vektor right" loading="lazy" />
                     &nbsp;&nbsp; Account &nbsp;&nbsp;
+                    <img src="../images/icons/vektor-right.svg" alt="vektor right" loading="lazy" />
+                    &nbsp;&nbsp; <span class="currentPage">Login</span> &nbsp;&nbsp;
                 </div>
             </div>
         </section>
-        <section id="login">
-            <div class="container"></div>
-        </section>
 
-        <section id="createAccaunt">
-            <div class="container"></div>
-        </section>
+        <main>
+            <section id="login">
+                <div class="container">
+                    <form action="#0" class="field loginForm">
+                        <header class="headerText">Sign In</header>
+                        <div class="inputDiv">
+                            <input class="loginEmail" type="email" placeholder="Email" required />
+                            <p class="validatorEmail error dHide"></p>
+                            <i class="warning bx bx-error-circle dHide"></i>
+                            <i class="error bx bx-error dHide"></i>
+                            <i class="success bx bx-check dHide"></i>
+                        </div>
+                        <div class="inputDiv">
+                            <input class="loginPassword" type="password" placeholder="Password" required />
+                            <p class="validatorPassword"></p>
+                            <i class="hide bx bx-hide dHide"></i>
+                            <i class="show bx bx-show"></i>
+                        </div>
+                        <div class="assists">
+                            <div class="remember">
+                                <input type="checkbox" name="#" id="rememberMe" />
+                                <label for="rememberMe" class="rememberMe">Remember&nbsp;me</label>
+                            </div>
+                            <div class="forgot">Forget Password</div>
+                        </div>
+                        <button type="submit">Login</button>
+                        <div class="forgot linkToRegister">
+                            Don’t have account?<span class="registerText">Register</span>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section id="createAccaunt">
+                <div class="container">
+                    <form action="#0" class="field">
+                        <header class="headerText">Sign In</header>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer></footer>
+
+        <script type="module" src="../js/auth.js"></script>
     </body>
 </html>
