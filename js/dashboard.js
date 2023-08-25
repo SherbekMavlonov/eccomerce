@@ -23,6 +23,10 @@ document.getElementById("defaultOpen").click()
 
 /* === main start === */
 
+/* === dashboard content start === */
+
+/* === dashboard content end === */
+
 /* === Order History content start === */
 /* === Order History content end === */
 
@@ -42,7 +46,7 @@ const lNameInput = document.querySelector("#lNameInput")
 const emailInput = document.querySelector("#emailInput")
 const phoneNumberInput = document.querySelector("#phoneNumberInput")
 const formAcc = document.querySelector(".settingsSectionIn")
-let imageUrl
+let imageUrl;
 //=====>> billing settings <<=====================================//
 const formBilling = document.querySelector(".billingSectionIn")
 const bfname = document.querySelector("#bfname")
@@ -87,6 +91,20 @@ formAcc.addEventListener("submit", (e) => {
         })
     )
 })
+
+accountSettingsBtn.addEventListener('click',() => {
+  localStorage.setItem(
+    "accountSettings",
+    JSON.stringify({
+        fname: fNameInput.value,
+        lname: lNameInput.value,
+        email: emailInput.value,
+        number: phoneNumberInput.value,
+        userImg: imageUrl,
+    })
+)
+})
+
 
 //=====>> take account settings section from localStorage <<===========//
 const { fname, lname, email, number, userImg } = JSON.parse(localStorage.getItem("accountSettings"))
@@ -170,13 +188,12 @@ formPassword.addEventListener("submit", (e) => {
         formPassword.setAttribute("disabled", "")
     } else {
         currentPass.style.border = "1px solid #00B207"
-        currIncorrect.style.display = "none"
         setTimeout(() => {
             currentPass.style.border = "1px solid #E6E6E6"
         }, 1000)
 
         if (newPass.value !== confirmPass.value) {
-            incorrect.forEach((e) => {
+                incorrect.forEach((e) => {
                 e.style.display = "block"
             })
             newPass.style.border = "1px solid red"
@@ -207,35 +224,6 @@ currentPass.value = confirmPassword
 // confirmPass.value = confirmPassword
 //=============>> change Password finished <<=====================================//
 /* === Settings content end === */
-
-
-/* === dashboard content start === */
-const personImg = document.querySelector("#personImg")
-const personFname = document.querySelectorAll("#personFname")
-const personLname = document.querySelectorAll("#personLname")
-const personZipCode = document.querySelector("#personZipCode")
-const personStreet = document.querySelector("#personStreet")
-const personCountry = document.querySelector("#personCountry")
-const personState = document.querySelector("#personState");
-const personEmail = document.querySelector("#personEmail");
-const personNum = document.querySelector("#personNum");
-
-//=========>> take image and full name from localStorage <<============//
-personFname.forEach((e) => {
-    e.textContent = fname;
-})
-personLname.forEach((e) => {
-    e.textContent = lname;
-})
-if (userImg) {
-    personImg.setAttribute("src", userImg)
-}
-personZipCode.textContent = `Zip Code: ${ZipCode}`;
-personStreet.textContent = streetAddress;
-personEmail.textContent = email;
-personNum.textContent = number;
-
-/* === dashboard content end === */
 
 /* === Log out content start === */
 /* === Log out content end === */
