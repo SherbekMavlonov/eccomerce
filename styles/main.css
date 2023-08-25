@@ -776,7 +776,7 @@ html {
 /* Savbatov Asadbek */
 
 #customers {
-    background-image: url(../images/BG.png);
+    background-image: url("../images/BG.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0;
@@ -873,3 +873,74 @@ html {
 }
 
 /* Savbatov Asadbek */
+/* --------------------------- */
+/* Azimsher */
+#topCatigories {
+    background-color: #f2f5f3;
+    padding: 10px 100px 100px 100px;
+}
+.innerContainer {
+    position: relative;
+}
+
+.topCatigories-starting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 41px;
+}
+
+.topCatigories-starting h2 {
+    font-size: 44px;
+}
+
+.topCatigories-starting a {
+    color: #00b207;
+}
+
+.topCatigories-box {
+    text-align: center;
+    border-radius: 6px;
+    border: 2px solid #ededed;
+    background: #fff;
+    padding: 32px 0 24px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.topCatigories-box:hover {
+    border-color: #2c742f;
+    box-shadow: 0px 0px 20px 0px rgba(32, 181, 38, 0.32);
+}
+
+.next,
+.prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 195px;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #e6e6e6;
+    cursor: pointer;
+}
+
+.next:hover,
+.prev:hover {
+    border-color: #2c742f;
+    box-shadow: 0px 0px 20px 0px rgba(32, 181, 38, 0.32);
+}
+.prev {
+    left: 0;
+    margin-left: -80px;
+}
+.next {
+    transform: rotate(180deg);
+    right: 0;
+    margin-right: -80px;
+}
+
+/* Azimsher */
