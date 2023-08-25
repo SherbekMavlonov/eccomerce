@@ -133,6 +133,7 @@
     margin-bottom: 500px;
     .accountSettingsSection {
         border: 2px solid #e6e6e6;
+        border-radius: 8px;
         h2 {
             font-size: 20px;
             font-style: normal;
@@ -184,6 +185,7 @@
                     width: 167px;
                     padding: 12px 32px;
                     transition: all 0.2s ease-in-out;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                     &:hover {
                         opacity: 0.8;
                     }
@@ -244,6 +246,7 @@
 
     .billingAddressSection {
         border: 2px solid #e6e6e6;
+        border-radius: 8px;
         margin-top: 26px;
         margin-bottom: 26px;
         h2 {
@@ -380,6 +383,7 @@
                 width: 167px;
                 padding: 12px 32px;
                 transition: all 0.2s ease-in-out;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 &:hover {
                     opacity: 0.8;
                 }
@@ -392,6 +396,7 @@
 
     .changePasswordSection {
         border: 2px solid #e6e6e6;
+        border-radius: 8px;
 
         h2 {
             font-size: 20px;
@@ -540,6 +545,7 @@
                 width: 200px;
                 padding: 12px 32px;
                 transition: all 0.2s ease-in-out;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 &:hover {
                     opacity: 0.8;
                 }

@@ -45,7 +45,7 @@ const lNameInput = document.querySelector("#lNameInput")
 const emailInput = document.querySelector("#emailInput")
 const phoneNumberInput = document.querySelector("#phoneNumberInput")
 const formAcc = document.querySelector(".settingsSectionIn")
-let imageUrl
+let imageUrl;
 //=====>> billing settings <<=====================================//
 const formBilling = document.querySelector(".billingSectionIn")
 const bfname = document.querySelector("#bfname")
@@ -90,6 +90,20 @@ formAcc.addEventListener("submit", (e) => {
         })
     )
 })
+
+accountSettingsBtn.addEventListener('click',() => {
+  localStorage.setItem(
+    "accountSettings",
+    JSON.stringify({
+        fname: fNameInput.value,
+        lname: lNameInput.value,
+        email: emailInput.value,
+        number: phoneNumberInput.value,
+        userImg: imageUrl,
+    })
+)
+})
+
 
 //=====>> take account settings section from localStorage <<===========//
 const { fname, lname, email, number, userImg } = JSON.parse(localStorage.getItem("accountSettings"))
