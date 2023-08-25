@@ -2,6 +2,23 @@
 //     .get("https://jsonplaceholder.typicode.com/todos/1")
 //     .then((data) => console.log(data.data));
 
+// Azimsher===========>>
+new Swiper(".topCatigoriesSwiper", {
+  slidesPerView: 6,
+  spaceBetween: 24,
+  loop: true,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+});
+// Azimsher==========>>
+
 // ---> samandar
 
 function bannerTimer() {
@@ -90,7 +107,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 // main section swiper end <<====================================//
 
-// Kamroncik
+// Kamroncik===============>>
 // const likeIcon = document.querySelector('.product_offerLike');
 // likeIcon.addEventListener('click', () =>{
 //     likeIcon.innerHTML = `
@@ -101,8 +118,9 @@ var swiper = new Swiper(".mySwiper", {
 //     </style>
 //     `
 // });
-// Kamroncik
-// Savbatov Asadbek
+// Kamroncik==========>>
+
+// Savbatov Asadbek==============>>
 
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;
@@ -157,7 +175,9 @@ valueDisplays.forEach((valueDisplay) => {
   }, duration);
 });
 
-// Savbatov Asadbek
+// Savbatov Asadbek============>>
+
+
 
 // =========>> testimonial section <<=========================//
 // import Swiper from "../node_modules/swiper/swiper-bundle.mjs";
