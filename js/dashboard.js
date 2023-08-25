@@ -201,6 +201,7 @@ formPassword.addEventListener("submit", (e) => {
     }
 })
 
+
 const { currPassword, newPassword, confirmPassword } = JSON.parse(localStorage.getItem("changePassword"))
 currentPass.value = confirmPassword
 // newPass.value = newPassword
