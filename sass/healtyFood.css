@@ -401,7 +401,19 @@
 #settings .changePasswordSection .changePasswordIn .currentPassDiv {
   display: flex;
   flex-direction: column;
-  width: 938px;
+}
+#settings .changePasswordSection .changePasswordIn .currentPassDiv .curPassInput {
+  position: relative;
+}
+#settings .changePasswordSection .changePasswordIn .currentPassDiv .curPassInput i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+}
+#settings .changePasswordSection .changePasswordIn .currentPassDiv #incorrect {
+  color: red;
+  display: none;
 }
 #settings .changePasswordSection .changePasswordIn .currentPassDiv label {
   font-size: 14px;
@@ -412,6 +424,7 @@
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
+  width: 938px;
 }
 #settings .changePasswordSection .changePasswordIn .currentPassDiv input::-moz-placeholder {
   font-size: 16px;
@@ -434,6 +447,15 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .newPassDiv .newPassInput {
+  position: relative;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .newPassDiv .newPassInput i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
 }
 #settings .changePasswordSection .changePasswordIn .updatePassSection .newPassDiv label {
   font-size: 14px;
@@ -462,6 +484,15 @@
   flex-direction: column;
   align-items: start;
 }
+#settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv .confirmPassInput {
+  position: relative;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv .confirmPassInput i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+}
 #settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv label {
   font-size: 14px;
   line-height: 150%;
@@ -483,6 +514,10 @@
 }
 #settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv input:focus {
   outline: 2px solid #00b207;
+}
+#settings .changePasswordSection .changePasswordIn .updatePassSection .incorrect {
+  color: red !important;
+  display: none;
 }
 #settings .changePasswordSection .changePasswordIn #ChangePassBtn {
   width: 200px;

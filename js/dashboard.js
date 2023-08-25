@@ -59,11 +59,11 @@ const bemail = document.querySelector("#bemail")
 const bnumbers = document.querySelector("#bnumbers")
 const billingSettBtn = document.querySelector("#billingSettBtn")
 //==========>> change password <<======================================//
-const formPassword = document.querySelector('.changePasswordIn');
-const currentPass = document.querySelector('#currentPass');
-const newPass = document.querySelector('#newPass');
-const confirmPass = document.querySelector('#confirmPass');
-const ChangePassBtn = document.querySelector('#ChangePassBtn');
+const formPassword = document.querySelector(".changePasswordIn")
+const currentPass = document.querySelector("#currentPass")
+const newPass = document.querySelector("#newPass")
+const confirmPass = document.querySelector("#confirmPass")
+const ChangePassBtn = document.querySelector("#ChangePassBtn")
 
 //=============>>>> Account settings started <<<<===================================================//
 //=====>> save images in localStorage <<===========//
@@ -141,7 +141,72 @@ bnumbers.value = bNumbers
 //=================>>>> Billings settings finished <<<<==================================//
 
 //=============>> change Password started <<=====================================//
+// const password = document.querySelectorAl(".password");
+const currentPassEye = document.querySelector("#currentPassEye")
+const newPassEye = document.querySelector("#newPassEye")
+const confirmPassEye = document.querySelector("#confirmPassEye")
+const incorrect = document.querySelectorAll(".incorrect")
+const currIncorrect = document.querySelector("#incorrect")
+let CurrentPassword = "12345678"
 
+currentPassEye.addEventListener("click", () => {
+    const currType = currentPass.getAttribute("type") === "password" ? "text" : "password"
+    currentPass.setAttribute("type", currType)
+    currentPassEye.classList.toggle("fa-eye")
+})
+newPassEye.addEventListener("click", () => {
+    const newType = newPass.getAttribute("type") === "password" ? "text" : "password"
+    newPass.setAttribute("type", newType)
+    newPassEye.classList.toggle("fa-eye")
+})
+confirmPassEye.addEventListener("click", () => {
+    const confirmType = confirmPass.getAttribute("type") === "password" ? "text" : "password"
+    confirmPass.setAttribute("type", confirmType)
+    confirmPassEye.classList.toggle("fa-eye")
+})
+
+formPassword.addEventListener("submit", (e) => {
+    e.preventDefault()
+    if (currentPass.value !== CurrentPassword) {
+        currentPass.style.border = "1px solid red"
+        currIncorrect.style.display = "block"
+        formPassword.setAttribute("disabled", "")
+    } else {
+        currentPass.style.border = "1px solid #00B207"
+        setTimeout(() => {
+            currentPass.style.border = "1px solid #E6E6E6"
+        }, 1000)
+
+        if (newPass.value !== confirmPass.value) {
+                incorrect.forEach((e) => {
+                e.style.display = "block"
+            })
+            newPass.style.border = "1px solid red"
+            confirmPass.style.border = "1px solid red"
+        } else {
+            incorrect.forEach((e) => {
+                e.style.display = "none"
+            })
+            newPass.style.border = "1px solid #E6E6E6"
+            confirmPass.style.border = "1px solid #E6E6E6"
+            formPassword.removeAttribute("disabled")
+
+            localStorage.setItem(
+                "changePassword",
+                JSON.stringify({
+                    currPassword: currentPass.value,
+                    newPassword: newPass.value,
+                    confirmPassword: confirmPass.value,
+                })
+            )
+        }
+    }
+})
+
+const { currPassword, newPassword, confirmPassword } = JSON.parse(localStorage.getItem("changePassword"))
+currentPass.value = confirmPassword
+// newPass.value = newPassword
+// confirmPass.value = confirmPassword
 //=============>> change Password finished <<=====================================//
 /* === Settings content end === */
 
