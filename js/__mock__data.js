@@ -5,8 +5,9 @@ export const MY_WISHLIST = [
     discountPrice: "14.99",
     status: "In Stock",
   },
-];
+]
 
+// ========>> testimonial section <<===================//
 export const TESTOMONIAL = [
   {
     id: 1,
@@ -58,3 +59,4 @@ export const TESTOMONIAL = [
   },
 ];
 
+//=================>> testimonial section end <<=============================//

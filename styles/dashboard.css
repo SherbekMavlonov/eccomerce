@@ -23,7 +23,7 @@ html {
 
 /* dashboard styles */
 #dashboard {
-  padding: 32px 0 350px;
+  padding: 32px 0 350px 0;
   background: #fff;
 }
 #dashboard .container {
@@ -39,6 +39,10 @@ html {
   background: var(--gray-scale-white, #fff);
   padding: 20px 0;
   width: 300px;
+}
+
+.navigationHeader{
+  padding-left: 20px;
 }
 
 .tab button {

@@ -1,85 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/dashboard.css" />
-  </head>
-  <body>
-    <header></header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <!-- Dashboard link -->
+        <link rel="stylesheet" href="../styles/dashboard.css" />
+        <!-- style/components link -->
+        <link rel="stylesheet" href="../styles/component.style.css" />
+        <!-- sass link -->
+        <link rel="stylesheet" href="../sass/healtyFood.css" />
+        <!-- font awesome link -->
+        <script src="https://kit.fontawesome.com/f35ca9bb4a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header></header>
 
-    <!-- breadcrumbs start -->
-    <section id="breadcrumbs">
-      <div class="container"></div>
-    </section>
-    <!-- breadcrumbs end -->
+        <!-- breadcrumbs start -->
+        <section id="breadcrumbs">
+            <div class="container"></div>
+        </section>
+        <!-- breadcrumbs end -->
 
-    <!-- dashboard start -->
-    <section id="dashboard">
-      <div class="container">
-        <aside id="navigation">
-          <div class="tab">
-            <div class="navigationHeader">Navigation</div>
-            <button class="tablinks" onclick="openCity(event, 'mainDashboard')" id="defaultOpen">
-              Dashboard
-            </button>
-            <button class="tablinks" onclick="openCity(event, 'orderHistory')">
-              Order History
-            </button>
-            <button class="tablinks" onclick="openCity(event, 'wishlist')">Wishlist</button>
-            <button class="tablinks" onclick="openCity(event, 'shoppingCard')">
-              Shopping Cart
-            </button>
-            <button class="tablinks" onclick="openCity(event, 'settings')">Settings</button>
-            <button class="tablinks">Log-out</button>
-          </div>
-        </aside>
+        <!-- dashboard start -->
+        <section id="dashboard">
+            <div class="container">
+                <aside id="navigation">
+                    <div class="tab">
+                        <div class="navigationHeader">Navigation</div>
+                        <button class="tablinks" onclick="openCity(event, 'mainDashboard')" id="defaultOpen">
+                            Dashboard
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'orderHistory')">Order History</button>
+                        <button class="tablinks" onclick="openCity(event, 'wishlist')">Wishlist</button>
+                        <button class="tablinks" onclick="openCity(event, 'shoppingCard')">Shopping Cart</button>
+                        <button class="tablinks" onclick="openCity(event, 'settings')">Settings</button>
+                        <button class="tablinks">Log-out</button>
+                    </div>
+                </aside>
 
-        <main id="main">
-          <div id="mainDashboard" class="tabcontent">
-            <h3>dashboard</h3>
-          </div>
-          <div id="orderHistory" class="tabcontent">
-            <h3>OrderHistory</h3>
-          </div>
+                <main id="main">
+                    <div id="mainDashboard" class="tabcontent">
+                        <h3>dashboard</h3>
+                    </div>
+                    <div id="orderHistory" class="tabcontent">
+                        <h3>OrderHistory</h3>
+                    </div>
 
-          <div id="wishlist" class="tabcontent">
-            <h3>Wishlist</h3>
-          </div>
+                    <div id="wishlist" class="tabcontent">
+                        <h3>Wishlist</h3>
+                    </div>
 
-          <div id="shoppingCard" class="tabcontent">
-            <h3>Shopping Card</h3>
-          </div>
+                    <div id="shoppingCard" class="tabcontent">
+                        <h3>Shopping Card</h3>
+                    </div>
 
-          <div id="settings" class="tabcontent">
-            <h3>Settings</h3>
-          </div>
-        </main>
-      </div>
-    </section>
-    <!-- dashboard end -->
+                    <div id="settings" class="tabcontent">
+                        <div class="accountSettingsSection">
+                            <h2>Account Settings</h2>
+                            <form class="settingsSectionIn">
+                                <div class="leftInputData">
+                                    <div class="fNameDiv leftInput">
+                                        <label for="fNameInput">First Name</label>
+                                        <input type="text" id="fNameInput" name="fname" placeholder="John" required />
+                                    </div>
+                                    <div class="lNameDiv leftInput">
+                                        <label for="lNameInput">Last Name</label>
+                                        <input type="text" id="lNameInput" name="lname" placeholder="Doe" required />
+                                    </div>
+                                    <div class="emailDiv leftInput">
+                                        <label for="emailInput">Email</label>
+                                        <input
+                                            type="email"
+                                            id="emailInput"
+                                            name="email"
+                                            placeholder="JohnDoe@gmail.com"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="numberDiv leftInput">
+                                        <label for="phoneNumberInput">Phone Number</label>
+                                        <input
+                                            type="number"
+                                            id="phoneNumberInput"
+                                            name="number"
+                                            placeholder="(+998) 99-999-99-99"
+                                            required
+                                        />
+                                    </div>
+                                    <button class="popular_tag_green_btn" id="accountSettingsBtn" type="submit">
+                                        Save Changes
+                                    </button>
+                                </div>
+                                <div class="rightInputData">
+                                    <div class="uploadImg">
+                                        <img src="" alt="" id="showImage" />
+                                    </div>
+                                    <label for="uploadImgInput">
+                                        Choose the Img
+                                        <input id="uploadImgInput" type="file" name="file" />
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="billingAddressSection">
+                            <h2>Billing Address</h2>
+                            <form class="billingSectionIn">
+                                <div class="topBillingIn">
+                                    <div class="fnmDiv bInput">
+                                        <label for="bfname">First Name</label>
+                                        <input type="text" id="bfname" placeholder="Dianne" required />
+                                    </div>
+                                    <div class="lnameDiv bInput">
+                                        <label for="blname">Last Name</label>
+                                        <input type="text" id="blname" placeholder="Richard" required />
+                                    </div>
+                                    <div class="compNameDiv bInput">
+                                        <label for="compName">Company Name <span>(optional)</span></label>
+                                        <input type="text" id="compName" placeholder="Office" required />
+                                    </div>
+                                </div>
+                                <div class="streetAdrressDiv">
+                                    <label for="streetAdress">Street Address</label>
+                                    <input type="text" id="streetAdress" placeholder="4141 Parl Road" required />
+                                </div>
+                                <div class="countrySectionsDiv">
+                                    <div class="countryDiv bInput">
+                                        <label for="country">Country/Region</label>
+                                        <select name="country" id="countrySlc" required>
+                                            <option selected disabled>Choose the Country</option>
+                                        </select>
+                                    </div>
+                                    <div class="statesDiv bInput">
+                                        <label for="states">States</label>
+                                        <select name="states" id="statesSlc" required>
+                                            <option selected disabled>Choose the State</option>
+                                        </select>
+                                    </div>
+                                    <div class="zipCodeDiv bInput">
+                                        <label for="zipCode">Zip Code</label>
+                                        <input type="number" id="zipCode" placeholder="12345" required />
+                                    </div>
+                                </div>
+                                <div class="bottomBillingIn">
+                                    <div class="emailDiv bInput">
+                                        <label for="bemail">Email</label>
+                                        <input type="email" id="bemail" placeholder="example@gamil.com" required />
+                                    </div>
+                                    <div class="numbersDiv bInput">
+                                        <label for="bnumbers">Number</label>
+                                        <input type="number" id="bnumbers" placeholder="(+998) 99-999-99-99" required />
+                                    </div>
+                                </div>
+                                <button class="popular_tag_green_btn" id="billingSettBtn" type="submit">
+                                    Save Changes
+                                </button>
+                            </form>
+                        </div>
+                        <div class="changePasswordSection">
+                            <h2>Change Password</h2>
+                            <form class="changePasswordIn">
+                                <div class="currentPassDiv">
+                                    <label for="currentPass">Current Password</label>
+                                    <div class="curPassInput">
+                                      <input type="password" id="currentPass"  placeholder="password" required />
+                                      <i class="fa-regular fa-eye-slash" id="currentPassEye"></i>
+                                    </div>
+                                    <p id="incorrect">Incorrect!</p>
+                                </div>
+                                <div class="updatePassSection">
+                                    <div class="newPassDiv">
+                                        <label for="newPass">New Password</label>
+                                        <div class="newPassInput">
+                                          <input type="password" id="newPass" placeholder="password" required />
+                                          <i class="fa-regular fa-eye-slash" id="newPassEye"></i>
+                                        </div>
+                                        <p class="incorrect">Incorrect!</p>
+                                    </div>
+                                    <div class="confirmPassDiv">
+                                        <label for="confirmPass">Confirm Password</label>
+                                       <div class="confirmPassInput">
+                                        <input type="password" id="confirmPass"  placeholder="password" required />
+                                        <i class="fa-regular fa-eye-slash" id="confirmPassEye"></i>
+                                       </div>
+                                    <p class="incorrect">Incorrect!</p>
+                                    </div>
+                                </div>
+                                <button class="popular_tag_green_btn" type="submit" id="ChangePassBtn">
+                                    Changes Password
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <!-- dashboard end -->
 
-    <!-- footer start -->
-    <footer></footer>
-    <!-- footer end -->
+        <!-- footer start -->
+        <footer></footer>
+        <!-- footer end -->
 
-    <script type="module" src="../js/dashboard.js"></script>
-    <script>
-      function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-      document.getElementById("defaultOpen").click();
-    </script>
-  </body>
+        <script type="module" src="../js/dashboard.js"></script>
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks
+                tabcontent = document.getElementsByClassName("tabcontent")
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none"
+                }
+                tablinks = document.getElementsByClassName("tablinks")
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "")
+                }
+                document.getElementById(cityName).style.display = "block"
+                evt.currentTarget.className += " active"
+            }
+            document.getElementById("defaultOpen").click()
+        </script>
+    </body>
 </html>
