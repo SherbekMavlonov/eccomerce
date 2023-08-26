@@ -29,19 +29,68 @@
                     <div class="tab">
                         <div class="navigationHeader">Navigation</div>
                         <button class="tablinks" onclick="openCity(event, 'mainDashboard')" id="defaultOpen">
-                            Dashboard
+                            <img src="../images/icons/dashboardIcon.svg" alt="dashboardIcon" loading="lazy" /> Dashboard
                         </button>
-                        <button class="tablinks" onclick="openCity(event, 'orderHistory')">Order History</button>
-                        <button class="tablinks" onclick="openCity(event, 'wishlist')">Wishlist</button>
-                        <button class="tablinks" onclick="openCity(event, 'shoppingCard')">Shopping Cart</button>
-                        <button class="tablinks" onclick="openCity(event, 'settings')">Settings</button>
-                        <button class="tablinks">Log-out</button>
+                        <button class="tablinks" onclick="openCity(event, 'orderHistory')">
+                            <img src="../images/icons/orderHistoryIcon.svg" alt="orderHistoryIcon" loading="lazy" />
+                            Order History
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'wishlist')">
+                            <img src="../images/icons/wishlistIcon.svg" alt="wishlist" loading="lazy" /> Wishlist
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'shoppingCard')">
+                            <img
+                                src="../images/icons/shoppingCardIcon.svg"
+                                alt="shoppingCardIcon
+                            "
+                                loading="lazy"
+                            />
+                            Shopping Cart
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'settings')">
+                            <img src="../images/icons/SettingsIcon.svg" alt="SettingsIcon" loading="lazy" /> Settings
+                        </button>
+                        <button class="tablinks">
+                            <img src="../images/icons/logOutIcon.svg" alt="logOutIcon" loading="lazy" />Log-out
+                        </button>
                     </div>
                 </aside>
 
                 <main id="main">
                     <div id="mainDashboard" class="tabcontent">
-                        <h3>dashboard</h3>
+                        <div class="personalInfoDash">
+                            <div class="personInfo">
+                                <div class="personImg">
+                                    <img src="" alt="personImg" loading="lazy" id="personImg">
+                                </div>
+                                <div class="personFullName">
+                                    <h2 id="personFname">John</h2>
+                                    <h2 id="personLname">Doe</h2>
+                                </div>
+                                <p>Customer</p>
+                                <a href="#0"  onclick="openCity(event, 'settings')">Edit Profile</a>
+                            </div>
+                            <div class="personBillingAddress">
+                                <p class="billingAddr">Billing Address</p>
+                                <div class="personFullName">
+                                    <h2 id="personFname">John</h2>
+                                    <h2 id="personLname">Doe</h2>
+                                </div>
+                               <div class="personCountryZip">
+                                <div class="personCountry">
+                                    <p id="personStreet">4040 Parker RD</p>
+                                    <p id="personCountry">Mexico</p>
+                                    <p id="personState">Tower</p>
+                                </div>
+                                <p id="personZipCode">1234</p>
+                               </div>
+                                <div class="personEmailNum">
+                                    <p id="personEmail">example@gamil.com</p>
+                                    <p id="personNum">12345577</p>
+                                </div>
+                                <a href="#0" id="editEmailNum"  onclick="openCity(event, 'settings')">Edit Address</a>
+                            </div>
+                        </div>
                     </div>
                     <div id="orderHistory" class="tabcontent">
                         <h3>OrderHistory</h3>
@@ -103,7 +152,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="billingAddressSection">
+                        <div id="billingAddressSection">
                             <h2>Billing Address</h2>
                             <form class="billingSectionIn">
                                 <div class="topBillingIn">
@@ -163,8 +212,8 @@
                                 <div class="currentPassDiv">
                                     <label for="currentPass">Current Password</label>
                                     <div class="curPassInput">
-                                      <input type="password" id="currentPass"  placeholder="password" required />
-                                      <i class="fa-regular fa-eye-slash" id="currentPassEye"></i>
+                                        <input type="password" id="currentPass" placeholder="password" required />
+                                        <i class="fa-regular fa-eye-slash" id="currentPassEye"></i>
                                     </div>
                                     <p id="incorrect">Incorrect!</p>
                                 </div>
@@ -172,18 +221,18 @@
                                     <div class="newPassDiv">
                                         <label for="newPass">New Password</label>
                                         <div class="newPassInput">
-                                          <input type="password" id="newPass" placeholder="password" required />
-                                          <i class="fa-regular fa-eye-slash" id="newPassEye"></i>
+                                            <input type="password" id="newPass" placeholder="password" required />
+                                            <i class="fa-regular fa-eye-slash" id="newPassEye"></i>
                                         </div>
                                         <p class="incorrect">Incorrect!</p>
                                     </div>
                                     <div class="confirmPassDiv">
                                         <label for="confirmPass">Confirm Password</label>
-                                       <div class="confirmPassInput">
-                                        <input type="password" id="confirmPass"  placeholder="password" required />
-                                        <i class="fa-regular fa-eye-slash" id="confirmPassEye"></i>
-                                       </div>
-                                    <p class="incorrect">Incorrect!</p>
+                                        <div class="confirmPassInput">
+                                            <input type="password" id="confirmPass" placeholder="password" required />
+                                            <i class="fa-regular fa-eye-slash" id="confirmPassEye"></i>
+                                        </div>
+                                        <p class="incorrect">Incorrect!</p>
                                     </div>
                                 </div>
                                 <button class="popular_tag_green_btn" type="submit" id="ChangePassBtn">
@@ -200,6 +249,129 @@
         <!-- footer start -->
         <footer></footer>
         <!-- footer end -->
+
+        <!-- order-history-details start -->
+        <div class="dashboard-history-right-container">
+            <div class="order-details-header">
+                <ul>
+                    <li>Order Details</li>
+                    <li>•</li>
+                    <li>April 24,2012</li>
+                    <li>•</li>
+                    <li>3 Products</li>
+                </ul>
+                <a href="#1">Back to list</a>
+            </div>
+            <div class="order-detail-main">
+                <div class="main-box-left">
+                    <div class="card">
+                        <h3>BILLING ADDRESS</h3>
+                        <h4>Dainne Russell</h4>
+                        <p class="orderDetailPlace">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                        <h5>EMAIL</h5>
+                        <p class="OrderDetailEmail">dainne.ressell@gmail.com</p>
+                        <h5>PHONE</h5>
+                        <p class="OrderDetailPhone">(671) 555 - 0110</p>
+                    </div>
+                    <div class="card">
+                        <h3>BILLING ADDRESS</h3>
+                        <h4>Dainne Russell</h4>
+                        <p class="orderDetailPlace">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                        <h5>EMAIL</h5>
+                        <p class="OrderDetailEmail">dainne.ressell@gmail.com</p>
+                        <h5>PHONE</h5>
+                        <p class="OrderDetailPhone">(671) 555 - 0110</p>
+                    </div>
+                </div>
+                <div class="main-box-right">
+                    <div class="rightBoxHeader">
+                        <div class="IdDiv">
+                            <h5>ORDER ID</h5>
+                            <p class="orderDetailId">#4152</p>
+                        </div>
+                        <div class="column-line">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2"
+                                height="40"
+                                viewBox="0 0 2 40"
+                                fill="none"
+                            >
+                                <path d="M1 0L1 40" stroke="#E6E6E6" />
+                            </svg>
+                        </div>
+                        <div class="PaymentDiv">
+                            <h5>PAYMENT METHOD:</h5>
+                            <p class="orderDetailPaymentType">Paypal</p>
+                        </div>
+                    </div>
+                    <div class="rightBoxMain">
+                        <ul>
+                            <li>Subtotal:</li>
+                            <li class="subtotal">$365.00</li>
+                        </ul>
+                        <div class="row-line"></div>
+                        <ul>
+                            <li>Discount:</li>
+                            <li class="discount">20%</li>
+                        </ul>
+                        <div class="row-line"></div>
+                        <ul>
+                            <li>Shipping:</li>
+                            <li class="shipping">Free</li>
+                        </ul>
+                        <div class="row-line"></div>
+                        <ul>
+                            <li class="totalText">Total</li>
+                            <li class="totalSum">$84.00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="orderDetailProgress">
+                <input type="range" />
+            </div>
+            <div class="thead">
+                <ul>
+                    <li>PRODUCT</li>
+                    <li>PRICE</li>
+                    <li>QUANTITY</li>
+                    <li>SUBTOTAL</li>
+                </ul>
+            </div>
+            <div class="tbody">
+                <ul>
+                    <li>
+                        <img src="../images/vegetables-img.jpg" alt="img" />
+                        <span> Red Capsicum</span>
+                    </li>
+                    <li>$14.00</li>
+                    <li>x5</li>
+                    <li>$70.00</li>
+                </ul>
+                <div class="table-line"></div>
+                <ul>
+                    <li>
+                        <img src="../images/vegetables-sale-img.jpg" alt="img" />
+                        <span> Red Capsicum</span>
+                    </li>
+                    <li>$14.00</li>
+                    <li>x5</li>
+                    <li>$70.00</li>
+                </ul>
+                <div class="table-line"></div>
+                <ul>
+                    <li>
+                        <img src="../images/vegetables-img.jpg" alt="img" />
+                        <span> Red Capsicum</span>
+                    </li>
+                    <li>$14.00</li>
+                    <li>x5</li>
+                    <li>$70.00</li>
+                </ul>
+            </div>
+        </div>
+        <!-- order-history-details end -->
 
         <script type="module" src="../js/dashboard.js"></script>
         <script>
