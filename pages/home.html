@@ -1,883 +1,809 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home</title>
-        <!-- axios script -->
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <!-- font awesome script -->
-        <script src="https://kit.fontawesome.com/f35ca9bb4a.js" crossorigin="anonymous"></script>
-        <!-- swiper in js script -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <!-- main css -->
-        <link rel="stylesheet" href="../styles/main.css" />
-        <!-- healthy food css -->
-        <link rel="stylesheet" href="../sass/healtyFood.css" />
-        <!-- Components css -->
-        <link rel="stylesheet" href="../styles/component.style.css" />
-        <!-- swiper css -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-        <!-- font link  -->
-        <link rel="stylesheet" href="../fonts/stylesheet.css" />
-    </head>
-    <body>
-        <!-- bahriddin -->
-        <header>
-            <div class="container"></div>
-        </header>
-        <!-- bahriddin -->
 
-        <!-- Suxrob -->
-        <main id="mainSectionHealthyFood">
-            <div class="container">
-                <!-- background little position images -->
-                <img class="barg1Img" src="../images/mainBargImg1.svg" alt="barg-little-images" loading="lazy" />
-                <img class="barg2Img" src="../images/mainBargImg4.svg" alt="barg-little-img" loading="lazy" />
-                <img class="group1Img" src="../images/GroupImg2.svg" alt="group-little-img" loading="lazy" />
-                <img class="group2Img" src="../images/GroupImg4.svg" alt="group-little-img" loading="lazy" />
-                <img class="group3Img" src="../images/GroupImg1.svg" alt="group-little-img" loading="lazy" />
-                <img class="group4Img" src="../images/GroupImg3.svg" alt="group-little-img" loading="lazy" />
-                <img class="group5Img" src="../images/GroupImg5.svg" alt="group-little-img" loading="lazy" />
-                <!-- background little position images -->
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="freshHealthyMain">
-                                <div class="leftHealthyFoodSection">
-                                    <img src="../images/healtyFoodImg.svg" alt="healthy-food-img" loading="lazy" />
-                                </div>
-                                <div class="rightHealthyFoodSection">
-                                    <span class="welcome">Welcome to shopery</span>
-                                    <h1>Fresh & Healthy Organic Food</h1>
-                                    <p class="saleP">Sale up to <span>30% OFF</span></p>
-                                    <span class="freeShipping"
-                                        >Free shipping on all your order. we deliver, you enjoy</span
-                                    >
-                                    <a href="#" class="shop_now_btn"
-                                        >Shop now <i class="fa-solid fa-arrow-right"></i
-                                    ></a>
-                                </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- axios script -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/f35ca9bb4a.js" crossorigin="anonymous"></script>
+    <!-- swiper in js script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <!-- navbar css -->
+    <link rel="stylesheet" href="../js/components/navbar/navbar.css">
+    <!-- healthy food css -->
+    <link rel="stylesheet" href="../sass/healtyFood.css" />
+    <!-- Components css -->
+    <link rel="stylesheet" href="../styles/component.style.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- font link  -->
+    <link rel="stylesheet" href="../fonts/stylesheet.css" />
+</head>
+
+<body>
+    <navbar-component></navbar-component>
+
+    <!-- Suxrob -->
+    <main id="mainSectionHealthyFood">
+        <div class="container">
+            <!-- background little position images -->
+            <img class="barg1Img" src="../images/mainBargImg1.svg" alt="barg-little-images" loading="lazy" />
+            <img class="barg2Img" src="../images/mainBargImg4.svg" alt="barg-little-img" loading="lazy" />
+            <img class="group1Img" src="../images/GroupImg2.svg" alt="group-little-img" loading="lazy" />
+            <img class="group2Img" src="../images/GroupImg4.svg" alt="group-little-img" loading="lazy" />
+            <img class="group3Img" src="../images/GroupImg1.svg" alt="group-little-img" loading="lazy" />
+            <img class="group4Img" src="../images/GroupImg3.svg" alt="group-little-img" loading="lazy" />
+            <img class="group5Img" src="../images/GroupImg5.svg" alt="group-little-img" loading="lazy" />
+            <!-- background little position images -->
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="freshHealthyMain">
+                            <div class="leftHealthyFoodSection">
+                                <img src="../images/healtyFoodImg.svg" alt="healthy-food-img" loading="lazy" />
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="freshHealthyMain">
-                                <div class="leftHealthyFoodSection">
-                                    <img src="../images/healtyFoodImg.svg" alt="healthy-food-img" loading="lazy" />
-                                </div>
-                                <div class="rightHealthyFoodSection">
-                                    <span class="welcome">Welcome to shopery</span>
-                                    <h1>Fresh & Healthy Organic Food</h1>
-                                    <p class="saleP">Sale up to <span>30% OFF</span></p>
-                                    <span class="freeShipping"
-                                        >Free shipping on all your order. we deliver, you enjoy</span
-                                    >
-                                    <a href="#" class="shop_now_btn"
-                                        >Shop now <i class="fa-solid fa-arrow-right"></i
-                                    ></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="freshHealthyMain">
-                                <div class="leftHealthyFoodSection">
-                                    <img src="../images/healtyFoodImg.svg" alt="healthy-food-img" loading="lazy" />
-                                </div>
-                                <div class="rightHealthyFoodSection">
-                                    <span class="welcome">Welcome to shopery</span>
-                                    <h1>Fresh & Healthy Organic Food</h1>
-                                    <p class="saleP">Sale up to <span>30% OFF</span></p>
-                                    <span class="freeShipping"
-                                        >Free shipping on all your order. we deliver, you enjoy</span
-                                    >
-                                    <a href="#" class="shop_now_btn"
-                                        >Shop now <i class="fa-solid fa-arrow-right"></i
-                                    ></a>
-                                </div>
+                            <div class="rightHealthyFoodSection">
+                                <span class="welcome">Welcome to shopery</span>
+                                <h1>Fresh & Healthy Organic Food</h1>
+                                <p class="saleP">Sale up to <span>30% OFF</span></p>
+                                <span class="freeShipping">Free shipping on all your order. we deliver, you enjoy</span>
+                                <a href="#" class="shop_now_btn">Shop now <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next swiperBtn"></div>
-                    <div class="swiper-button-prev swiperBtn"></div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide">
+                        <div class="freshHealthyMain">
+                            <div class="leftHealthyFoodSection">
+                                <img src="../images/healtyFoodImg.svg" alt="healthy-food-img" loading="lazy" />
+                            </div>
+                            <div class="rightHealthyFoodSection">
+                                <span class="welcome">Welcome to shopery</span>
+                                <h1>Fresh & Healthy Organic Food</h1>
+                                <p class="saleP">Sale up to <span>30% OFF</span></p>
+                                <span class="freeShipping">Free shipping on all your order. we deliver, you enjoy</span>
+                                <a href="#" class="shop_now_btn">Shop now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="freshHealthyMain">
+                            <div class="leftHealthyFoodSection">
+                                <img src="../images/healtyFoodImg.svg" alt="healthy-food-img" loading="lazy" />
+                            </div>
+                            <div class="rightHealthyFoodSection">
+                                <span class="welcome">Welcome to shopery</span>
+                                <h1>Fresh & Healthy Organic Food</h1>
+                                <p class="saleP">Sale up to <span>30% OFF</span></p>
+                                <span class="freeShipping">Free shipping on all your order. we deliver, you enjoy</span>
+                                <a href="#" class="shop_now_btn">Shop now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Swiper -->
+                <div class="swiper-button-next swiperBtn"></div>
+                <div class="swiper-button-prev swiperBtn"></div>
+                <div class="swiper-pagination"></div>
             </div>
-        </main>
-        <!-- Suxrob -->
+            <!-- Swiper -->
+        </div>
+    </main>
+    <!-- Suxrob -->
 
-        <!-- Nurbek -->
-        <div class="container feature">
-            <div class="box">
-                <div class="box_img">
-                    <img class="proImgBg" src="../images/featuredBg.png" alt="" />
-                    <img class="proImg" src="../images/deliveryIcon1.svg" alt="" />
-                </div>
-                <div class="featureDescription">Free Shipping</div>
-                <div class="featureDiscount">Free shipping with discount</div>
+    <!-- Nurbek -->
+    <div class="container feature">
+        <div class="box">
+            <div class="box_img">
+                <img class="proImgBg" src="../images/featuredBg.png" alt="" />
+                <img class="proImg" src="../images/deliveryIcon1.svg" alt="" />
             </div>
-            <div class="box">
-                <div class="box_img">
-                    <img class="proImgBg" src="../images/featuredBg.png" alt="" />
-                    <img class="proImg" src="../images/deliveryIcon2.svg" alt="" />
-                </div>
-                <div class="featureDescription">Great Support 24/7</div>
-                <div class="featureDiscount">Instant access to Contact</div>
+            <div class="featureDescription">Free Shipping</div>
+            <div class="featureDiscount">Free shipping with discount</div>
+        </div>
+        <div class="box">
+            <div class="box_img">
+                <img class="proImgBg" src="../images/featuredBg.png" alt="" />
+                <img class="proImg" src="../images/deliveryIcon2.svg" alt="" />
             </div>
-            <div class="box">
-                <div class="box_img">
-                    <img class="proImgBg" src="../images/featuredBg.png" alt="" />
-                    <img class="proImg proWhiteImg" src="../images/deliveryIcon3.svg" alt="" />
-                </div>
-                <div class="featureDescription">100% Sucure Payment</div>
-                <div class="featureDiscount">We ensure your money is save</div>
+            <div class="featureDescription">Great Support 24/7</div>
+            <div class="featureDiscount">Instant access to Contact</div>
+        </div>
+        <div class="box">
+            <div class="box_img">
+                <img class="proImgBg" src="../images/featuredBg.png" alt="" />
+                <img class="proImg proWhiteImg" src="../images/deliveryIcon3.svg" alt="" />
             </div>
-            <div class="box">
-                <div class="box_img">
-                    <img class="proImgBg" src="../images/featuredBg.png" alt="" />
-                    <img class="proImg" src="../images/deliveryIcon4.svg" alt="" />
+            <div class="featureDescription">100% Sucure Payment</div>
+            <div class="featureDiscount">We ensure your money is save</div>
+        </div>
+        <div class="box">
+            <div class="box_img">
+                <img class="proImgBg" src="../images/featuredBg.png" alt="" />
+                <img class="proImg" src="../images/deliveryIcon4.svg" alt="" />
+            </div>
+            <div class="featureDescription">Money-Back Guarantee</div>
+            <div class="featureDiscount">30 days money-back</div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <!-- Nurbek -->
+
+    <!-- Abduhakim -->
+    <section id="praductsCard">
+        <div class="container">
+            <div class="productsBox">
+                <div class="productsTitle">Featured Products</div>
+                <a id="productsLink" href="#">View All ⇨</a>
+            </div>
+            <div class="productsMain">
+                <div class="mainProductBox">
+                    <div class="productsImgBox">
+                        <img src="../images/productsDefaultImg.svg" alt="Default Img for Products section"
+                            loading="lazy" />
+                    </div>
+                    <div class="productsBottomBox">
+                        <div class="productsBottomSmallBox">
+                            <h3 class="productsBottomTitle">Default</h3>
+                            <p class="productsBottomText">14.99$</p>
+                        </div>
+                        <div class="productsIcon">
+                            <img src="../images/productsIcon.svg" alt="Icon for Products page" />
+                        </div>
+                    </div>
                 </div>
-                <div class="featureDescription">Money-Back Guarantee</div>
-                <div class="featureDiscount">30 days money-back</div>
+                <div class="mainProductBox">
+                    <div class="productsImgBox">
+                        <img src="../images/productsDefaultImg.svg" alt="Default Img for Products section"
+                            loading="lazy" />
+                    </div>
+                    <div class="productsBottomBox">
+                        <div class="productsBottomSmallBox">
+                            <h3 class="productsBottomTitle">Default</h3>
+                            <p class="productsBottomText">14.99$</p>
+                        </div>
+                        <div class="productsIcon">
+                            <img src="../images/productsIcon.svg" alt="Icon for Products page" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mainProductBox">
+                    <div class="productsImgBox">
+                        <img src="../images/productsDefaultImg.svg" alt="Default Img for Products section"
+                            loading="lazy" />
+                    </div>
+                    <div class="productsBottomBox">
+                        <div class="productsBottomSmallBox">
+                            <h3 class="productsBottomTitle">Default</h3>
+                            <p class="productsBottomText">14.99$</p>
+                        </div>
+                        <div class="productsIcon">
+                            <img src="../images/productsIcon.svg" alt="Icon for Products page" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mainProductBox">
+                    <div class="productsImgBox">
+                        <img src="../images/productsDefaultImg.svg" alt="Default Img for Products section"
+                            loading="lazy" />
+                    </div>
+                    <div class="productsBottomBox">
+                        <div class="productsBottomSmallBox">
+                            <h3 class="productsBottomTitle">Default</h3>
+                            <p class="productsBottomText">14.99$</p>
+                        </div>
+                        <div class="productsIcon">
+                            <img src="../images/productsIcon.svg" alt="Icon for Products page" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="line"></div>
-        <!-- Nurbek -->
+    </section>
+    <!-- Abduhakim -->
 
-        <!-- Abduhakim -->
-        <section id="praductsCard">
-            <div class="container">
-                <div class="productsBox">
-                    <div class="productsTitle">Featured Products</div>
-                    <a id="productsLink" href="#">View All ⇨</a>
+    <!-- Azimsher -->
+    <section id="topCatigories">
+        <div class="container">
+            <div class="innerContainer">
+                <div class="topCatigories-starting">
+                    <h2>Shop by Top Categories</h2>
+                    <a href="#">View All <img src="../images/green-arrow.png" alt="arrow" loading="lazy" /></a>
                 </div>
-                <div class="productsMain">
-                    <div class="mainProductBox">
-                        <div class="productsImgBox">
-                            <img
-                                src="../images/productsDefaultImg.svg"
-                                alt="Default Img for Products section"
-                                loading="lazy"
-                            />
+                <div class="swiper topCatigoriesSwiper">
+                    <div class="topCatigories-boxes swiper-wrapper">
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-1.png" alt="vegetables" loading="lazy" />
+                            <h3>Vegetables</h3>
+                            <p>165 Products</p>
                         </div>
-                        <div class="productsBottomBox">
-                            <div class="productsBottomSmallBox">
-                                <h3 class="productsBottomTitle">Default</h3>
-                                <p class="productsBottomText">14.99$</p>
-                            </div>
-                            <div class="productsIcon">
-                                <img src="../images/productsIcon.svg" alt="Icon for Products page" />
-                            </div>
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-2.png" alt="vegetables" loading="lazy" />
+                            <h3>Fresh Fruit</h3>
+                            <p>137 Products</p>
                         </div>
-                    </div>
-                    <div class="mainProductBox">
-                        <div class="productsImgBox">
-                            <img
-                                src="../images/productsDefaultImg.svg"
-                                alt="Default Img for Products section"
-                                loading="lazy"
-                            />
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-3.png" alt="vegetables" loading="lazy" />
+                            <h3>Fish</h3>
+                            <p>34 Products</p>
                         </div>
-                        <div class="productsBottomBox">
-                            <div class="productsBottomSmallBox">
-                                <h3 class="productsBottomTitle">Default</h3>
-                                <p class="productsBottomText">14.99$</p>
-                            </div>
-                            <div class="productsIcon">
-                                <img src="../images/productsIcon.svg" alt="Icon for Products page" />
-                            </div>
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-4.png" alt="vegetables" loading="lazy" />
+                            <h3>Meat</h3>
+                            <p>165 Products</p>
                         </div>
-                    </div>
-                    <div class="mainProductBox">
-                        <div class="productsImgBox">
-                            <img
-                                src="../images/productsDefaultImg.svg"
-                                alt="Default Img for Products section"
-                                loading="lazy"
-                            />
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-5.png" alt="vegetables" loading="lazy" />
+                            <h3>Water and Drinks</h3>
+                            <p>48 Products</p>
                         </div>
-                        <div class="productsBottomBox">
-                            <div class="productsBottomSmallBox">
-                                <h3 class="productsBottomTitle">Default</h3>
-                                <p class="productsBottomText">14.99$</p>
-                            </div>
-                            <div class="productsIcon">
-                                <img src="../images/productsIcon.svg" alt="Icon for Products page" />
-                            </div>
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-6.png" alt="vegetables" loading="lazy" />
+                            <h3>Snacks</h3>
+                            <p>165 Products</p>
                         </div>
-                    </div>
-                    <div class="mainProductBox">
-                        <div class="productsImgBox">
-                            <img
-                                src="../images/productsDefaultImg.svg"
-                                alt="Default Img for Products section"
-                                loading="lazy"
-                            />
+
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-1.png" alt="vegetables" loading="lazy" />
+                            <h3>Vegetables</h3>
+                            <p>165 Products</p>
                         </div>
-                        <div class="productsBottomBox">
-                            <div class="productsBottomSmallBox">
-                                <h3 class="productsBottomTitle">Default</h3>
-                                <p class="productsBottomText">14.99$</p>
-                            </div>
-                            <div class="productsIcon">
-                                <img src="../images/productsIcon.svg" alt="Icon for Products page" />
-                            </div>
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-2.png" alt="vegetables" loading="lazy" />
+                            <h3>Fresh Fruit</h3>
+                            <p>137 Products</p>
+                        </div>
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-3.png" alt="vegetables" loading="lazy" />
+                            <h3>Fish</h3>
+                            <p>34 Products</p>
+                        </div>
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-4.png" alt="vegetables" loading="lazy" />
+                            <h3>Meat</h3>
+                            <p>165 Products</p>
+                        </div>
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-5.png" alt="vegetables" loading="lazy" />
+                            <h3>Water and Drinks</h3>
+                            <p>48 Products</p>
+                        </div>
+                        <div class="topCatigories-box swiper-slide">
+                            <img src="../images/topCatigories-img-6.png" alt="vegetables" loading="lazy" />
+                            <h3>Snacks</h3>
+                            <p>165 Products</p>
                         </div>
                     </div>
+                </div>
+                <div class="next"><img src="../images/arrow.svg" alt="img" /></div>
+                <div class="prev"><img src="../images/arrow.svg" alt="img" /></div>
+            </div>
+        </div>
+    </section>
+    <!-- Azimsher -->
+
+    <!-- Asqarjon -->
+    <section id="whyChooseUs">
+        <div class="container">
+            <div class="whyChooseWrapper">
+                <div><img src="../images/Image (4).svg" alt="" /></div>
+                <div><img src="../images/Image (5).svg" alt="" /></div>
+                <div class="whyChooseUsText">
+                    <h1>
+                        100% Trusted <br />
+                        Organic Food Store
+                    </h1>
+                    <div class="whyChooseUsTexts">
+                        <img src="../images/Check.svg" alt="Check.svg" loading="lazy" />
+                        <div class="whyChooseUsTexts1">
+                            <h4>Healthy & natural food for lovers of healthy food.</h4>
+                            <p>
+                                Ut quis tempus erat. Phasellus euismod bibendum magna non
+                                <br />
+                                tristique. Pellentesque semper vestibulum elit sed condimentum. Nunc pretium
+                                fermentum interdum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="whyChooseUsTexts">
+                        <img src="../images/Check.svg" alt="Check.svg" loading="lazy" />
+                        <div class="whyChooseUsTexts1">
+                            <h4>Every day fresh and quality products for you.</h4>
+                            <p>
+                                Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex. Morbi
+                                sem neque, aliquam sed orci et, rhoncus lobortis felis. Sed vestibulum nisl sit amet
+                                sapien.
+                            </p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
-        </section>
-        <!-- Abduhakim -->
+            <div class="leafFoto">
+                <img src="../images/leafFoto.svg" alt="" />
+            </div>
+            <div class="leafFoto2">
+                <img src="../images/leafFoto2.svg" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- Asqarjon -->
 
-        <!-- Azimsher -->
-        <section id="topCatigories">
-            <div class="container">
-                <div class="innerContainer">
-                    <div class="topCatigories-starting">
-                        <h2>Shop by Top Categories</h2>
-                        <a href="#">View All <img src="../images/green-arrow.png" alt="arrow" loading="lazy" /></a>
-                    </div>
-                    <div class="swiper topCatigoriesSwiper">
-                        <div class="topCatigories-boxes swiper-wrapper">
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-1.png" alt="vegetables" loading="lazy" />
-                                <h3>Vegetables</h3>
-                                <p>165 Products</p>
-                            </div>
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-2.png" alt="vegetables" loading="lazy" />
-                                <h3>Fresh Fruit</h3>
-                                <p>137 Products</p>
-                            </div>
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-3.png" alt="vegetables" loading="lazy" />
-                                <h3>Fish</h3>
-                                <p>34 Products</p>
-                            </div>
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-4.png" alt="vegetables" loading="lazy" />
-                                <h3>Meat</h3>
-                                <p>165 Products</p>
-                            </div>
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-5.png" alt="vegetables" loading="lazy" />
-                                <h3>Water and Drinks</h3>
-                                <p>48 Products</p>
-                            </div>
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-6.png" alt="vegetables" loading="lazy" />
-                                <h3>Snacks</h3>
-                                <p>165 Products</p>
-                            </div>
+    <!-- Asadbek Savbatov -->
+    <section id="customers">
+        <div class="container">
+            <div class="customersWrapper">
+                <div class="customersWrapperBox">
+                    <span class="num" data-val="37">000</span>
+                    <span class="text">Years of Hard Work</span>
+                </div>
+                <div class="customersWrapperBox">
+                    <span class="num" data-val="510000">000</span>
+                    <span class="text">Happy Customer</span>
+                </div>
+                <div class="customersWrapperBox">
+                    <span class="num" data-val="28">000</span>
+                    <span class="text">Qualified Team Member</span>
+                </div>
+                <div class="customersWrapperBox">
+                    <span class="num" data-val="750000">000</span>
+                    <span class="text">Monthly Orders</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Asadbek Savbatov -->
 
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-1.png" alt="vegetables" loading="lazy" />
-                                <h3>Vegetables</h3>
-                                <p>165 Products</p>
+    <!-- Samandar -->
+    <section id="Banner">
+        <div class="container">
+            <div class="banner-box">
+                <h4>100% Organic</h4>
+                <h2>Fruit & Vegetable</h2>
+                <p class="boxLeftInP">
+                    <span class="startingAtText">Starting at:</span>
+                    <span class="startingAtPrice">$11.99</span>
+                </p>
+                <button class="shop_now_btn btn">Shop Now</button>
+            </div>
+            <div class="banner-box">
+                <h4>sale off the week</h4>
+                <h2>Sales of the Year</h2>
+                <div class="saleDiscountTime">
+                    <ul class="days">
+                        <li class="day">00</li>
+                        <li class="dayTitle">DAYS</li>
+                    </ul>
+                    :
+                    <ul class="hours">
+                        <li class="hour">02</li>
+                        <li class="hourTitle">HOUR</li>
+                    </ul>
+                    :
+                    <ul class="minutes">
+                        <li class="minute">18</li>
+                        <li class="minuteTitle">MINS</li>
+                    </ul>
+                    :
+                    <ul class="seconds">
+                        <li class="second">46</li>
+                        <li class="secondTitle">SECS</li>
+                    </ul>
+                </div>
+                <button class="shop_now_btn btn">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kamronchik -->
+    <section id="hotDealsCard">
+        <div class="container">
+            <div class="product_offer_in">
+                <div class="product_offer_cards_wrapper">
+                    <div class="product_offer_part">
+                        <div class="product_offer_short_titles">
+                            <h2>Hot Deals</h2>
+                            <h2>Best Seller</h2>
+                            <h2>Top Rated</h2>
+                        </div>
+                        <div class="product_offer_cards">
+                            <div class="product_offer_card">
+                                <div class="hotProductImg"></div>
+                                <div class="product_offer_card_text">
+                                    <p class="product_offer_card_title hotProductName">Green Apple</p>
+                                    <div class="product_offer_icons">
+                                        <div class="product_offer_ShopIcon" id="product-shop-button">
+                                            <a><i class="fas fa-regular fa-bag-shopping"></i></a>
+                                        </div>
+                                        <div class="product_offerLike">
+                                            <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
+                                        </div>
+                                    </div>
+
+                                    <span class="product_cost hotProductPrice">14.99</span>
+                                    <div class="product_offerGrade">
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-2.png" alt="vegetables" loading="lazy" />
-                                <h3>Fresh Fruit</h3>
-                                <p>137 Products</p>
+                            <div class="product_offer_card">
+                                <div class="bestSellerProductImg"></div>
+                                <div class="product_offer_card_text">
+                                    <p class="product_offer_card_title bestSellerProductName">Eggplant</p>
+                                    <div class="product_offer_icons">
+                                        <div class="product_offer_ShopIcon" id="product-shop-button">
+                                            <a><i class="fas fa-regular fa-bag-shopping"></i></a>
+                                        </div>
+                                        <div class="product_offerLike">
+                                            <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
+                                        </div>
+                                    </div>
+                                    <span class="product_cost bestSellerProductPrice">$14.99</span>
+                                    <div class="product_offerGrade">
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-3.png" alt="vegetables" loading="lazy" />
-                                <h3>Fish</h3>
-                                <p>34 Products</p>
-                            </div>
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-4.png" alt="vegetables" loading="lazy" />
-                                <h3>Meat</h3>
-                                <p>165 Products</p>
-                            </div>
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-5.png" alt="vegetables" loading="lazy" />
-                                <h3>Water and Drinks</h3>
-                                <p>48 Products</p>
-                            </div>
-                            <div class="topCatigories-box swiper-slide">
-                                <img src="../images/topCatigories-img-6.png" alt="vegetables" loading="lazy" />
-                                <h3>Snacks</h3>
-                                <p>165 Products</p>
+                            <div class="product_offer_card">
+                                <div class="topRatedProductImg"></div>
+                                <div class="product_offer_card_text">
+                                    <p class="product_offer_card_title topRatedProductName">Big Potatos</p>
+                                    <div class="product_offer_icons">
+                                        <div class="product_offer_ShopIcon" id="product-shop-button">
+                                            <a><i class="fas fa-regular fa-bag-shopping"></i></a>
+                                        </div>
+                                        <div class="product_offerLike">
+                                            <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
+                                        </div>
+                                    </div>
+
+                                    <span></span><span class="product_cost topRatedProductPrice">14.99</span>
+                                    <div class="product_offerGrade">
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="next"><img src="../images/arrow.svg" alt="img" /></div>
-                    <div class="prev"><img src="../images/arrow.svg" alt="img" /></div>
-                </div>
-            </div>
-        </section>
-        <!-- Azimsher -->
-
-        <!-- Asqarjon -->
-        <section id="whyChooseUs">
-            <div class="container">
-                <div class="whyChooseWrapper">
-                    <div><img src="../images/Image (4).svg" alt="" /></div>
-                    <div><img src="../images/Image (5).svg" alt="" /></div>
-                    <div class="whyChooseUsText">
-                        <h1>
-                            100% Trusted <br />
-                            Organic Food Store
-                        </h1>
-                        <div class="whyChooseUsTexts">
-                            <img src="../images/Check.svg" alt="Check.svg" loading="lazy" />
-                            <div class="whyChooseUsTexts1">
-                                <h4>Healthy & natural food for lovers of healthy food.</h4>
-                                <p>
-                                    Ut quis tempus erat. Phasellus euismod bibendum magna non
-                                    <br />
-                                    tristique. Pellentesque semper vestibulum elit sed condimentum. Nunc pretium
-                                    fermentum interdum.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="whyChooseUsTexts">
-                            <img src="../images/Check.svg" alt="Check.svg" loading="lazy" />
-                            <div class="whyChooseUsTexts1">
-                                <h4>Every day fresh and quality products for you.</h4>
-                                <p>
-                                    Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex. Morbi
-                                    sem neque, aliquam sed orci et, rhoncus lobortis felis. Sed vestibulum nisl sit amet
-                                    sapien.
-                                </p>
-                            </div>
-                        </div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-                <div class="leafFoto">
-                    <img src="../images/leafFoto.svg" alt="" />
-                </div>
-                <div class="leafFoto2">
-                    <img src="../images/leafFoto2.svg" alt="" />
-                </div>
-            </div>
-        </section>
-        <!-- Asqarjon -->
-
-        <!-- Asadbek Savbatov -->
-        <section id="customers">
-            <div class="container">
-                <div class="customersWrapper">
-                    <div class="customersWrapperBox">
-                        <span class="num" data-val="37">000</span>
-                        <span class="text">Years of Hard Work</span>
-                    </div>
-                    <div class="customersWrapperBox">
-                        <span class="num" data-val="510000">000</span>
-                        <span class="text">Happy Customer</span>
-                    </div>
-                    <div class="customersWrapperBox">
-                        <span class="num" data-val="28">000</span>
-                        <span class="text">Qualified Team Member</span>
-                    </div>
-                    <div class="customersWrapperBox">
-                        <span class="num" data-val="750000">000</span>
-                        <span class="text">Monthly Orders</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Asadbek Savbatov -->
-
-        <!-- Samandar -->
-        <section id="Banner">
-            <div class="container">
-                <div class="banner-box">
-                    <h4>100% Organic</h4>
-                    <h2>Fruit & Vegetable</h2>
-                    <p class="boxLeftInP">
-                        <span class="startingAtText">Starting at:</span>
-                        <span class="startingAtPrice">$11.99</span>
-                    </p>
-                    <button class="shop_now_btn btn">Shop Now</button>
-                </div>
-                <div class="banner-box">
-                    <h4>sale off the week</h4>
-                    <h2>Sales of the Year</h2>
-                    <div class="saleDiscountTime">
-                        <ul class="days">
-                            <li class="day">00</li>
-                            <li class="dayTitle">DAYS</li>
-                        </ul>
-                        :
-                        <ul class="hours">
-                            <li class="hour">02</li>
-                            <li class="hourTitle">HOUR</li>
-                        </ul>
-                        :
-                        <ul class="minutes">
-                            <li class="minute">18</li>
-                            <li class="minuteTitle">MINS</li>
-                        </ul>
-                        :
-                        <ul class="seconds">
-                            <li class="second">46</li>
-                            <li class="secondTitle">SECS</li>
-                        </ul>
-                    </div>
-                    <button class="shop_now_btn btn">Shop Now</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Kamronchik -->
-        <section id="hotDealsCard">
-            <div class="container">
-                <div class="product_offer_in">
-                    <div class="product_offer_cards_wrapper">
-                        <div class="product_offer_part">
-                            <div class="product_offer_short_titles">
-                                <h2>Hot Deals</h2>
-                                <h2>Best Seller</h2>
-                                <h2>Top Rated</h2>
-                            </div>
-                            <div class="product_offer_cards">
-                                <div class="product_offer_card">
-                                    <div class="hotProductImg"></div>
-                                    <div class="product_offer_card_text">
-                                        <p class="product_offer_card_title hotProductName">Green Apple</p>
-                                        <div class="product_offer_icons">
-                                            <div class="product_offer_ShopIcon" id="product-shop-button">
-                                                <a><i class="fas fa-regular fa-bag-shopping"></i></a>
-                                            </div>
-                                            <div class="product_offerLike">
-                                                <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
-                                            </div>
+                        <div class="product_offer_cards">
+                            <div class="product_offer_card">
+                                <div class="hotProductImg"></div>
+                                <div class="product_offer_card_text">
+                                    <p class="product_offer_card_title hotProductName">Green Apple</p>
+                                    <div class="product_offer_icons">
+                                        <div class="product_offer_ShopIcon" id="product-shop-button">
+                                            <a><i class="fas fa-regular fa-bag-shopping"></i></a>
                                         </div>
-
-                                        <span class="product_cost hotProductPrice">14.99</span>
-                                        <div class="product_offerGrade">
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
+                                        <div class="product_offerLike">
+                                            <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product_offer_card">
-                                    <div class="bestSellerProductImg"></div>
-                                    <div class="product_offer_card_text">
-                                        <p class="product_offer_card_title bestSellerProductName">Eggplant</p>
-                                        <div class="product_offer_icons">
-                                            <div class="product_offer_ShopIcon" id="product-shop-button">
-                                                <a><i class="fas fa-regular fa-bag-shopping"></i></a>
-                                            </div>
-                                            <div class="product_offerLike">
-                                                <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
-                                            </div>
-                                        </div>
-                                        <span class="product_cost bestSellerProductPrice">$14.99</span>
-                                        <div class="product_offerGrade">
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
-                                        </div>
+
+                                    <span class="product_cost hotProductPrice">$14.99</span>
+                                    <div class="product_offerGrade">
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
                                     </div>
                                 </div>
-                                <div class="product_offer_card">
-                                    <div class="topRatedProductImg"></div>
-                                    <div class="product_offer_card_text">
-                                        <p class="product_offer_card_title topRatedProductName">Big Potatos</p>
-                                        <div class="product_offer_icons">
-                                            <div class="product_offer_ShopIcon" id="product-shop-button">
-                                                <a><i class="fas fa-regular fa-bag-shopping"></i></a>
-                                            </div>
-                                            <div class="product_offerLike">
-                                                <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
-                                            </div>
+                            </div>
+                            <div class="product_offer_card">
+                                <div class="bestSellerProductImg"></div>
+                                <div class="product_offer_card_text">
+                                    <p class="product_offer_card_title bestSellerProductName">Eggplant</p>
+                                    <div class="product_offer_icons">
+                                        <div class="product_offer_ShopIcon" id="product-shop-button">
+                                            <a><i class="fas fa-regular fa-bag-shopping"></i></a>
                                         </div>
+                                        <div class="product_offerLike">
+                                            <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
+                                        </div>
+                                    </div>
+                                    <span class="product_cost bestSellerProductPrice">$14.99</span>
+                                    <div class="product_offerGrade">
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_offer_card">
+                                <div class="topRatedProductImg"></div>
+                                <div class="product_offer_card_text">
+                                    <p class="product_offer_card_title topRatedProductName">Big Potatos</p>
+                                    <div class="product_offer_icons">
+                                        <div class="product_offer_ShopIcon" id="product-shop-button">
+                                            <a><i class="fas fa-regular fa-bag-shopping"></i></a>
+                                        </div>
+                                        <div class="product_offerLike">
+                                            <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
+                                        </div>
+                                    </div>
 
-                                        <span></span><span class="product_cost topRatedProductPrice">14.99</span>
-                                        <div class="product_offerGrade">
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
-                                        </div>
+                                    <span class="product_cost topRatedProductPrice">$14.99</span>
+                                    <div class="product_offerGrade">
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="product_offer_cards">
-                                <div class="product_offer_card">
-                                    <div class="hotProductImg"></div>
-                                    <div class="product_offer_card_text">
-                                        <p class="product_offer_card_title hotProductName">Green Apple</p>
-                                        <div class="product_offer_icons">
-                                            <div class="product_offer_ShopIcon" id="product-shop-button">
-                                                <a><i class="fas fa-regular fa-bag-shopping"></i></a>
-                                            </div>
-                                            <div class="product_offerLike">
-                                                <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
-                                            </div>
+                        </div>
+                        <div class="product_offer_cards product_offer_cards_end">
+                            <div class="product_offer_card">
+                                <div class="hotProductImg"></div>
+                                <div class="product_offer_card_text">
+                                    <p class="product_offer_card_title hotProductName">Green Apple</p>
+                                    <div class="product_offer_icons">
+                                        <div class="product_offer_ShopIcon" id="product-shop-button">
+                                            <a><i class="fas fa-regular fa-bag-shopping"></i></a>
                                         </div>
-
-                                        <span class="product_cost hotProductPrice">$14.99</span>
-                                        <div class="product_offerGrade">
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
+                                        <div class="product_offerLike">
+                                            <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product_offer_card">
-                                    <div class="bestSellerProductImg"></div>
-                                    <div class="product_offer_card_text">
-                                        <p class="product_offer_card_title bestSellerProductName">Eggplant</p>
-                                        <div class="product_offer_icons">
-                                            <div class="product_offer_ShopIcon" id="product-shop-button">
-                                                <a><i class="fas fa-regular fa-bag-shopping"></i></a>
-                                            </div>
-                                            <div class="product_offerLike">
-                                                <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
-                                            </div>
-                                        </div>
-                                        <span class="product_cost bestSellerProductPrice">$14.99</span>
-                                        <div class="product_offerGrade">
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_offer_card">
-                                    <div class="topRatedProductImg"></div>
-                                    <div class="product_offer_card_text">
-                                        <p class="product_offer_card_title topRatedProductName">Big Potatos</p>
-                                        <div class="product_offer_icons">
-                                            <div class="product_offer_ShopIcon" id="product-shop-button">
-                                                <a><i class="fas fa-regular fa-bag-shopping"></i></a>
-                                            </div>
-                                            <div class="product_offerLike">
-                                                <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
-                                            </div>
-                                        </div>
 
-                                        <span class="product_cost topRatedProductPrice">$14.99</span>
-                                        <div class="product_offerGrade">
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
-                                        </div>
+                                    <span class="product_cost hotProductPrice">14.99</span>
+                                    <div class="product_offerGrade">
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="product_offer_cards product_offer_cards_end">
-                                <div class="product_offer_card">
-                                    <div class="hotProductImg"></div>
-                                    <div class="product_offer_card_text">
-                                        <p class="product_offer_card_title hotProductName">Green Apple</p>
-                                        <div class="product_offer_icons">
-                                            <div class="product_offer_ShopIcon" id="product-shop-button">
-                                                <a><i class="fas fa-regular fa-bag-shopping"></i></a>
-                                            </div>
-                                            <div class="product_offerLike">
-                                                <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
-                                            </div>
+                            <div class="product_offer_card">
+                                <div class="bestSellerProductImg"></div>
+                                <div class="product_offer_card_text">
+                                    <p class="product_offer_card_title bestSellerProductName">Eggplant</p>
+                                    <div class="product_offer_icons">
+                                        <div class="product_offer_ShopIcon" id="product-shop-button">
+                                            <a><i class="fas fa-regular fa-bag-shopping"></i></a>
                                         </div>
-
-                                        <span class="product_cost hotProductPrice">14.99</span>
-                                        <div class="product_offerGrade">
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_offer_card">
-                                    <div class="bestSellerProductImg"></div>
-                                    <div class="product_offer_card_text">
-                                        <p class="product_offer_card_title bestSellerProductName">Eggplant</p>
-                                        <div class="product_offer_icons">
-                                            <div class="product_offer_ShopIcon" id="product-shop-button">
-                                                <a><i class="fas fa-regular fa-bag-shopping"></i></a>
-                                            </div>
-                                            <!-- <div class="product_offerLike">
+                                        <!-- <div class="product_offerLike">
                                   <a id="likeButton" onclick="likeProduct()">
                                     <img id="likeIcon" src="../images/featuredLikeIcon.svg" alt="Like" />
                                   </a>
                                 </div> -->
-                                            <div class="product_offerLike">
-                                                <a href="#"
-                                                    ><img
-                                                        src="../images/featuredLikeIcon.svg"
-                                                        alt="Like"
-                                                        style="color: red"
-                                                /></a>
-                                            </div>
-                                        </div>
-                                        <span class="product_cost bestSellerProductPrice">$14.99</span>
-                                        <div class="product_offerGrade">
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
+                                        <div class="product_offerLike">
+                                            <a href="#"><img src="../images/featuredLikeIcon.svg" alt="Like"
+                                                    style="color: red" /></a>
                                         </div>
                                     </div>
+                                    <span class="product_cost bestSellerProductPrice">$14.99</span>
+                                    <div class="product_offerGrade">
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
+                                    </div>
                                 </div>
-                                <div class="product_offer_card">
-                                    <div class="topRatedProductImg"></div>
-                                    <div class="product_offer_card_text">
-                                        <p class="product_offer_card_title topRatedProductName">Big Potatos</p>
-                                        <div class="product_offer_icons">
-                                            <div class="product_offer_ShopIcon" id="product-shop-button">
-                                                <a><i class="fas fa-regular fa-bag-shopping"></i></a>
-                                            </div>
-                                            <div class="product_offerLike">
-                                                <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
-                                            </div>
+                            </div>
+                            <div class="product_offer_card">
+                                <div class="topRatedProductImg"></div>
+                                <div class="product_offer_card_text">
+                                    <p class="product_offer_card_title topRatedProductName">Big Potatos</p>
+                                    <div class="product_offer_icons">
+                                        <div class="product_offer_ShopIcon" id="product-shop-button">
+                                            <a><i class="fas fa-regular fa-bag-shopping"></i></a>
                                         </div>
+                                        <div class="product_offerLike">
+                                            <a><img src="../images/featuredLikeIcon.svg" alt="Like" /></a>
+                                        </div>
+                                    </div>
 
-                                        <span class="product_cost topRatedProductPrice">$14.99</span>
-                                        <div class="product_offerGrade">
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
-                                            <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
-                                        </div>
+                                    <span class="product_cost topRatedProductPrice">$14.99</span>
+                                    <div class="product_offerGrade">
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartFull.svg" alt="Yellow Start" />
+                                        <img src="../images/featuredStartEmpty.svg" alt="Yellow Start" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product_order">
-                            <p class="sale">HOT SALE</p>
-                            <p class="order"><span>Save 37%</span> on Every Order</p>
-                            <div class="product_order_button">
-                                <a href="product_detail.html">
-                                    <button class="product_order_btn">
-                                        Shop Now <i class="fa fa-arrow-right" 1aria-hidden="true"></i>
-                                    </button>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="product_order">
+                        <p class="sale">HOT SALE</p>
+                        <p class="order"><span>Save 37%</span> on Every Order</p>
+                        <div class="product_order_button">
+                            <a href="product_detail.html">
+                                <button class="product_order_btn">
+                                    Shop Now <i class="fa fa-arrow-right" 1aria-hidden="true"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Kamronchik -->
+        </div>
+    </section>
+    <!-- Kamronchik -->
 
-        <!-- Azizbek -->
-        <section id="latestNews">
-            <div class="container">
-                <div class="latest">
-                    <h3>Blogs</h3>
-                    <h2>Latest News</h2>
+    <!-- Azizbek -->
+    <section id="latestNews">
+        <div class="container">
+            <div class="latest">
+                <h3>Blogs</h3>
+                <h2>Latest News</h2>
+            </div>
+            <div class="boxsWrap">
+                <div class="box">
+                    <div class="imgBox">
+                        <div class="mini">
+                            <h3>18</h3>
+                            <p>NOV</p>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="categ-box">
+                            <div>
+                                <img src="../images/tag 1.svg" alt="img" loading="lazy" />
+                                <a href="#">Food</a>
+                            </div>
+                            <div>
+                                <img src="../images/user_3 1.svg" loading="lazy" alt="img" />
+                                <a href="#">By Admins</a>
+                            </div>
+                            <div>
+                                <img src="../images/ChatCentered 1.svg" alt="img" loading="lazy" />
+                                <a href="#">65 Comments</a>
+                            </div>
+                        </div>
+                        <p>Curabitur porttitor orci eget neque accumsan venenatis.Nunc fermentum.</p>
+                        <button>
+                            Read More
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13"
+                                    fill="none">
+                                    <path d="M16 7.50049H1" stroke="#00B307" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9.9502 1.47559L16.0002 7.49959L9.9502 13.5246" stroke="#00B307"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
                 </div>
-                <div class="boxsWrap">
-                    <div class="box">
-                        <div class="imgBox">
-                            <div class="mini">
-                                <h3>18</h3>
-                                <p>NOV</p>
-                            </div>
-                        </div>
-                        <div class="wrap">
-                            <div class="categ-box">
-                                <div>
-                                    <img src="../images/tag 1.svg" alt="img" loading="lazy" />
-                                    <a href="#">Food</a>
-                                </div>
-                                <div>
-                                    <img src="../images/user_3 1.svg" loading="lazy" alt="img" />
-                                    <a href="#">By Admins</a>
-                                </div>
-                                <div>
-                                    <img src="../images/ChatCentered 1.svg" alt="img" loading="lazy" />
-                                    <a href="#">65 Comments</a>
-                                </div>
-                            </div>
-                            <p>Curabitur porttitor orci eget neque accumsan venenatis.Nunc fermentum.</p>
-                            <button>
-                                Read More
-                                <span
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="17"
-                                        height="13"
-                                        viewBox="0 0 17 13"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M16 7.50049H1"
-                                            stroke="#00B307"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M9.9502 1.47559L16.0002 7.49959L9.9502 13.5246"
-                                            stroke="#00B307"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </span>
-                            </button>
+                <div class="box">
+                    <div class="imgBox">
+                        <div class="mini">
+                            <h3>23</h3>
+                            <p>JAN</p>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <div class="mini">
-                                <h3>23</h3>
-                                <p>JAN</p>
+                    <div class="wrap">
+                        <div class="categ-box">
+                            <div>
+                                <img src="../images/tag 1.svg" alt="img" loading="lazy" />
+                                <a href="#">Food</a>
+                            </div>
+                            <div>
+                                <img src="../images/user_3 1.svg" loading="lazy" alt="img" />
+                                <a href="#">By Admins</a>
+                            </div>
+                            <div>
+                                <img src="../images/ChatCentered 1.svg" alt="img" loading="lazy" />
+                                <a href="#">65 Comments</a>
                             </div>
                         </div>
-                        <div class="wrap">
-                            <div class="categ-box">
-                                <div>
-                                    <img src="../images/tag 1.svg" alt="img" loading="lazy" />
-                                    <a href="#">Food</a>
-                                </div>
-                                <div>
-                                    <img src="../images/user_3 1.svg" loading="lazy" alt="img" />
-                                    <a href="#">By Admins</a>
-                                </div>
-                                <div>
-                                    <img src="../images/ChatCentered 1.svg" alt="img" loading="lazy" />
-                                    <a href="#">65 Comments</a>
-                                </div>
-                            </div>
-                            <p>Curabitur porttitor orci eget neque accumsan venenatis.Nunc fermentum.</p>
-                            <button>
-                                Read More
-                                <span
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="17"
-                                        height="13"
-                                        viewBox="0 0 17 13"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M16 7.50049H1"
-                                            stroke="#00B307"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M9.9502 1.47559L16.0002 7.49959L9.9502 13.5246"
-                                            stroke="#00B307"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </span>
-                            </button>
+                        <p>Curabitur porttitor orci eget neque accumsan venenatis.Nunc fermentum.</p>
+                        <button>
+                            Read More
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13"
+                                    fill="none">
+                                    <path d="M16 7.50049H1" stroke="#00B307" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9.9502 1.47559L16.0002 7.49959L9.9502 13.5246" stroke="#00B307"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBox">
+                        <div class="mini">
+                            <h3>18</h3>
+                            <p>NOV</p>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <div class="mini">
-                                <h3>18</h3>
-                                <p>NOV</p>
+                    <div class="wrap">
+                        <div class="categ-box">
+                            <div>
+                                <img src="../images/tag 1.svg" alt="img" loading="lazy" />
+                                <a href="#">Food</a>
+                            </div>
+                            <div>
+                                <img src="../images/user_3 1.svg" loading="lazy" alt="img" />
+                                <a href="#">By Admins</a>
+                            </div>
+                            <div>
+                                <img src="../images/ChatCentered 1.svg" alt="img" loading="lazy" />
+                                <a href="#">65 Comments</a>
                             </div>
                         </div>
-                        <div class="wrap">
-                            <div class="categ-box">
-                                <div>
-                                    <img src="../images/tag 1.svg" alt="img" loading="lazy" />
-                                    <a href="#">Food</a>
-                                </div>
-                                <div>
-                                    <img src="../images/user_3 1.svg" loading="lazy" alt="img" />
-                                    <a href="#">By Admins</a>
-                                </div>
-                                <div>
-                                    <img src="../images/ChatCentered 1.svg" alt="img" loading="lazy" />
-                                    <a href="#">65 Comments</a>
-                                </div>
-                            </div>
-                            <p>Curabitur porttitor orci eget neque accumsan venenatis.Nunc fermentum.</p>
-                            <button>
-                                Read More
-                                <span
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="17"
-                                        height="13"
-                                        viewBox="0 0 17 13"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M16 7.50049H1"
-                                            stroke="#00B307"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M9.9502 1.47559L16.0002 7.49959L9.9502 13.5246"
-                                            stroke="#00B307"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
+                        <p>Curabitur porttitor orci eget neque accumsan venenatis.Nunc fermentum.</p>
+                        <button>
+                            Read More
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13"
+                                    fill="none">
+                                    <path d="M16 7.50049H1" stroke="#00B307" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9.9502 1.47559L16.0002 7.49959L9.9502 13.5246" stroke="#00B307"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Azizbek -->
+        </div>
+    </section>
+    <!-- Azizbek -->
 
-        <!-- Dilshodbek -->
-        <section id="testimonials">
-            <div class="container"></div>
-        </section>
-        <!-- Dilshodbek -->
+    <!-- Dilshodbek -->
+    <section id="testimonials">
+        <div class="container"></div>
+    </section>
+    <!-- Dilshodbek -->
 
-        <!-- Nafisa -->
-        <section id="company-logo">
-            <div class="container">
-                <div class="company-logo-slide">
-                    <a href="#0"><img src="../images/company-logo1.svg" alt="" /></a>
-                    <a href="#0"><img src="../images/company-logo2.svg" alt="" /></a>
-                    <a href="#0"><img src="../images/company-logo3.svg" alt="" /></a>
-                    <a href="#0"><img src="../images/company-logo4.svg" alt="" /></a>
-                    <a href="#0"><img src="../images/company-logo5.svg" alt="" /></a>
-                    <a href="#0"><img src="../images/company-logo6.svg" alt="" /></a>
-                </div>
-                <div class="company-logo-slide">
-                    <a href="#0"><img src="../images/company-logo1.svg" alt="" /></a>
-                    <a href="#0"><img src="../images/company-logo2.svg" alt="" /></a>
-                    <a href="#0"><img src="../images/company-logo3.svg" alt="" /></a>
-                    <a href="#0"><img src="../images/company-logo4.svg" alt="" /></a>
-                    <a href="#0"><img src="../images/company-logo5.svg" alt="" /></a>
-                    <a href="#0"><img src="../images/company-logo6.svg" alt="" /></a>
-                </div>
+    <!-- Nafisa -->
+    <section id="company-logo">
+        <div class="container">
+            <div class="company-logo-slide">
+                <a href="#0"><img src="../images/company-logo1.svg" alt="" /></a>
+                <a href="#0"><img src="../images/company-logo2.svg" alt="" /></a>
+                <a href="#0"><img src="../images/company-logo3.svg" alt="" /></a>
+                <a href="#0"><img src="../images/company-logo4.svg" alt="" /></a>
+                <a href="#0"><img src="../images/company-logo5.svg" alt="" /></a>
+                <a href="#0"><img src="../images/company-logo6.svg" alt="" /></a>
             </div>
-        </section>
-        <section id="contact">
-            <div class="container"></div>
-        </section>
-        <footer>
-            <div class="container"></div>
-        </footer>
-        <!-- Nafisa -->
+            <div class="company-logo-slide">
+                <a href="#0"><img src="../images/company-logo1.svg" alt="" /></a>
+                <a href="#0"><img src="../images/company-logo2.svg" alt="" /></a>
+                <a href="#0"><img src="../images/company-logo3.svg" alt="" /></a>
+                <a href="#0"><img src="../images/company-logo4.svg" alt="" /></a>
+                <a href="#0"><img src="../images/company-logo5.svg" alt="" /></a>
+                <a href="#0"><img src="../images/company-logo6.svg" alt="" /></a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container"></div>
+    </section>
+    <footer>
+        <div class="container"></div>
+    </footer>
+    <!-- Nafisa -->
 
-        
-        <script src="../js/index.js" type="module"></script>
-    </body>
+
+    <script src="../js/index.js" type="module"></script>
+    <script src="../js/components/navbar/navbar.js"></script>
+</body>
+
 </html>
