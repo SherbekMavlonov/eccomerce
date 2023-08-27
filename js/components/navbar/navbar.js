@@ -69,7 +69,7 @@ class NavbarComponent extends HTMLElement {
 
             <div class="navbar-bottom-middle-content">
               <!-- Logo qismi -->
-              <a href="/">
+              <a href="/pages/home.html">
                 <img src="../images/navbar/logo.png" class="lang-shopery" />
                 Shopery
               </a>
