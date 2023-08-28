@@ -39,9 +39,6 @@
                         <div class="inputDiv">
                             <input class="loginEmail" type="email" placeholder="Email" required />
                             <p class="validatorEmail error dHide"></p>
-                            <i class="warning bx bx-error-circle dHide"></i>
-                            <i class="error bx bx-error dHide"></i>
-                            <i class="success bx bx-check dHide"></i>
                         </div>
                         <div class="inputDiv">
                             <input class="loginPassword" type="password" placeholder="Password" required />
@@ -58,7 +55,7 @@
                         </div>
                         <button type="submit">Login</button>
                         <div class="forgot linkToRegister">
-                            Don’t have account?<span class="registerText">Register</span>
+                            Don’t have account?<span class="registerText"> Register</span>
                         </div>
                     </form>
                 </div>
@@ -67,7 +64,36 @@
             <section id="createAccaunt">
                 <div class="container">
                     <form action="#0" class="field">
-                        <header class="headerText">Sign In</header>
+                        <header class="headerText">Create Account</header>
+                        <div class="inputDiv">
+                            <input class="createEmail" type="email" placeholder="Email" required />
+                            <p class="validatorEmail error dHide"></p>
+                        </div>
+                        <div class="inputDiv">
+                            <input class="createPassword" type="password" placeholder="Password" required />
+                            <p class="validatorPassword dHide"></p>
+                            <i class="hide bx bx-hide dHide"></i>
+                            <i class="show bx bx-show"></i>
+                        </div>
+                        <div class="inputDiv">
+                            <input type="password" placeholder="Repeate Password" required />
+                            <p class="validatorPassword"></p>
+                            <i class="hide bx bx-hide dHide"></i>
+                            <i class="show bx bx-show"></i>
+                        </div>
+
+                        <div class="assists">
+                            <div class="remember">
+                                <input type="checkbox" name="#" id="acceptTerms" />
+                                <label for="acceptTerms" class="acceptTerms">Accept all terms & Conditions</label>
+                            </div>
+                        </div>
+
+                        <button type="submit">Create Account</button>
+
+                        <div class="forgot linkToRegister">
+                            Already have account<span class="registerText"> Login</span>
+                        </div>
                     </form>
                 </div>
             </section>

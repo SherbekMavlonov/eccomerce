@@ -82,6 +82,9 @@ input {
     line-height: 130%; /* 20.8px */
     outline: none;
 }
+input:focus {
+    outline: 1px solid var(--branding-success, #00b207);
+}
 input[checked] {
     background: var(--branding-success, #00b207);
 }
@@ -99,6 +102,7 @@ button {
     margin: 20px 0;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 .bx {
     font-size: 25px;
@@ -121,6 +125,9 @@ button {
 }
 .typing {
     border: 1px solid var(--branding-success, #00b207);
+}
+.success-color {
+    color: var(--branding-success, #00b207);
 }
 .bx.dHide {
     display: none;
@@ -179,4 +186,30 @@ button {
     position: absolute;
     top: 13px;
     right: 13px;
+}
+form p {
+    font-size: 14px;
+}
+
+/* =====>>  Create Accaunt  <<===== */
+
+#createAccaunt .assists label {
+    color: var(--gray-scale-gray-600, #666);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+#createAccaunt .assists {
+    display: block;
+}
+#createAccaunt .remember {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+#createAccaunt input[type="checkbox"] {
+    width: 15px;
 }
