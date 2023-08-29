@@ -181,11 +181,11 @@ valueDisplays.forEach((valueDisplay) => {
 
 // =========>> testimonial section <<=========================//
 // import Swiper from "../node_modules/swiper/swiper-bundle.mjs";
-// import { TESTOMONIAL } from "./__mock__data.js";
+import { TESTOMONIAL } from "./__mock__data.js";
 function createTestomonial() {
-  const swiperWrapper = document.querySelector(".swiper-wrapper");
+  const swiperWrapper = document.querySelector(".testomonialSwiperContainer .swiper-wrapper")
 
-  const swiper = new Swiper(".swiper-container", {
+  new Swiper(".swiper-container", {
     loop: true,
     loopedSlides: 3,
     slidesPerView: 3,
