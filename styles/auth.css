@@ -84,7 +84,7 @@ input {
     background: var(--gray-scale-white, #fff);
     padding: 14px 16px;
     width: 100%;
-    color: var(--gray-scale-gray-400, #999);
+    /* color: var(--gray-scale-gray-400, #999); */
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
