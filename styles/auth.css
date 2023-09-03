@@ -1,5 +1,6 @@
 @import url("./component.style.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +9,11 @@
     text-decoration: none;
     font-family: "Poppins";
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
@@ -20,9 +23,11 @@ html {
 #breadcrumbs {
     background: linear-gradient(95deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), #999;
 }
+
 #breadcrumbs .container {
     padding: 45px 0;
 }
+
 #breadcrumbs .content {
     display: flex;
     justify-content: start;
@@ -32,8 +37,10 @@ html {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
 }
+
 .currentPage {
     color: var(--branding-success, #00b207);
 }
@@ -58,16 +65,19 @@ main {
     width: 520px;
     padding: 24px;
 }
+
 .headerText {
     color: var(--gray-scale-gray-900, #1a1a1a);
     font-family: Poppins;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; /* 38.4px */
+    line-height: 120%;
+    /* 38.4px */
     text-align: center;
     margin-bottom: 20px;
 }
+
 input {
     border-radius: 6px;
     border: 1px solid var(--gray-scale-gray-100, #e6e6e6);
@@ -79,15 +89,19 @@ input {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 20.8px */
+    line-height: 130%;
+    /* 20.8px */
     outline: none;
 }
+
 input:focus {
     outline: 1px solid var(--branding-success, #00b207);
 }
+
 input[checked] {
     background: var(--branding-success, #00b207);
 }
+
 button {
     border-radius: 43px;
     background: var(--branding-success, #00b207);
@@ -96,7 +110,8 @@ button {
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; /* 16.8px */
+    line-height: 120%;
+    /* 16.8px */
     padding: 14px 32px;
     width: 100%;
     margin: 20px 0;
@@ -104,34 +119,42 @@ button {
     outline: none;
     cursor: pointer;
 }
+
 .bx {
     font-size: 25px;
     cursor: pointer;
 }
+
 .warning {
     border-radius: 6px;
     color: var(--branding-warning, #ff8a00);
     background: var(--gray-scale-white, #fff);
 }
+
 .error {
     border-radius: 6px;
     color: var(--branding-error, #ea4b48);
     background: var(--gray-scale-white, #fff);
 }
+
 .success {
     border-radius: 6px;
     color: var(--branding-success, #00b207);
     background: linear-gradient(0deg, rgba(32, 181, 38, 0.05) 0%, rgba(32, 181, 38, 0.05) 100%), #fff;
 }
+
 .typing {
     border: 1px solid var(--branding-success, #00b207);
 }
+
 .success-color {
     color: var(--branding-success, #00b207);
 }
+
 .bx.dHide {
     display: none;
 }
+
 .bx.dShow {
     display: block;
 }
@@ -140,11 +163,13 @@ button {
     margin: 12px 0 20px;
     position: relative;
 }
+
 .assists {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .remember {
     display: flex;
     justify-content: space-between;
@@ -152,9 +177,19 @@ button {
     width: 120px;
     gap: 5px;
 }
+
 .remember label {
     word-wrap: break-word;
 }
+
+#acceptTerms {
+    cursor: pointer;
+}
+
+#rememberMe {
+    cursor: pointer;
+}
+
 .forgot,
 .rememberMe {
     color: var(--gray-scale-gray-600, #666);
@@ -162,31 +197,41 @@ button {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 21px */
-}
-.forgot:hover,
-.rememberMe:hover {
-    color: #00b207;
-}
-.forgot {
+    line-height: 150%;
     cursor: pointer;
+    /* 21px */
 }
+
 .linkToRegister {
     text-align: center;
+    cursor: auto;
 }
+
+.createAccountBtn:hover,
+.loginBtn:hover {
+    opacity: 0.9;
+}
+
 .registerText {
     color: var(--gray-scale-gray-900, #1a1a1a);
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 21px */
+    line-height: 150%;
+    cursor: pointer;
 }
+
+.registerText:hover {
+    border-bottom: 1px solid black;
+}
+
 .bx {
     position: absolute;
     top: 13px;
     right: 13px;
 }
+
 form p {
     font-size: 14px;
 }
@@ -199,17 +244,26 @@ form p {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 21px */
+    line-height: 150%;
+    /* 21px */
 }
+
 #createAccaunt .assists {
     display: block;
 }
+
 #createAccaunt .remember {
     width: 100%;
     align-items: center;
     display: flex;
     justify-content: start;
 }
+
 #createAccaunt input[type="checkbox"] {
     width: 15px;
+}
+
+
+.hide {
+    display: none;
 }
