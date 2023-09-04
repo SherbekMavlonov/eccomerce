@@ -20,6 +20,7 @@ class Auth {
 
   login(email, password) {
     if (email === this.users.email && password === this.users.password) {
+      useStorage.setItem('users', JSON.stringify({ ...this.users, loggedIn: true }))
       this.navigate('/pages/dashboard.html')
     } else {
       document.querySelector('.login--error').textContent = 'Email or password is incorrect'
