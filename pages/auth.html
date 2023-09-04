@@ -43,6 +43,7 @@
             <div class="container">
                 <form action="#0" class="field loginForm">
                     <header class="headerText">Sign In</header>
+                    <p class="login--error" style="color: red;"></p>
                     <div class="inputDiv">
                         <input class="loginEmail" type="email" placeholder="Email" required />
                         <p class="validatorEmail error dHide"></p>
@@ -59,7 +60,7 @@
                         </div>
                         <a href="#0" class="forgot forgotPassword">Forget Password</a>
                     </div>
-                    <button type="submit" class="loginBtn">Login</button>
+                    <button type="submit" class="loginBtn disabled" disabled>Login</button>
                     <div class="forgot linkToRegister">
                         Don’t have account?<span class="registerText signupLink"> Register</span>
                     </div>
@@ -71,6 +72,7 @@
             <div class="container">
                 <form action="#0" class="field">
                     <header class="headerText">Create Account</header>
+                    <p class="create-account--error" style="color: red;"></p>
                     <div class="inputDiv">
                         <input class="createEmail" type="email" placeholder="Email" required />
                         <p class="validatorEmail error dHide"></p>
@@ -89,14 +91,14 @@
 
                     <div class="assists">
                         <div class="remember">
-                            <input type="checkbox" name="#" id="acceptTerms" />
+                            <input type="checkbox" id="acceptTerms" required />
                             <label for="acceptTerms" class="acceptTerms">Accept all <a href="#0"
                                     style="text-decoration: underline;">terms</a> & <a href="#0"
                                     style="text-decoration: underline;">Conditions</a></label>
                         </div>
                     </div>
 
-                    <button type="submit" class="createAccountBtn">Create Account</button>
+                    <button type="submit" class="createAccountBtn disabled" disabled>Create Account</button>
 
                     <div class="forgot linkToRegister">
                         Already have account? <span class="registerText loginLink"> Login</span>

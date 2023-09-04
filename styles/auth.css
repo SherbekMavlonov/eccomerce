@@ -94,6 +94,15 @@ input {
     outline: none;
 }
 
+.disabled {
+    background-color: gray;
+    cursor: default;
+}
+
+.disabled:hover {
+    opacity: 1 !important;
+}
+
 input:focus {
     outline: 1px solid var(--branding-success, #00b207);
 }
@@ -266,4 +275,8 @@ form p {
 
 .hide {
     display: none;
+}
+
+button {
+    transition: all 0.2s ease-in;
 }
