@@ -296,6 +296,7 @@
 }
 #settings .accountSettingsSection .settingsSectionIn .leftInputData .leftInput input:focus {
   outline: 2px solid #00b207;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #settings .accountSettingsSection .settingsSectionIn .leftInputData .leftInput input::-moz-placeholder {
   font-size: 16px;
@@ -415,6 +416,7 @@
 }
 #settings #billingAddressSection .billingSectionIn .topBillingIn .bInput input:focus {
   outline: 2px solid #00b207;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #settings #billingAddressSection .billingSectionIn .streetAdrressDiv {
   width: 938px;
@@ -436,6 +438,7 @@
 }
 #settings #billingAddressSection .billingSectionIn .streetAdrressDiv input:focus {
   outline: 2px solid #00b207;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #settings #billingAddressSection .billingSectionIn .countrySectionsDiv {
   display: flex;
@@ -471,6 +474,7 @@
 #settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput input:focus,
 #settings #billingAddressSection .billingSectionIn .countrySectionsDiv .bInput select:focus {
   outline: 2px solid #00b207;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #settings #billingAddressSection .billingSectionIn .bottomBillingIn {
   display: flex;
@@ -503,6 +507,7 @@
 }
 #settings #billingAddressSection .billingSectionIn .bottomBillingIn .bInput input:focus {
   outline: 2px solid #00b207;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #settings #billingAddressSection .billingSectionIn button {
   width: 167px;
@@ -574,6 +579,7 @@
 }
 #settings .changePasswordSection .changePasswordIn .currentPassDiv input:focus {
   outline: 2px solid #00b207;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #settings .changePasswordSection .changePasswordIn .updatePassSection {
   display: flex;
@@ -616,6 +622,7 @@
 }
 #settings .changePasswordSection .changePasswordIn .updatePassSection .newPassDiv input:focus {
   outline: 2px solid #00b207;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv {
   display: flex;
@@ -652,6 +659,7 @@
 }
 #settings .changePasswordSection .changePasswordIn .updatePassSection .confirmPassDiv input:focus {
   outline: 2px solid #00b207;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #settings .changePasswordSection .changePasswordIn .updatePassSection .incorrect {
   color: red !important;
