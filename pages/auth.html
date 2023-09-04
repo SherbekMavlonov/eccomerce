@@ -1,116 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopery</title>
+        <!-- auth styles -->
+        <link rel="stylesheet" href="../styles/auth.css" />
+        <!-- Navbar component-->
+        <link rel="stylesheet" href="../js/components/navbar/navbar.css" />
+        <script defer src="../js/components/navbar/navbar.js"></script>
+        <!-- axios script -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- Components css -->
+        <link rel="stylesheet" href="../styles/component.style.css" />
+        <!-- font link  -->
+        <link rel="stylesheet" href="../fonts/stylesheet.css" />
+        <!-- box icons link -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <!-- font awesome script -->
+        <script src="https://kit.fontawesome.com/f35ca9bb4a.js" crossorigin="anonymous"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopery</title>
-    <!-- auth styles -->
-    <link rel="stylesheet" href="../styles/auth.css" />
-    <!-- Navbar component-->
-    <link rel="stylesheet" href="../js/components/navbar/navbar.css">
-    <script defer src="../js/components/navbar/navbar.js"></script>
-    <!-- axios script -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- Components css -->
-    <link rel="stylesheet" href="../styles/component.style.css" />
-    <!-- font link  -->
-    <link rel="stylesheet" href="../fonts/stylesheet.css" />
-    <!-- box icons link -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <!-- font awesome script -->
-    <script src="https://kit.fontawesome.com/f35ca9bb4a.js" crossorigin="anonymous"></script>
-</head>
+    <body>
+        <navbar-component></navbar-component>
 
-<body>
-    <navbar-component></navbar-component>
-
-    <section id="breadcrumbs">
-        <div class="container">
-            <div class="content">
-                <img src="../images/icons/home-icon.svg" alt="home icon" loading="lazy" />
-                &nbsp;&nbsp;
-                <img src="../images/icons/vektor-right.svg" alt="vektor right" loading="lazy" />
-                &nbsp;&nbsp; Account &nbsp;&nbsp;
-                <img src="../images/icons/vektor-right.svg" alt="vektor right" loading="lazy" />
-                &nbsp;&nbsp; <span class="currentPage">Login</span> &nbsp;&nbsp;
-            </div>
-        </div>
-    </section>
-
-    <main>
-        <section id="login" class="hide">
+        <section id="breadcrumbs">
             <div class="container">
-                <form action="#0" class="field loginForm">
-                    <header class="headerText">Sign In</header>
-                    <p class="login--error" style="color: red;"></p>
-                    <div class="inputDiv">
-                        <input class="loginEmail" type="email" placeholder="Email" required />
-                        <p class="validatorEmail error dHide"></p>
-                    </div>
-                    <div class="inputDiv">
-                        <input class="loginPassword eyeInput" type="password" placeholder="Password" required />
-                        <p class="validatorPassword"></p>
-                        <i class="bx bx-hide eyeIcon"></i>
-                    </div>
-                    <div class="assists">
-                        <div class="remember">
-                            <input type="checkbox" name="#" id="rememberMe" />
-                            <label for="rememberMe" class="rememberMe">Remember&nbsp;me</label>
-                        </div>
-                        <a href="#0" class="forgot forgotPassword">Forget Password</a>
-                    </div>
-                    <button type="submit" class="loginBtn disabled" disabled>Login</button>
-                    <div class="forgot linkToRegister">
-                        Don’t have account?<span class="registerText signupLink"> Register</span>
-                    </div>
-                </form>
+                <div class="content">
+                    <img src="../images/icons/home-icon.svg" alt="home icon" loading="lazy" />
+                    &nbsp;&nbsp;
+                    <img src="../images/icons/vektor-right.svg" alt="vektor right" loading="lazy" />
+                    &nbsp;&nbsp; Account &nbsp;&nbsp;
+                    <img src="../images/icons/vektor-right.svg" alt="vektor right" loading="lazy" />
+                    &nbsp;&nbsp; <span class="currentPage">Login</span> &nbsp;&nbsp;
+                </div>
             </div>
         </section>
 
-        <section id="createAccaunt">
-            <div class="container">
-                <form action="#0" class="field">
-                    <header class="headerText">Create Account</header>
-                    <p class="create-account--error" style="color: red;"></p>
-                    <div class="inputDiv">
-                        <input class="createEmail" type="email" placeholder="Email" required />
-                        <p class="validatorEmail error dHide"></p>
-                    </div>
-                    <div class="inputDiv">
-                        <input class="createPassword eyeInput" type="password" placeholder="Password" required />
-                        <p class="validatorPassword dHide"></p>
-                        <i class="bx bx-hide eyeIcon"></i>
-                    </div>
-                    <div class="inputDiv">
-                        <input class="createPasswordRepeat eyeInput" type="password" placeholder="Repeate Password"
-                            required />
-                        <p class="validatorPassword"></p>
-                        <i class="bx bx-hide eyeIcon"></i>
-                    </div>
-
-                    <div class="assists">
-                        <div class="remember">
-                            <input type="checkbox" id="acceptTerms" required />
-                            <label for="acceptTerms" class="acceptTerms">Accept all <a href="#0"
-                                    style="text-decoration: underline;">terms</a> & <a href="#0"
-                                    style="text-decoration: underline;">Conditions</a></label>
+        <main>
+            <section id="login" class="hide">
+                <div class="container">
+                    <form action="#0" class="field loginForm">
+                        <header class="headerText">Sign In</header>
+                        <p class="login--error" style="color: red"></p>
+                        <div class="inputDiv">
+                            <input class="loginEmail" type="email" placeholder="Email" required />
+                            <p class="validatorEmail error dHide"></p>
                         </div>
-                    </div>
+                        <div class="inputDiv">
+                            <input class="loginPassword eyeInput" type="password" placeholder="Password" required />
+                            <p class="validatorPassword"></p>
+                            <i class="bx bx-hide eyeIcon"></i>
+                        </div>
+                        <div class="assists">
+                            <div class="remember">
+                                <input type="checkbox" name="#" id="rememberMe" />
+                                <label for="rememberMe" class="rememberMe">Remember&nbsp;me</label>
+                            </div>
+                            <a href="#0" class="forgot forgotPassword">Forget Password</a>
+                        </div>
+                        <button type="submit" class="loginBtn disabled" disabled>Login</button>
+                        <div class="forgot linkToRegister">
+                            Don’t have account?<span class="registerText signupLink"> Register</span>
+                        </div>
+                    </form>
+                </div>
+            </section>
 
-                    <button type="submit" class="createAccountBtn disabled" disabled>Create Account</button>
+            <section id="createAccaunt">
+                <div class="container">
+                    <form action="#0" class="field">
+                        <header class="headerText">Create Account</header>
+                        <p class="create-account--error" style="color: red"></p>
+                        <div class="inputDiv">
+                            <input class="createEmail" type="email" placeholder="Email" required />
+                            <p class="validatorEmail error dHide"></p>
+                        </div>
+                        <div class="inputDiv">
+                            <input class="createPassword eyeInput" type="password" placeholder="Password" required />
+                            <p class="validatorPassword dHide"></p>
+                            <i class="bx bx-hide eyeIcon"></i>
+                        </div>
+                        <div class="inputDiv">
+                            <input
+                                class="createPasswordRepeat eyeInput"
+                                type="password"
+                                placeholder="Repeate Password"
+                                required
+                            />
+                            <p class="validatorPassword"></p>
+                            <i class="bx bx-hide eyeIcon"></i>
+                        </div>
 
-                    <div class="forgot linkToRegister">
-                        Already have account? <span class="registerText loginLink"> Login</span>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
+                        <div class="assists">
+                            <div class="remember">
+                                <input type="checkbox" id="acceptTerms" required />
+                                <label for="acceptTerms" class="acceptTerms"
+                                    >Accept all <a href="#0" style="text-decoration: underline">terms</a> &
+                                    <a href="#0" style="text-decoration: underline">Conditions</a></label
+                                >
+                            </div>
+                        </div>
 
-    <footer></footer>
+                        <button type="submit" class="createAccountBtn disabled" disabled>Create Account</button>
 
-    <script type="module" src="../js/handlers/authEventHandler.js"></script>
-</body>
+                        <div class="forgot linkToRegister">
+                            Already have account? <span class="registerText loginLink"> Login</span>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
 
+        <footer></footer>
+
+        <script type="module" src="../js/handlers/authEventHandler.js"></script>
+    </body>
 </html>
