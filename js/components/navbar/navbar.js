@@ -4,6 +4,7 @@ class NavbarComponent extends HTMLElement {
 
   constructor() {
     super()
+    this.loggedUser = JSON.parse(localStorage.getItem('users')).loggedIn
 
     this.htmlCollection = `
     <nav>
@@ -98,10 +99,10 @@ class NavbarComponent extends HTMLElement {
               </a>
               <div class="user-profile-dropdown">
                 <div class="user-profile-dropdown-content">
-                  <a href="/pages/dashboard.html" class="dashboard-link remember-display lang-dashboard">Dashboard</a>
-                  <a class="logout-link remember-display lang-logout">Log out</a>
-                  <a href="/pages/signup.html" class="signup-link lang-signup">Sign up</a>
-                  <a href="/pages/login.html" class="login-link lang-login">Log in</a>
+                  <a href="/pages/dashboard.html" class="dashboard-link hide">Dashboard</a>
+                  <a class="logout-link hide">Log out</a>
+
+                  <a href="/pages/auth.html" class="signup-link">Register</a>
                 </div>
               </div>
             </div>
@@ -114,6 +115,17 @@ class NavbarComponent extends HTMLElement {
 
   connectedCallback() {
     this.getData()
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const logoutLink = this.querySelector('.logout-link');
+
+      if (logoutLink) {
+        logoutLink.addEventListener('click', () => {
+          this.logOut();
+          window.location.href = '/pages/home.html'
+        });
+      }
+    })
   }
 
   async getData() {
@@ -135,7 +147,26 @@ class NavbarComponent extends HTMLElement {
   }
 
   render() {
-    this.innerHTML = this.htmlCollection
+    this.innerHTML = this.htmlCollection;
+
+    const dashboardLink = this.querySelector('.dashboard-link');
+    const logoutLink = this.querySelector('.logout-link');
+    const signupLink = this.querySelector('.signup-link');
+
+    if (this.loggedUser) {
+      if (dashboardLink) dashboardLink.classList.remove('hide');
+      if (logoutLink) logoutLink.classList.remove('hide');
+      if (signupLink) signupLink.classList.add('hide');
+    } else {
+      if (dashboardLink) dashboardLink.classList.add('hide');
+      if (logoutLink) logoutLink.classList.add('hide');
+      if (signupLink) signupLink.classList.remove('hide');
+    }
+  }
+
+  logOut() {
+    const users = JSON.parse(localStorage.getItem('users'))
+    localStorage.setItem('users', JSON.stringify({ ...users, loggedIn: false }))
   }
 }
 
