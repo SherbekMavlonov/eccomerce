@@ -9,7 +9,14 @@ HTML.createAccountBtnEl.addEventListener('click', (e) => {
   auth.createAccount(
     HTML.createEmailEl.value,
     HTML.createPasswordEl.value,
-    HTML.createPasswordRepeatEl.value)
+    HTML.createPasswordRepeatEl.value,
+    HTML.acceptTermsEl.checked)
+})
+
+HTML.acceptTermsEl.addEventListener('change', () => {
+  const isChecked = HTML.acceptTermsEl.checked
+  HTML.createAccountBtnEl.classList.toggle('disabled', !isChecked)
+  HTML.createAccountBtnEl.disabled = !isChecked
 })
 
 
@@ -19,6 +26,12 @@ HTML.loginBtnEl.addEventListener('click', (e) => {
   auth.login(
     HTML.loginEmailEl.value,
     HTML.loginPasswordEl.value)
+})
+
+HTML.loginPasswordEl.addEventListener('input', () => {
+  const isValid = HTML.loginPasswordEl.value.length >= 4
+  HTML.loginBtnEl.classList.toggle('disabled', !isValid)
+  HTML.loginBtnEl.disabled = !isValid
 })
 
 
