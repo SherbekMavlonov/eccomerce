@@ -1,4 +1,4 @@
-class useStorage {
+export class useStorage {
   static setItem(key, item) {
     localStorage.setItem(key, item)
   }
